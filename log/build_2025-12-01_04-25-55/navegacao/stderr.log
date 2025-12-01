@@ -1,0 +1,34 @@
+/home/inteli/ponderada_navegacao/src/navegacao/src/path_planner_node.cpp: In member function ‘bool PathPlannerNode::fetch_map(navegacao::GridMap&)’:
+/home/inteli/ponderada_navegacao/src/navegacao/src/path_planner_node.cpp:78:49: error: ‘std::vector<unsigned char, std::allocator<unsigned char> >’ is an inaccessible base of ‘rosidl_runtime_cpp::BoundedVector<unsigned char, 2, std::allocator<unsigned char> >’
+   78 |       grid = navegacao::build_grid_from_response(
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+   79 |         response->occupancy_grid_flattened,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~      
+   80 |         response->occupancy_grid_shape);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~          
+/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp: In lambda function:
+/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:148:9: error: ‘target_coord_’ was not declared in this scope; did you mean ‘target_known_’?
+  148 |         target_coord_ = coord;
+      |         ^~~~~~~~~~~~~
+      |         target_known_
+/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp: In member function ‘bool MapperNode::send_move(const std::string&, const navegacao::GridCoordinate&)’:
+/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:233:7: error: ‘target_coord_’ was not declared in this scope; did you mean ‘target_known_’?
+  233 |       target_coord_ = current_;
+      |       ^~~~~~~~~~~~~
+      |       target_known_
+/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp: In member function ‘{anonymous}::LocalGrid MapperNode::build_local_grid() const’:
+/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:267:44: error: ‘target_coord_’ was not declared in this scope; did you mean ‘target_known_’?
+  267 |       } else if (target_known_ && coord == target_coord_) {
+      |                                            ^~~~~~~~~~~~~
+      |                                            target_known_
+/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp: In member function ‘void MapperNode::replay_with_local_map(const {anonymous}::LocalGrid&)’:
+/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:323:42: error: ‘target_coord_’ was not declared in this scope; did you mean ‘target_known_’?
+  323 |     navegacao::GridCoordinate target_idx{target_coord_.row + local.row_offset, target_coord_.col + local.col_offset};
+      |                                          ^~~~~~~~~~~~~
+      |                                          target_known_
+gmake[2]: *** [CMakeFiles/path_planner.dir/build.make:76: CMakeFiles/path_planner.dir/src/path_planner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/path_planner.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/mapper.dir/build.make:76: CMakeFiles/mapper.dir/src/mapper_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mapper.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

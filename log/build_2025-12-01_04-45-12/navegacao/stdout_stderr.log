@@ -1,0 +1,12 @@
+[ 50%] Built target path_planner
+[ 75%] Building CXX object CMakeFiles/mapper.dir/src/mapper_node.cpp.o
+/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp: In member function ‘std::optional<{anonymous}::StepDecision> MapperNode::choose_next_step()’:
+/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:202:15: error: no match for ‘operator!=’ (operand types are ‘navegacao::GridCoordinate’ and ‘navegacao::GridCoordinate’)
+  202 |       if (cur != current_ && it_cell != discovered_.end()) {
+      |           ~~~ ^~ ~~~~~~~~
+      |           |      |
+      |           |      navegacao::GridCoordinate
+      |           navegacao::GridCoordinate
+gmake[2]: *** [CMakeFiles/mapper.dir/build.make:76: CMakeFiles/mapper.dir/src/mapper_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mapper.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

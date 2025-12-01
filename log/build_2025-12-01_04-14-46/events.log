@@ -1,0 +1,788 @@
+[0.000000] (-) TimerEvent: {}
+[0.000263] (cg_interfaces) JobQueued: {'identifier': 'cg_interfaces', 'dependencies': OrderedDict()}
+[0.000296] (cg) JobQueued: {'identifier': 'cg', 'dependencies': OrderedDict({'cg_interfaces': '/home/inteli/ponderada_navegacao/install/cg_interfaces'})}
+[0.000320] (cg_teleop) JobQueued: {'identifier': 'cg_teleop', 'dependencies': OrderedDict({'cg_interfaces': '/home/inteli/ponderada_navegacao/install/cg_interfaces'})}
+[0.000335] (navegacao) JobQueued: {'identifier': 'navegacao', 'dependencies': OrderedDict({'cg_interfaces': '/home/inteli/ponderada_navegacao/install/cg_interfaces'})}
+[0.000742] (cg_interfaces) JobStarted: {'identifier': 'cg_interfaces'}
+[0.010858] (cg_interfaces) JobProgress: {'identifier': 'cg_interfaces', 'progress': 'cmake'}
+[0.011526] (cg_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/inteli/ponderada_navegacao/src/culling_games/src/cg_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/inteli/ponderada_navegacao/install/cg_interfaces'], 'cwd': '/home/inteli/ponderada_navegacao/build/cg_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'inteli', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/inteli', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/inteli', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/inteli/.nvm/versions/node/v20.19.5/bin', 'NVM_INC': '/home/inteli/.nvm/versions/node/v20.19.5/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/inteli/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'inteli', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'inteli', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/inteli/.nvm/versions/node/v20.19.5/bin:/home/inteli/micromamba/condabin:/home/inteli/.cargo/bin:/home/inteli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/inteli:@/tmp/.ICE-unix/3660,unix/inteli:/tmp/.ICE-unix/3660', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/453f2925_2ee5_45d0_b63b_c42c88a621d5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MAMBA_ROOT_PREFIX': '/home/inteli/micromamba', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R5MQG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.319', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'MAMBA_EXE': '/home/inteli/.local/bin/micromamba', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/inteli/ponderada_navegacao/build/cg_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099827] (-) TimerEvent: {}
+[0.150714] (cg_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199976] (-) TimerEvent: {}
+[0.298010] (cg_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.300056] (-) TimerEvent: {}
+[0.327026] (cg_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400254] (-) TimerEvent: {}
+[0.500614] (-) TimerEvent: {}
+[0.510776] (cg_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.535072] (cg_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.542169] (cg_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.543808] (cg_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.566074] (cg_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600770] (-) TimerEvent: {}
+[0.701161] (-) TimerEvent: {}
+[0.769812] (cg_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.792147] (cg_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.792965] (cg_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.794220] (cg_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.801276] (-) TimerEvent: {}
+[0.816350] (cg_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.901401] (-) TimerEvent: {}
+[1.002340] (-) TimerEvent: {}
+[1.102828] (-) TimerEvent: {}
+[1.120898] (cg_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.202942] (-) TimerEvent: {}
+[1.286601] (cg_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.298995] (cg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.303066] (-) TimerEvent: {}
+[1.403500] (-) TimerEvent: {}
+[1.438121] (cg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.503692] (-) TimerEvent: {}
+[1.557835] (cg_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.603948] (-) TimerEvent: {}
+[1.704343] (-) TimerEvent: {}
+[1.804711] (-) TimerEvent: {}
+[1.905004] (-) TimerEvent: {}
+[2.005293] (-) TimerEvent: {}
+[2.105624] (-) TimerEvent: {}
+[2.206462] (-) TimerEvent: {}
+[2.306802] (-) TimerEvent: {}
+[2.407693] (-) TimerEvent: {}
+[2.495528] (cg_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.507809] (-) TimerEvent: {}
+[2.608222] (-) TimerEvent: {}
+[2.708766] (-) TimerEvent: {}
+[2.809247] (-) TimerEvent: {}
+[2.910704] (-) TimerEvent: {}
+[3.011578] (-) TimerEvent: {}
+[3.112096] (-) TimerEvent: {}
+[3.156174] (cg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.212210] (-) TimerEvent: {}
+[3.312581] (-) TimerEvent: {}
+[3.412936] (-) TimerEvent: {}
+[3.513246] (-) TimerEvent: {}
+[3.613631] (-) TimerEvent: {}
+[3.714136] (-) TimerEvent: {}
+[3.814644] (-) TimerEvent: {}
+[3.915001] (-) TimerEvent: {}
+[4.015456] (-) TimerEvent: {}
+[4.116079] (-) TimerEvent: {}
+[4.179300] (cg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.189403] (cg_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[4.216174] (-) TimerEvent: {}
+[4.319625] (-) TimerEvent: {}
+[4.419992] (-) TimerEvent: {}
+[4.445217] (cg_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[4.520150] (-) TimerEvent: {}
+[4.620538] (-) TimerEvent: {}
+[4.720977] (-) TimerEvent: {}
+[4.821422] (-) TimerEvent: {}
+[4.921868] (-) TimerEvent: {}
+[5.022636] (-) TimerEvent: {}
+[5.123048] (-) TimerEvent: {}
+[5.223768] (-) TimerEvent: {}
+[5.291467] (cg_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[5.323974] (-) TimerEvent: {}
+[5.357318] (cg_interfaces) StdoutLine: {'line': b'-- Configuring done (5.3s)\n'}
+[5.424468] (-) TimerEvent: {}
+[5.445443] (cg_interfaces) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[5.466541] (cg_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/inteli/ponderada_navegacao/build/cg_interfaces\n'}
+[5.474637] (cg_interfaces) CommandEnded: {'returncode': 0}
+[5.475246] (cg_interfaces) JobProgress: {'identifier': 'cg_interfaces', 'progress': 'build'}
+[5.476044] (cg_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/inteli/ponderada_navegacao/build/cg_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/inteli/ponderada_navegacao/build/cg_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'inteli', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/inteli', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/inteli', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/inteli/.nvm/versions/node/v20.19.5/bin', 'NVM_INC': '/home/inteli/.nvm/versions/node/v20.19.5/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/inteli/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'inteli', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'inteli', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/inteli/.nvm/versions/node/v20.19.5/bin:/home/inteli/micromamba/condabin:/home/inteli/.cargo/bin:/home/inteli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/inteli:@/tmp/.ICE-unix/3660,unix/inteli:/tmp/.ICE-unix/3660', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/453f2925_2ee5_45d0_b63b_c42c88a621d5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MAMBA_ROOT_PREFIX': '/home/inteli/micromamba', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R5MQG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.319', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'MAMBA_EXE': '/home/inteli/.local/bin/micromamba', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/inteli/ponderada_navegacao/build/cg_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.524498] (-) TimerEvent: {}
+[5.572182] (cg_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[5.606356] (cg_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_cg_interfaces\n'}
+[5.625346] (-) TimerEvent: {}
+[5.725847] (-) TimerEvent: {}
+[5.826155] (-) TimerEvent: {}
+[5.917429] (cg_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[5.918390] (cg_interfaces) StdoutLine: {'line': b'creating cg_interfaces.egg-info\n'}
+[5.926319] (-) TimerEvent: {}
+[5.940408] (cg_interfaces) StdoutLine: {'line': b'writing cg_interfaces.egg-info/PKG-INFO\n'}
+[5.940723] (cg_interfaces) StdoutLine: {'line': b'writing dependency_links to cg_interfaces.egg-info/dependency_links.txt\n'}
+[5.940876] (cg_interfaces) StdoutLine: {'line': b'writing top-level names to cg_interfaces.egg-info/top_level.txt\n'}
+[5.941008] (cg_interfaces) StdoutLine: {'line': b"writing manifest file 'cg_interfaces.egg-info/SOURCES.txt'\n"}
+[5.973047] (cg_interfaces) StdoutLine: {'line': b'[  1%] Built target cg_interfaces__rosidl_generator_type_description\n'}
+[5.987661] (cg_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.999849] (cg_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.023855] (cg_interfaces) StdoutLine: {'line': b"reading manifest file 'cg_interfaces.egg-info/SOURCES.txt'\n"}
+[6.024468] (cg_interfaces) StdoutLine: {'line': b"writing manifest file 'cg_interfaces.egg-info/SOURCES.txt'\n"}
+[6.026647] (-) TimerEvent: {}
+[6.060611] (cg_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_cg_interfaces_egg\n'}
+[6.126769] (-) TimerEvent: {}
+[6.227100] (-) TimerEvent: {}
+[6.327405] (-) TimerEvent: {}
+[6.427663] (-) TimerEvent: {}
+[6.527928] (-) TimerEvent: {}
+[6.629819] (-) TimerEvent: {}
+[6.692336] (cg_interfaces) StdoutLine: {'line': b'[  4%] Built target cg_interfaces__cpp\n'}
+[6.730913] (-) TimerEvent: {}
+[6.835302] (-) TimerEvent: {}
+[6.845747] (cg_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/move_cmd__type_support.c.o\x1b[0m\n'}
+[6.860232] (cg_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/move_cmd__description.c.o\x1b[0m\n'}
+[6.862470] (cg_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/move_cmd__functions.c.o\x1b[0m\n'}
+[6.868059] (cg_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/get_map__type_support.c.o\x1b[0m\n'}
+[6.871337] (cg_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/msg/detail/robot_sensors__functions.c.o\x1b[0m\n'}
+[6.871575] (cg_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/get_map__functions.c.o\x1b[0m\n'}
+[6.871703] (cg_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/get_map__description.c.o\x1b[0m\n'}
+[6.873565] (cg_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/msg/detail/robot_sensors__description.c.o\x1b[0m\n'}
+[6.937280] (-) TimerEvent: {}
+[6.977137] (cg_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/msg/detail/robot_sensors__type_support.c.o\x1b[0m\n'}
+[6.985191] (cg_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/reset__description.c.o\x1b[0m\n'}
+[6.988977] (cg_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/reset__functions.c.o\x1b[0m\n'}
+[7.002091] (cg_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/reset__type_support.c.o\x1b[0m\n'}
+[7.040283] (-) TimerEvent: {}
+[7.117234] (cg_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libcg_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[7.140423] (-) TimerEvent: {}
+[7.197333] (cg_interfaces) StdoutLine: {'line': b'[ 25%] Built target cg_interfaces__rosidl_generator_c\n'}
+[7.218519] (cg_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.219025] (cg_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[7.220242] (cg_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.222035] (cg_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.222732] (cg_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.226028] (cg_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.240557] (-) TimerEvent: {}
+[7.340974] (-) TimerEvent: {}
+[7.441268] (-) TimerEvent: {}
+[7.541650] (-) TimerEvent: {}
+[7.641998] (-) TimerEvent: {}
+[7.742548] (-) TimerEvent: {}
+[7.845274] (-) TimerEvent: {}
+[7.945589] (-) TimerEvent: {}
+[7.985268] (cg_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cg_interfaces/srv/move_cmd__type_support.cpp.o\x1b[0m\n'}
+[7.990802] (cg_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cg_interfaces/srv/get_map__type_support.cpp.o\x1b[0m\n'}
+[7.992144] (cg_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cg_interfaces/msg/robot_sensors__type_support.cpp.o\x1b[0m\n'}
+[8.013391] (cg_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cg_interfaces/srv/move_cmd__type_support.cpp.o\x1b[0m\n'}
+[8.045697] (-) TimerEvent: {}
+[8.133382] (cg_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cg_interfaces/srv/get_map__type_support.cpp.o\x1b[0m\n'}
+[8.145814] (-) TimerEvent: {}
+[8.247986] (-) TimerEvent: {}
+[8.255626] (cg_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cg_interfaces/msg/robot_sensors__type_support.cpp.o\x1b[0m\n'}
+[8.293000] (cg_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cg_interfaces/srv/detail/move_cmd__type_support.c.o\x1b[0m\n'}
+[8.328724] (cg_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cg_interfaces/srv/detail/move_cmd__type_support.cpp.o\x1b[0m\n'}
+[8.348097] (-) TimerEvent: {}
+[8.373345] (cg_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cg_interfaces/srv/reset__type_support.cpp.o\x1b[0m\n'}
+[8.421055] (cg_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cg_interfaces/srv/detail/dds_fastrtps/move_cmd__type_support.cpp.o\x1b[0m\n'}
+[8.448215] (-) TimerEvent: {}
+[8.456378] (cg_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cg_interfaces/srv/detail/get_map__type_support.c.o\x1b[0m\n'}
+[8.537544] (cg_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libcg_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.548328] (-) TimerEvent: {}
+[8.579029] (cg_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cg_interfaces/msg/detail/robot_sensors__type_support.c.o\x1b[0m\n'}
+[8.648454] (-) TimerEvent: {}
+[8.654232] (cg_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cg_interfaces/srv/detail/reset__type_support.c.o\x1b[0m\n'}
+[8.664811] (cg_interfaces) StdoutLine: {'line': b'[ 56%] Built target cg_interfaces__rosidl_typesupport_c\n'}
+[8.669279] (cg_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cg_interfaces/srv/reset__type_support.cpp.o\x1b[0m\n'}
+[8.679948] (cg_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cg_interfaces/srv/detail/get_map__type_support.cpp.o\x1b[0m\n'}
+[8.711290] (cg_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cg_interfaces/srv/detail/move_cmd__type_support_c.cpp.o\x1b[0m\n'}
+[8.749379] (-) TimerEvent: {}
+[8.757571] (cg_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking C shared library libcg_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.829463] (cg_interfaces) StdoutLine: {'line': b'[ 62%] Built target cg_interfaces__rosidl_typesupport_introspection_c\n'}
+[8.843964] (cg_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cg_interfaces/srv/detail/dds_fastrtps/get_map__type_support.cpp.o\x1b[0m\n'}
+[8.849448] (-) TimerEvent: {}
+[8.949807] (-) TimerEvent: {}
+[9.016626] (cg_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cg_interfaces/msg/detail/robot_sensors__type_support.cpp.o\x1b[0m\n'}
+[9.049922] (-) TimerEvent: {}
+[9.085068] (cg_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cg_interfaces/srv/detail/reset__type_support.cpp.o\x1b[0m\n'}
+[9.150110] (-) TimerEvent: {}
+[9.250455] (-) TimerEvent: {}
+[9.350801] (-) TimerEvent: {}
+[9.383305] (cg_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cg_interfaces/srv/detail/get_map__type_support_c.cpp.o\x1b[0m\n'}
+[9.451446] (-) TimerEvent: {}
+[9.508682] (cg_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcg_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.551564] (-) TimerEvent: {}
+[9.655467] (-) TimerEvent: {}
+[9.681517] (cg_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cg_interfaces/msg/detail/robot_sensors__type_support_c.cpp.o\x1b[0m\n'}
+[9.737045] (cg_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cg_interfaces/srv/detail/reset__type_support_c.cpp.o\x1b[0m\n'}
+[9.755592] (-) TimerEvent: {}
+[9.759029] (cg_interfaces) StdoutLine: {'line': b'[ 73%] Built target cg_interfaces__rosidl_typesupport_cpp\n'}
+[9.778107] (cg_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cg_interfaces/msg/detail/dds_fastrtps/robot_sensors__type_support.cpp.o\x1b[0m\n'}
+[9.841272] (cg_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cg_interfaces/srv/detail/dds_fastrtps/reset__type_support.cpp.o\x1b[0m\n'}
+[9.855723] (-) TimerEvent: {}
+[9.956786] (-) TimerEvent: {}
+[10.059132] (-) TimerEvent: {}
+[10.091909] (cg_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libcg_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[10.159258] (-) TimerEvent: {}
+[10.262531] (-) TimerEvent: {}
+[10.364280] (cg_interfaces) StdoutLine: {'line': b'[ 78%] Built target cg_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[10.364679] (-) TimerEvent: {}
+[10.466777] (-) TimerEvent: {}
+[10.567747] (-) TimerEvent: {}
+[10.668333] (-) TimerEvent: {}
+[10.727520] (cg_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libcg_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.768542] (-) TimerEvent: {}
+[10.836980] (cg_interfaces) StdoutLine: {'line': b'[ 79%] Built target cg_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[10.868724] (-) TimerEvent: {}
+[10.928758] (cg_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libcg_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[10.968824] (-) TimerEvent: {}
+[11.054758] (cg_interfaces) StdoutLine: {'line': b'[ 81%] Built target cg_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[11.068920] (-) TimerEvent: {}
+[11.077381] (cg_interfaces) StdoutLine: {'line': b'[ 81%] Built target cg_interfaces\n'}
+[11.099321] (cg_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[11.169250] (-) TimerEvent: {}
+[11.269819] (-) TimerEvent: {}
+[11.370742] (-) TimerEvent: {}
+[11.471572] (-) TimerEvent: {}
+[11.572107] (-) TimerEvent: {}
+[11.672369] (-) TimerEvent: {}
+[11.772662] (-) TimerEvent: {}
+[11.873160] (-) TimerEvent: {}
+[11.973801] (-) TimerEvent: {}
+[12.056301] (cg_interfaces) StdoutLine: {'line': b'[ 82%] Built target cg_interfaces__py\n'}
+[12.073930] (-) TimerEvent: {}
+[12.079355] (cg_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/cg_interfaces/srv/_get_map_s.c.o\x1b[0m\n'}
+[12.079983] (cg_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/cg_interfaces/msg/_robot_sensors_s.c.o\x1b[0m\n'}
+[12.081417] (cg_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/cg_interfaces/srv/_move_cmd_s.c.o\x1b[0m\n'}
+[12.082796] (cg_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/cg_interfaces/srv/_reset_s.c.o\x1b[0m\n'}
+[12.174187] (-) TimerEvent: {}
+[12.274671] (-) TimerEvent: {}
+[12.285915] (cg_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library libcg_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[12.374829] (-) TimerEvent: {}
+[12.383891] (cg_interfaces) StdoutLine: {'line': b'[ 90%] Built target cg_interfaces__rosidl_generator_py\n'}
+[12.418451] (cg_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/cg_interfaces/_cg_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[12.418946] (cg_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/cg_interfaces/_cg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[12.419097] (cg_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/cg_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/cg_interfaces/_cg_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[12.474954] (-) TimerEvent: {}
+[12.575264] (-) TimerEvent: {}
+[12.596888] (cg_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/cg_interfaces/cg_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[12.632779] (cg_interfaces) StdoutLine: {'line': b'[ 96%] Built target cg_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[12.644634] (cg_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/cg_interfaces/cg_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[12.647846] (cg_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/cg_interfaces/cg_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.675413] (-) TimerEvent: {}
+[12.696007] (cg_interfaces) StdoutLine: {'line': b'[100%] Built target cg_interfaces_s__rosidl_typesupport_c\n'}
+[12.703316] (cg_interfaces) StdoutLine: {'line': b'[100%] Built target cg_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[12.727129] (cg_interfaces) CommandEnded: {'returncode': 0}
+[12.728270] (cg_interfaces) JobProgress: {'identifier': 'cg_interfaces', 'progress': 'install'}
+[12.745125] (cg_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/inteli/ponderada_navegacao/build/cg_interfaces'], 'cwd': '/home/inteli/ponderada_navegacao/build/cg_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'inteli', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/inteli', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/inteli', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/inteli/.nvm/versions/node/v20.19.5/bin', 'NVM_INC': '/home/inteli/.nvm/versions/node/v20.19.5/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/inteli/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'inteli', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'inteli', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/inteli/.nvm/versions/node/v20.19.5/bin:/home/inteli/micromamba/condabin:/home/inteli/.cargo/bin:/home/inteli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/inteli:@/tmp/.ICE-unix/3660,unix/inteli:/tmp/.ICE-unix/3660', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/453f2925_2ee5_45d0_b63b_c42c88a621d5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MAMBA_ROOT_PREFIX': '/home/inteli/micromamba', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R5MQG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.319', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'MAMBA_EXE': '/home/inteli/.local/bin/micromamba', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/inteli/ponderada_navegacao/build/cg_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[12.762437] (cg_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.763833] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/ament_index/resource_index/rosidl_interfaces/cg_interfaces\n'}
+[12.764242] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/MoveCmd.json\n'}
+[12.764692] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/GetMap.json\n'}
+[12.764989] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/msg/RobotSensors.json\n'}
+[12.765271] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/Reset.json\n'}
+[12.765472] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces\n'}
+[12.765665] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg\n'}
+[12.765891] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/robot_sensors.h\n'}
+[12.766126] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail\n'}
+[12.766358] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__functions.h\n'}
+[12.766539] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__functions.c\n'}
+[12.766765] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__type_support.c\n'}
+[12.766996] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__type_support.h\n'}
+[12.767169] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__description.c\n'}
+[12.767350] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__struct.h\n'}
+[12.767517] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[12.767723] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv\n'}
+[12.767983] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/get_map.h\n'}
+[12.768162] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/reset.h\n'}
+[12.768342] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail\n'}
+[12.768508] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__description.c\n'}
+[12.768672] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__functions.c\n'}
+[12.768836] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__struct.h\n'}
+[12.769043] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__struct.h\n'}
+[12.769339] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__functions.c\n'}
+[12.769503] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__functions.h\n'}
+[12.769669] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.h\n'}
+[12.769835] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.c\n'}
+[12.769994] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__type_support.c\n'}
+[12.770151] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.c\n'}
+[12.770318] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__functions.h\n'}
+[12.770513] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__description.c\n'}
+[12.770641] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__description.c\n'}
+[12.770765] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__type_support.h\n'}
+[12.770921] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__functions.c\n'}
+[12.771084] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__functions.h\n'}
+[12.771705] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__struct.h\n'}
+[12.771885] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.h\n'}
+[12.772065] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/move_cmd.h\n'}
+[12.772255] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/library_path.sh\n'}
+[12.772537] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/library_path.dsv\n'}
+[12.772683] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_generator_c.so\n'}
+[12.773917] (cg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_generator_c.so" to ""\n'}
+[12.774257] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces\n'}
+[12.774599] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg\n'}
+[12.774766] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail\n'}
+[12.774950] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__rosidl_typesupport_fastrtps_c.h\n'}
+[12.775131] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[12.775375] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv\n'}
+[12.775559] (-) TimerEvent: {}
+[12.775894] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail\n'}
+[12.776259] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__rosidl_typesupport_fastrtps_c.h\n'}
+[12.776496] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__rosidl_typesupport_fastrtps_c.h\n'}
+[12.776860] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__rosidl_typesupport_fastrtps_c.h\n'}
+[12.777099] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[12.777343] (cg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[12.777577] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces\n'}
+[12.777856] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg\n'}
+[12.778030] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail\n'}
+[12.778280] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__type_support.c\n'}
+[12.778520] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__rosidl_typesupport_introspection_c.h\n'}
+[12.778752] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[12.779018] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv\n'}
+[12.779196] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail\n'}
+[12.779356] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__rosidl_typesupport_introspection_c.h\n'}
+[12.779526] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.c\n'}
+[12.779691] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__type_support.c\n'}
+[12.779905] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.c\n'}
+[12.780170] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__rosidl_typesupport_introspection_c.h\n'}
+[12.780416] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__rosidl_typesupport_introspection_c.h\n'}
+[12.780645] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[12.780986] (cg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[12.781325] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_c.so\n'}
+[12.782040] (cg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[12.782301] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces\n'}
+[12.782462] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg\n'}
+[12.782664] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/robot_sensors.hpp\n'}
+[12.782863] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail\n'}
+[12.783100] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__traits.hpp\n'}
+[12.783339] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__builder.hpp\n'}
+[12.783503] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__struct.hpp\n'}
+[12.783705] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__type_support.hpp\n'}
+[12.783849] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[12.784059] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv\n'}
+[12.784197] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/move_cmd.hpp\n'}
+[12.785005] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail\n'}
+[12.785187] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.hpp\n'}
+[12.785378] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__traits.hpp\n'}
+[12.785594] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__builder.hpp\n'}
+[12.785783] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__type_support.hpp\n'}
+[12.785948] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__builder.hpp\n'}
+[12.786126] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__struct.hpp\n'}
+[12.786312] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__struct.hpp\n'}
+[12.786484] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__builder.hpp\n'}
+[12.786655] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__traits.hpp\n'}
+[12.786980] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__struct.hpp\n'}
+[12.787126] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__traits.hpp\n'}
+[12.787320] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.hpp\n'}
+[12.787515] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/reset.hpp\n'}
+[12.787647] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/get_map.hpp\n'}
+[12.787824] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces\n'}
+[12.788002] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg\n'}
+[12.788372] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail\n'}
+[12.788963] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/dds_fastrtps\n'}
+[12.789342] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.789585] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.790003] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv\n'}
+[12.790295] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail\n'}
+[12.790568] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.790809] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.791030] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/dds_fastrtps\n'}
+[12.791237] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.791487] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[12.793131] (cg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[12.793375] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces\n'}
+[12.793598] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg\n'}
+[12.793831] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail\n'}
+[12.794103] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__type_support.cpp\n'}
+[12.794287] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.794422] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv\n'}
+[12.794624] (cg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail\n'}
+[12.794786] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.794921] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.795056] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__type_support.cpp\n'}
+[12.795258] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.cpp\n'}
+[12.795395] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.795520] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.cpp\n'}
+[12.795694] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[12.796975] (cg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[12.797154] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_cpp.so\n'}
+[12.799640] (cg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[12.799896] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/pythonpath.sh\n'}
+[12.800052] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/pythonpath.dsv\n'}
+[12.800502] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces-0.0.0-py3.12.egg-info\n'}
+[12.800757] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[12.800953] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[12.801178] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[12.801389] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[12.801539] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces\n'}
+[12.801672] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_c.so\n'}
+[12.801853] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg\n'}
+[12.801991] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg/__init__.py\n'}
+[12.802125] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg/_robot_sensors_s.c\n'}
+[12.802324] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg/_robot_sensors.py\n'}
+[12.802465] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/_cg_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.802599] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv\n'}
+[12.802783] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_get_map_s.c\n'}
+[12.802923] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_move_cmd.py\n'}
+[12.803059] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_reset.py\n'}
+[12.803350] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/__init__.py\n'}
+[12.803564] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_get_map.py\n'}
+[12.803768] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_reset_s.c\n'}
+[12.803900] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_move_cmd_s.c\n'}
+[12.804131] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/_cg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.804326] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/_cg_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[12.804453] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/__init__.py\n'}
+[12.804581] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[12.804759] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[12.875723] (-) TimerEvent: {}
+[12.951400] (cg_interfaces) StdoutLine: {'line': b"Listing '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces'...\n"}
+[12.951809] (cg_interfaces) StdoutLine: {'line': b"Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/__init__.py'...\n"}
+[12.952014] (cg_interfaces) StdoutLine: {'line': b"Listing '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg'...\n"}
+[12.952229] (cg_interfaces) StdoutLine: {'line': b"Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg/__init__.py'...\n"}
+[12.952470] (cg_interfaces) StdoutLine: {'line': b"Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg/_robot_sensors.py'...\n"}
+[12.952706] (cg_interfaces) StdoutLine: {'line': b"Listing '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv'...\n"}
+[12.952921] (cg_interfaces) StdoutLine: {'line': b"Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/__init__.py'...\n"}
+[12.953065] (cg_interfaces) StdoutLine: {'line': b"Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_get_map.py'...\n"}
+[12.953223] (cg_interfaces) StdoutLine: {'line': b"Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_move_cmd.py'...\n"}
+[12.953386] (cg_interfaces) StdoutLine: {'line': b"Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_reset.py'...\n"}
+[12.965040] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[12.965499] (cg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[12.965735] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[12.966239] (cg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[12.966743] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_c.so\n'}
+[12.967060] (cg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[12.967351] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_generator_py.so\n'}
+[12.968129] (cg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_generator_py.so" to ""\n'}
+[12.968395] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/MoveCmd.idl\n'}
+[12.968640] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/GetMap.idl\n'}
+[12.968956] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/msg/RobotSensors.idl\n'}
+[12.969175] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/Reset.idl\n'}
+[12.970313] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/MoveCmd.srv\n'}
+[12.970567] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/GetMap.srv\n'}
+[12.970842] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/msg/RobotSensors.msg\n'}
+[12.971124] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/Reset.srv\n'}
+[12.971501] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/ament_index/resource_index/package_run_dependencies/cg_interfaces\n'}
+[12.972113] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/ament_index/resource_index/parent_prefix_path/cg_interfaces\n'}
+[12.972412] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/ament_prefix_path.sh\n'}
+[12.972700] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/ament_prefix_path.dsv\n'}
+[12.973006] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/path.sh\n'}
+[12.973393] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/path.dsv\n'}
+[12.973705] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/local_setup.bash\n'}
+[12.974005] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/local_setup.sh\n'}
+[12.974293] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/local_setup.zsh\n'}
+[12.974574] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/local_setup.dsv\n'}
+[12.974854] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.dsv\n'}
+[12.975228] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/ament_index/resource_index/packages/cg_interfaces\n'}
+[12.975596] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_generator_cExport.cmake\n'}
+[12.975825] (-) TimerEvent: {}
+[12.976051] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[12.976353] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[12.976619] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[12.977805] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[12.978173] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[12.978754] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[12.979149] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[12.979814] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_generator_cppExport.cmake\n'}
+[12.980175] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[12.980710] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[12.981044] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[12.981399] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[12.981745] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[12.982118] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[12.982505] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_generator_pyExport.cmake\n'}
+[12.982877] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[12.983242] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[12.983596] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.984826] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.985322] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.985782] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[12.986188] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[12.986793] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[12.987249] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfacesConfig.cmake\n'}
+[12.987576] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfacesConfig-version.cmake\n'}
+[12.987806] (cg_interfaces) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.xml\n'}
+[12.993987] (cg_interfaces) CommandEnded: {'returncode': 0}
+[13.052525] (cg_interfaces) JobEnded: {'identifier': 'cg_interfaces', 'rc': 0}
+[13.054149] (cg) JobStarted: {'identifier': 'cg'}
+[13.062289] (cg_teleop) JobStarted: {'identifier': 'cg_teleop'}
+[13.068610] (navegacao) JobStarted: {'identifier': 'navegacao'}
+[13.075942] (-) TimerEvent: {}
+[13.176287] (-) TimerEvent: {}
+[13.276681] (-) TimerEvent: {}
+[13.376923] (-) TimerEvent: {}
+[13.477159] (-) TimerEvent: {}
+[13.577482] (-) TimerEvent: {}
+[13.648542] (navegacao) JobProgress: {'identifier': 'navegacao', 'progress': 'cmake'}
+[13.648940] (navegacao) Command: {'cmd': ['/usr/bin/cmake', '/home/inteli/ponderada_navegacao/src/navegacao', '-DCMAKE_INSTALL_PREFIX=/home/inteli/ponderada_navegacao/install/navegacao'], 'cwd': '/home/inteli/ponderada_navegacao/build/navegacao', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'inteli', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/inteli', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/inteli', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/inteli/.nvm/versions/node/v20.19.5/bin', 'NVM_INC': '/home/inteli/.nvm/versions/node/v20.19.5/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/inteli/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'inteli', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'inteli', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/inteli/.nvm/versions/node/v20.19.5/bin:/home/inteli/micromamba/condabin:/home/inteli/.cargo/bin:/home/inteli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/inteli:@/tmp/.ICE-unix/3660,unix/inteli:/tmp/.ICE-unix/3660', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/453f2925_2ee5_45d0_b63b_c42c88a621d5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MAMBA_ROOT_PREFIX': '/home/inteli/micromamba', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R5MQG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.319', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'MAMBA_EXE': '/home/inteli/.local/bin/micromamba', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/inteli/ponderada_navegacao/build/navegacao', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[13.677590] (-) TimerEvent: {}
+[13.724648] (navegacao) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[13.777724] (-) TimerEvent: {}
+[13.796179] (navegacao) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[13.816309] (navegacao) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[13.877846] (-) TimerEvent: {}
+[13.916837] (navegacao) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[13.927939] (navegacao) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[13.928209] (navegacao) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[13.928853] (navegacao) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[13.940070] (navegacao) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[13.977963] (-) TimerEvent: {}
+[14.078267] (-) TimerEvent: {}
+[14.105627] (navegacao) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[14.121919] (navegacao) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[14.123065] (navegacao) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[14.123647] (navegacao) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[14.127616] (navegacao) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[14.178369] (-) TimerEvent: {}
+[14.278707] (-) TimerEvent: {}
+[14.347682] (navegacao) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[14.378813] (-) TimerEvent: {}
+[14.467634] (navegacao) StdoutLine: {'line': b'-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[14.478915] (-) TimerEvent: {}
+[14.510728] (navegacao) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[14.524369] (navegacao) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[14.541803] (navegacao) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[14.559157] (cg_teleop) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../../build/cg_teleop', 'build', '--build-base', '/home/inteli/ponderada_navegacao/build/cg_teleop/build', 'install', '--record', '/home/inteli/ponderada_navegacao/build/cg_teleop/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/inteli/ponderada_navegacao/src/culling_games/src/cg_teleop', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'inteli', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/inteli', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/inteli', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/inteli/.nvm/versions/node/v20.19.5/bin', 'NVM_INC': '/home/inteli/.nvm/versions/node/v20.19.5/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/inteli/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'inteli', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'inteli', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/inteli/.nvm/versions/node/v20.19.5/bin:/home/inteli/micromamba/condabin:/home/inteli/.cargo/bin:/home/inteli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/inteli:@/tmp/.ICE-unix/3660,unix/inteli:/tmp/.ICE-unix/3660', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/453f2925_2ee5_45d0_b63b_c42c88a621d5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MAMBA_ROOT_PREFIX': '/home/inteli/micromamba', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R5MQG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.319', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'MAMBA_EXE': '/home/inteli/.local/bin/micromamba', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/inteli/ponderada_navegacao/build/cg_teleop', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/inteli/ponderada_navegacao/build/cg_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[14.561112] (navegacao) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[14.577282] (cg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../../build/cg', 'build', '--build-base', '/home/inteli/ponderada_navegacao/build/cg/build', 'install', '--record', '/home/inteli/ponderada_navegacao/build/cg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/inteli/ponderada_navegacao/src/culling_games/src/cg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'inteli', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/inteli', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/inteli', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/inteli/.nvm/versions/node/v20.19.5/bin', 'NVM_INC': '/home/inteli/.nvm/versions/node/v20.19.5/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/inteli/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'inteli', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'inteli', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/inteli/.nvm/versions/node/v20.19.5/bin:/home/inteli/micromamba/condabin:/home/inteli/.cargo/bin:/home/inteli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/inteli:@/tmp/.ICE-unix/3660,unix/inteli:/tmp/.ICE-unix/3660', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/453f2925_2ee5_45d0_b63b_c42c88a621d5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MAMBA_ROOT_PREFIX': '/home/inteli/micromamba', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R5MQG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.319', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'MAMBA_EXE': '/home/inteli/.local/bin/micromamba', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/inteli/ponderada_navegacao/build/cg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/inteli/ponderada_navegacao/build/cg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[14.578990] (-) TimerEvent: {}
+[14.668871] (navegacao) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[14.673714] (navegacao) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[14.679098] (-) TimerEvent: {}
+[14.779394] (-) TimerEvent: {}
+[14.782680] (navegacao) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[14.808409] (navegacao) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[14.836566] (navegacao) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[14.879526] (-) TimerEvent: {}
+[14.884449] (cg_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[14.884852] (cg_teleop) StdoutLine: {'line': b'creating ../../../../build/cg_teleop/cg_teleop.egg-info\n'}
+[14.908444] (cg_teleop) StdoutLine: {'line': b'writing ../../../../build/cg_teleop/cg_teleop.egg-info/PKG-INFO\n'}
+[14.908907] (cg_teleop) StdoutLine: {'line': b'writing dependency_links to ../../../../build/cg_teleop/cg_teleop.egg-info/dependency_links.txt\n'}
+[14.909115] (cg_teleop) StdoutLine: {'line': b'writing entry points to ../../../../build/cg_teleop/cg_teleop.egg-info/entry_points.txt\n'}
+[14.909254] (cg_teleop) StdoutLine: {'line': b'writing requirements to ../../../../build/cg_teleop/cg_teleop.egg-info/requires.txt\n'}
+[14.909406] (cg_teleop) StdoutLine: {'line': b'writing top-level names to ../../../../build/cg_teleop/cg_teleop.egg-info/top_level.txt\n'}
+[14.909571] (cg_teleop) StdoutLine: {'line': b"writing manifest file '../../../../build/cg_teleop/cg_teleop.egg-info/SOURCES.txt'\n"}
+[14.910264] (cg) StdoutLine: {'line': b'running egg_info\n'}
+[14.910929] (cg) StdoutLine: {'line': b'creating ../../../../build/cg/cg.egg-info\n'}
+[14.936138] (cg) StdoutLine: {'line': b'writing ../../../../build/cg/cg.egg-info/PKG-INFO\n'}
+[14.936649] (cg) StdoutLine: {'line': b'writing dependency_links to ../../../../build/cg/cg.egg-info/dependency_links.txt\n'}
+[14.936911] (cg) StdoutLine: {'line': b'writing entry points to ../../../../build/cg/cg.egg-info/entry_points.txt\n'}
+[14.937297] (cg) StdoutLine: {'line': b'writing requirements to ../../../../build/cg/cg.egg-info/requires.txt\n'}
+[14.937517] (cg) StdoutLine: {'line': b'writing top-level names to ../../../../build/cg/cg.egg-info/top_level.txt\n'}
+[14.937672] (cg) StdoutLine: {'line': b"writing manifest file '../../../../build/cg/cg.egg-info/SOURCES.txt'\n"}
+[14.941637] (navegacao) StdoutLine: {'line': b'-- Found cg_interfaces: 0.0.0 (/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake)\n'}
+[14.963396] (cg_teleop) StdoutLine: {'line': b"reading manifest file '../../../../build/cg_teleop/cg_teleop.egg-info/SOURCES.txt'\n"}
+[14.964289] (cg_teleop) StdoutLine: {'line': b"writing manifest file '../../../../build/cg_teleop/cg_teleop.egg-info/SOURCES.txt'\n"}
+[14.964620] (cg_teleop) StdoutLine: {'line': b'running build\n'}
+[14.964863] (cg_teleop) StdoutLine: {'line': b'running build_py\n'}
+[14.965505] (cg_teleop) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/build/cg_teleop/build\n'}
+[14.965700] (cg_teleop) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/build/cg_teleop/build/lib\n'}
+[14.965907] (cg_teleop) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/build/cg_teleop/build/lib/cg_teleop\n'}
+[14.966070] (cg_teleop) StdoutLine: {'line': b'copying cg_teleop/__init__.py -> /home/inteli/ponderada_navegacao/build/cg_teleop/build/lib/cg_teleop\n'}
+[14.966250] (cg_teleop) StdoutLine: {'line': b'copying cg_teleop/teleop_node.py -> /home/inteli/ponderada_navegacao/build/cg_teleop/build/lib/cg_teleop\n'}
+[14.966519] (cg_teleop) StdoutLine: {'line': b'running install\n'}
+[14.975459] (cg_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[14.980603] (-) TimerEvent: {}
+[15.002968] (cg_teleop) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages/cg_teleop\n'}
+[15.003317] (cg_teleop) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg_teleop/build/lib/cg_teleop/__init__.py -> /home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages/cg_teleop\n'}
+[15.003539] (cg_teleop) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg_teleop/build/lib/cg_teleop/teleop_node.py -> /home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages/cg_teleop\n'}
+[15.003925] (cg_teleop) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages/cg_teleop/__init__.py to __init__.cpython-312.pyc\n'}
+[15.004271] (cg_teleop) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages/cg_teleop/teleop_node.py to teleop_node.cpython-312.pyc\n'}
+[15.006117] (cg_teleop) StdoutLine: {'line': b'running install_data\n'}
+[15.006525] (cg_teleop) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/install/cg_teleop/share/ament_index\n'}
+[15.006718] (cg_teleop) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/install/cg_teleop/share/ament_index/resource_index\n'}
+[15.008341] (cg_teleop) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/install/cg_teleop/share/ament_index/resource_index/packages\n'}
+[15.008522] (cg_teleop) StdoutLine: {'line': b'copying resource/cg_teleop -> /home/inteli/ponderada_navegacao/install/cg_teleop/share/ament_index/resource_index/packages\n'}
+[15.008829] (cg_teleop) StdoutLine: {'line': b'copying package.xml -> /home/inteli/ponderada_navegacao/install/cg_teleop/share/cg_teleop\n'}
+[15.008987] (cg_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[15.010184] (cg) StdoutLine: {'line': b"reading manifest file '../../../../build/cg/cg.egg-info/SOURCES.txt'\n"}
+[15.010565] (cg) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[15.012080] (cg) StdoutLine: {'line': b"writing manifest file '../../../../build/cg/cg.egg-info/SOURCES.txt'\n"}
+[15.012479] (cg) StdoutLine: {'line': b'running build\n'}
+[15.012881] (cg) StdoutLine: {'line': b'running build_py\n'}
+[15.013112] (cg) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/build/cg/build\n'}
+[15.013336] (cg) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/build/cg/build/lib\n'}
+[15.013469] (cg) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/build/cg/build/lib/cg\n'}
+[15.013596] (cg) StdoutLine: {'line': b'copying cg/Robot.py -> /home/inteli/ponderada_navegacao/build/cg/build/lib/cg\n'}
+[15.013781] (cg) StdoutLine: {'line': b'copying cg/main.py -> /home/inteli/ponderada_navegacao/build/cg/build/lib/cg\n'}
+[15.013917] (cg) StdoutLine: {'line': b'copying cg/Editor.py -> /home/inteli/ponderada_navegacao/build/cg/build/lib/cg\n'}
+[15.014079] (cg) StdoutLine: {'line': b'copying cg/__init__.py -> /home/inteli/ponderada_navegacao/build/cg/build/lib/cg\n'}
+[15.014398] (cg) StdoutLine: {'line': b'copying cg/teste.py -> /home/inteli/ponderada_navegacao/build/cg/build/lib/cg\n'}
+[15.014665] (cg) StdoutLine: {'line': b'copying cg/Game.py -> /home/inteli/ponderada_navegacao/build/cg/build/lib/cg\n'}
+[15.014950] (cg) StdoutLine: {'line': b'copying cg/Maze.py -> /home/inteli/ponderada_navegacao/build/cg/build/lib/cg\n'}
+[15.015712] (cg) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Utils\n'}
+[15.015924] (cg) StdoutLine: {'line': b'copying cg/Utils/Screen.py -> /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Utils\n'}
+[15.016230] (cg) StdoutLine: {'line': b'copying cg/Utils/Finders.py -> /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Utils\n'}
+[15.016394] (cg) StdoutLine: {'line': b'copying cg/Utils/Grid.py -> /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Utils\n'}
+[15.016545] (cg) StdoutLine: {'line': b'copying cg/Utils/Csv.py -> /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Utils\n'}
+[15.016697] (cg) StdoutLine: {'line': b'copying cg/Utils/__init__.py -> /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Utils\n'}
+[15.017278] (cg) StdoutLine: {'line': b'running install\n'}
+[15.032782] (cg) StdoutLine: {'line': b'running install_lib\n'}
+[15.035632] (cg_teleop) StdoutLine: {'line': b'Copying ../../../../build/cg_teleop/cg_teleop.egg-info to /home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages/cg_teleop-0.0.0-py3.12.egg-info\n'}
+[15.036373] (cg_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[15.064483] (cg) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg\n'}
+[15.064730] (cg) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Robot.py -> /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg\n'}
+[15.064922] (cg) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/main.py -> /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg\n'}
+[15.065143] (cg) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Editor.py -> /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg\n'}
+[15.065518] (cg) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/__init__.py -> /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg\n'}
+[15.065750] (cg) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/teste.py -> /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg\n'}
+[15.066036] (cg) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Game.py -> /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg\n'}
+[15.066278] (cg) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Utils\n'}
+[15.066573] (cg) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Utils/Screen.py -> /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Utils\n'}
+[15.066769] (cg) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Utils/Finders.py -> /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Utils\n'}
+[15.066927] (cg) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Utils/Grid.py -> /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Utils\n'}
+[15.067095] (cg) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Utils/Csv.py -> /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Utils\n'}
+[15.067561] (cg) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Utils/__init__.py -> /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Utils\n'}
+[15.067706] (cg) StdoutLine: {'line': b'copying /home/inteli/ponderada_navegacao/build/cg/build/lib/cg/Maze.py -> /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg\n'}
+[15.068581] (cg) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Robot.py to Robot.cpython-312.pyc\n'}
+[15.069491] (cg) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/main.py to main.cpython-312.pyc\n'}
+[15.070908] (cg) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Editor.py to Editor.cpython-312.pyc\n'}
+[15.071855] (cg) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/__init__.py to __init__.cpython-312.pyc\n'}
+[15.072175] (cg) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/teste.py to teste.cpython-312.pyc\n'}
+[15.072827] (cg) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Game.py to Game.cpython-312.pyc\n'}
+[15.075834] (cg) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Utils/Screen.py to Screen.cpython-312.pyc\n'}
+[15.076901] (cg) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Utils/Finders.py to Finders.cpython-312.pyc\n'}
+[15.077456] (cg) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Utils/Grid.py to Grid.cpython-312.pyc\n'}
+[15.077860] (cg) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Utils/Csv.py to Csv.cpython-312.pyc\n'}
+[15.078991] (cg) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Utils/__init__.py to __init__.cpython-312.pyc\n'}
+[15.079431] (cg) StdoutLine: {'line': b'byte-compiling /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg/Maze.py to Maze.cpython-312.pyc\n'}
+[15.080683] (-) TimerEvent: {}
+[15.081053] (cg) StdoutLine: {'line': b'running install_data\n'}
+[15.081390] (cg) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/install/cg/share/ament_index\n'}
+[15.081560] (cg) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/install/cg/share/ament_index/resource_index\n'}
+[15.081741] (cg) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/install/cg/share/ament_index/resource_index/packages\n'}
+[15.081869] (cg) StdoutLine: {'line': b'copying resource/cg -> /home/inteli/ponderada_navegacao/install/cg/share/ament_index/resource_index/packages\n'}
+[15.082018] (cg) StdoutLine: {'line': b'copying package.xml -> /home/inteli/ponderada_navegacao/install/cg/share/cg\n'}
+[15.082189] (cg) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/install/cg/share/cg/maps\n'}
+[15.082332] (cg) StdoutLine: {'line': b'copying maps/8.csv -> /home/inteli/ponderada_navegacao/install/cg/share/cg/maps\n'}
+[15.082568] (cg) StdoutLine: {'line': b'copying maps/9.csv -> /home/inteli/ponderada_navegacao/install/cg/share/cg/maps\n'}
+[15.082755] (cg) StdoutLine: {'line': b'copying maps/2.csv -> /home/inteli/ponderada_navegacao/install/cg/share/cg/maps\n'}
+[15.082913] (cg) StdoutLine: {'line': b'copying maps/3.csv -> /home/inteli/ponderada_navegacao/install/cg/share/cg/maps\n'}
+[15.083095] (cg) StdoutLine: {'line': b'copying maps/6.csv -> /home/inteli/ponderada_navegacao/install/cg/share/cg/maps\n'}
+[15.083338] (cg) StdoutLine: {'line': b'copying maps/5.csv -> /home/inteli/ponderada_navegacao/install/cg/share/cg/maps\n'}
+[15.083576] (cg) StdoutLine: {'line': b'copying maps/10.csv -> /home/inteli/ponderada_navegacao/install/cg/share/cg/maps\n'}
+[15.083848] (cg) StdoutLine: {'line': b'copying maps/1.csv -> /home/inteli/ponderada_navegacao/install/cg/share/cg/maps\n'}
+[15.084136] (cg) StdoutLine: {'line': b'copying maps/test.csv -> /home/inteli/ponderada_navegacao/install/cg/share/cg/maps\n'}
+[15.084393] (cg) StdoutLine: {'line': b'copying maps/4.csv -> /home/inteli/ponderada_navegacao/install/cg/share/cg/maps\n'}
+[15.084656] (cg) StdoutLine: {'line': b'copying maps/7.csv -> /home/inteli/ponderada_navegacao/install/cg/share/cg/maps\n'}
+[15.084872] (cg) StdoutLine: {'line': b'creating /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.085017] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/idwin.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.086010] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/shibuya.jpeg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.086767] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/fax.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.087505] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/wuji.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.088300] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/dies_from_peak.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.089802] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/dabura.png -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.091397] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/megumi.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.093454] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/mou.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.094610] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/potential_man.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.095851] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/freddy.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.096754] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/cook.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.098254] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/goatjo.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.098799] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/fax3.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.101334] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/remembered.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.102480] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/mental_damage.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.103585] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/suksuk.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.104112] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/cinema.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.108365] (cg) StdoutLine: {'line': b'copying ../../lobotomy_kaisen/brain_damage.jpg -> /home/inteli/ponderada_navegacao/install/cg/share/cg/lobotomy_kaisen\n'}
+[15.108910] (navegacao) StdoutLine: {'line': b'-- Configuring done (1.4s)\n'}
+[15.109060] (cg) StdoutLine: {'line': b'running install_egg_info\n'}
+[15.130657] (navegacao) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[15.141486] (navegacao) StdoutLine: {'line': b'-- Build files have been written to: /home/inteli/ponderada_navegacao/build/navegacao\n'}
+[15.145633] (cg) StdoutLine: {'line': b'Copying ../../../../build/cg/cg.egg-info to /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg-0.0.0-py3.12.egg-info\n'}
+[15.146697] (cg) StdoutLine: {'line': b'running install_scripts\n'}
+[15.154546] (navegacao) CommandEnded: {'returncode': 0}
+[15.155153] (navegacao) JobProgress: {'identifier': 'navegacao', 'progress': 'build'}
+[15.155790] (navegacao) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/inteli/ponderada_navegacao/build/navegacao', '--', '-j8', '-l8'], 'cwd': '/home/inteli/ponderada_navegacao/build/navegacao', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'inteli', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/inteli', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/inteli', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/inteli/.nvm/versions/node/v20.19.5/bin', 'NVM_INC': '/home/inteli/.nvm/versions/node/v20.19.5/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/inteli/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'inteli', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'inteli', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/inteli/.nvm/versions/node/v20.19.5/bin:/home/inteli/micromamba/condabin:/home/inteli/.cargo/bin:/home/inteli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/inteli:@/tmp/.ICE-unix/3660,unix/inteli:/tmp/.ICE-unix/3660', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/453f2925_2ee5_45d0_b63b_c42c88a621d5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MAMBA_ROOT_PREFIX': '/home/inteli/micromamba', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R5MQG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.319', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'MAMBA_EXE': '/home/inteli/.local/bin/micromamba', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/inteli/ponderada_navegacao/build/navegacao', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[15.180830] (-) TimerEvent: {}
+[15.221482] (navegacao) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/path_planner.dir/src/path_planner_node.cpp.o\x1b[0m\n'}
+[15.221961] (navegacao) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mapper.dir/src/mapper_node.cpp.o\x1b[0m\n'}
+[15.231985] (cg_teleop) StdoutLine: {'line': b'Installing teleop_keyboard script to /home/inteli/ponderada_navegacao/install/cg_teleop/lib/cg_teleop\n'}
+[15.232678] (cg_teleop) StdoutLine: {'line': b"writing list of installed files to '/home/inteli/ponderada_navegacao/build/cg_teleop/install.log'\n"}
+[15.280948] (-) TimerEvent: {}
+[15.285968] (cg_teleop) CommandEnded: {'returncode': 0}
+[15.304293] (cg_teleop) JobEnded: {'identifier': 'cg_teleop', 'rc': 0}
+[15.381073] (-) TimerEvent: {}
+[15.391861] (cg) StdoutLine: {'line': b'Installing edit script to /home/inteli/ponderada_navegacao/install/cg/lib/cg\n'}
+[15.392190] (cg) StdoutLine: {'line': b'Installing maze script to /home/inteli/ponderada_navegacao/install/cg/lib/cg\n'}
+[15.392409] (cg) StdoutLine: {'line': b'Installing test script to /home/inteli/ponderada_navegacao/install/cg/lib/cg\n'}
+[15.393000] (cg) StdoutLine: {'line': b"writing list of installed files to '/home/inteli/ponderada_navegacao/build/cg/install.log'\n"}
+[15.448288] (cg) CommandEnded: {'returncode': 0}
+[15.454531] (cg) JobEnded: {'identifier': 'cg', 'rc': 0}
+[15.481207] (-) TimerEvent: {}
+[15.581490] (-) TimerEvent: {}
+[15.681805] (-) TimerEvent: {}
+[15.782183] (-) TimerEvent: {}
+[15.882477] (-) TimerEvent: {}
+[15.982782] (-) TimerEvent: {}
+[16.083105] (-) TimerEvent: {}
+[16.183446] (-) TimerEvent: {}
+[16.283825] (-) TimerEvent: {}
+[16.384175] (-) TimerEvent: {}
+[16.484501] (-) TimerEvent: {}
+[16.584850] (-) TimerEvent: {}
+[16.685255] (-) TimerEvent: {}
+[16.785573] (-) TimerEvent: {}
+[16.885969] (-) TimerEvent: {}
+[16.986282] (-) TimerEvent: {}
+[17.086573] (-) TimerEvent: {}
+[17.186823] (-) TimerEvent: {}
+[17.287110] (-) TimerEvent: {}
+[17.387760] (-) TimerEvent: {}
+[17.488686] (-) TimerEvent: {}
+[17.589453] (-) TimerEvent: {}
+[17.689876] (-) TimerEvent: {}
+[17.790281] (-) TimerEvent: {}
+[17.890684] (-) TimerEvent: {}
+[17.990947] (-) TimerEvent: {}
+[18.091233] (-) TimerEvent: {}
+[18.135537] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/path_planner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool PathPlannerNode::\x1b[01;32m\x1b[Kfetch_map\x1b[m\x1b[K(navegacao::GridMap&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.135789] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/path_planner_node.cpp:78:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> >\x1b[m\x1b[K\xe2\x80\x99 is an inaccessible base of \xe2\x80\x98\x1b[01m\x1b[Krosidl_runtime_cpp::BoundedVector<unsigned char, 2, std::allocator<unsigned char> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.135880] (navegacao) StderrLine: {'line': b'   78 |       grid = \x1b[01;31m\x1b[Knavegacao::build_grid_from_response(\x1b[m\x1b[K\n'}
+[18.135955] (navegacao) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[18.136026] (navegacao) StderrLine: {'line': b'   79 | \x1b[01;31m\x1b[K        response->occupancy_grid_flattened,\x1b[m\x1b[K\n'}
+[18.136098] (navegacao) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K      \n'}
+[18.136171] (navegacao) StderrLine: {'line': b'   80 | \x1b[01;31m\x1b[K        response->occupancy_grid_shape)\x1b[m\x1b[K;\n'}
+[18.136256] (navegacao) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K          \n'}
+[18.191333] (-) TimerEvent: {}
+[18.291606] (-) TimerEvent: {}
+[18.391870] (-) TimerEvent: {}
+[18.485707] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[18.486190] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:148:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktarget_coord_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktarget_known_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[18.486444] (navegacao) StderrLine: {'line': b'  148 |         \x1b[01;31m\x1b[Ktarget_coord_\x1b[m\x1b[K = coord;\n'}
+[18.486645] (navegacao) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.486777] (navegacao) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ktarget_known_\x1b[m\x1b[K\n'}
+[18.491982] (-) TimerEvent: {}
+[18.511735] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool MapperNode::\x1b[01;32m\x1b[Ksend_move\x1b[m\x1b[K(const std::string&, const navegacao::GridCoordinate&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.511963] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:233:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktarget_coord_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktarget_known_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[18.512046] (navegacao) StderrLine: {'line': b'  233 |       \x1b[01;31m\x1b[Ktarget_coord_\x1b[m\x1b[K = current_;\n'}
+[18.512121] (navegacao) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.512184] (navegacao) StderrLine: {'line': b'      |       \x1b[32m\x1b[Ktarget_known_\x1b[m\x1b[K\n'}
+[18.526931] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[K{anonymous}::LocalGrid MapperNode::\x1b[01;32m\x1b[Kbuild_local_grid\x1b[m\x1b[K() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.527168] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:267:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktarget_coord_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktarget_known_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[18.527268] (navegacao) StderrLine: {'line': b'  267 |       } else if (target_known_ && coord == \x1b[01;31m\x1b[Ktarget_coord_\x1b[m\x1b[K) {\n'}
+[18.527337] (navegacao) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.527403] (navegacao) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[Ktarget_known_\x1b[m\x1b[K\n'}
+[18.543513] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MapperNode::\x1b[01;32m\x1b[Kreplay_with_local_map\x1b[m\x1b[K(const {anonymous}::LocalGrid&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.543762] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:323:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktarget_coord_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktarget_known_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[18.543869] (navegacao) StderrLine: {'line': b'  323 |     navegacao::GridCoordinate target_idx{\x1b[01;31m\x1b[Ktarget_coord_\x1b[m\x1b[K.row + local.row_offset, target_coord_.col + local.col_offset};\n'}
+[18.543964] (navegacao) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.544057] (navegacao) StderrLine: {'line': b'      |                                          \x1b[32m\x1b[Ktarget_known_\x1b[m\x1b[K\n'}
+[18.592103] (-) TimerEvent: {}
+[18.692418] (-) TimerEvent: {}
+[18.792689] (-) TimerEvent: {}
+[18.892967] (-) TimerEvent: {}
+[18.993278] (-) TimerEvent: {}
+[19.093604] (-) TimerEvent: {}
+[19.193919] (-) TimerEvent: {}
+[19.294222] (-) TimerEvent: {}
+[19.395281] (-) TimerEvent: {}
+[19.495640] (-) TimerEvent: {}
+[19.595946] (-) TimerEvent: {}
+[19.696232] (-) TimerEvent: {}
+[19.747959] (navegacao) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/path_planner.dir/build.make:76: CMakeFiles/path_planner.dir/src/path_planner_node.cpp.o] Error 1\n'}
+[19.748199] (navegacao) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/path_planner.dir/all] Error 2\n'}
+[19.748295] (navegacao) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[19.796360] (-) TimerEvent: {}
+[19.896746] (-) TimerEvent: {}
+[19.997020] (-) TimerEvent: {}
+[20.097301] (-) TimerEvent: {}
+[20.198276] (-) TimerEvent: {}
+[20.298596] (-) TimerEvent: {}
+[20.398891] (-) TimerEvent: {}
+[20.499638] (-) TimerEvent: {}
+[20.599959] (-) TimerEvent: {}
+[20.700280] (-) TimerEvent: {}
+[20.800602] (-) TimerEvent: {}
+[20.900944] (-) TimerEvent: {}
+[21.001384] (-) TimerEvent: {}
+[21.101801] (-) TimerEvent: {}
+[21.202192] (-) TimerEvent: {}
+[21.302470] (-) TimerEvent: {}
+[21.402774] (-) TimerEvent: {}
+[21.503148] (-) TimerEvent: {}
+[21.603432] (-) TimerEvent: {}
+[21.690811] (navegacao) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mapper.dir/build.make:76: CMakeFiles/mapper.dir/src/mapper_node.cpp.o] Error 1\n'}
+[21.691104] (navegacao) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mapper.dir/all] Error 2\n'}
+[21.691276] (navegacao) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[21.693182] (navegacao) CommandEnded: {'returncode': 2}
+[21.697869] (navegacao) JobEnded: {'identifier': 'navegacao', 'rc': 2}
+[21.703506] (-) TimerEvent: {}
+[21.708556] (-) EventReactorShutdown: {}

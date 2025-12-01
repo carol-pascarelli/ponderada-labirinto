@@ -1,0 +1,33 @@
+[0.029s] Invoking command in '/home/inteli/ponderada_navegacao/build/navegacao': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/navegacao -- -j8 -l8
+[0.210s] [ 50%] Built target path_planner
+[0.212s] [ 75%] Building CXX object CMakeFiles/mapper.dir/src/mapper_node.cpp.o
+[21.792s] [100%] Linking CXX executable mapper
+[22.613s] [100%] Built target mapper
+[22.640s] Invoked command in '/home/inteli/ponderada_navegacao/build/navegacao' returned '0': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/navegacao -- -j8 -l8
+[22.665s] Invoking command in '/home/inteli/ponderada_navegacao/build/navegacao': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/inteli/ponderada_navegacao/build/navegacao
+[22.683s] -- Install configuration: ""
+[22.684s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/path_planner
+[22.684s] -- Installing: /home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/mapper
+[22.695s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/mapper" to ""
+[22.697s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/include/navegacao
+[22.697s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/include/navegacao/grid_utils.hpp
+[22.697s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch
+[22.697s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch/mapper.launch.py
+[22.698s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch/path_planner.launch.py
+[22.698s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/maps
+[22.698s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/package_run_dependencies/navegacao
+[22.699s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/parent_prefix_path/navegacao
+[22.699s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/ament_prefix_path.sh
+[22.699s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/ament_prefix_path.dsv
+[22.699s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/path.sh
+[22.700s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/path.dsv
+[22.700s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.bash
+[22.701s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.sh
+[22.702s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.zsh
+[22.703s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.dsv
+[22.703s] -- Installing: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.dsv
+[22.704s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/packages/navegacao
+[22.704s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/cmake/navegacaoConfig.cmake
+[22.704s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/cmake/navegacaoConfig-version.cmake
+[22.704s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.xml
+[22.705s] Invoked command in '/home/inteli/ponderada_navegacao/build/navegacao' returned '0': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/inteli/ponderada_navegacao/build/navegacao

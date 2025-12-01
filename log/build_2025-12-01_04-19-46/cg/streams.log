@@ -1,0 +1,24 @@
+[1.171s] Invoking command in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/inteli/ponderada_navegacao/build/cg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/cg build --build-base /home/inteli/ponderada_navegacao/build/cg/build install --record /home/inteli/ponderada_navegacao/build/cg/install.log --single-version-externally-managed install_data
+[1.557s] running egg_info
+[1.581s] writing ../../../../build/cg/cg.egg-info/PKG-INFO
+[1.582s] writing dependency_links to ../../../../build/cg/cg.egg-info/dependency_links.txt
+[1.582s] writing entry points to ../../../../build/cg/cg.egg-info/entry_points.txt
+[1.582s] writing requirements to ../../../../build/cg/cg.egg-info/requires.txt
+[1.583s] writing top-level names to ../../../../build/cg/cg.egg-info/top_level.txt
+[1.628s] reading manifest file '../../../../build/cg/cg.egg-info/SOURCES.txt'
+[1.628s] adding license file 'LICENSE'
+[1.629s] writing manifest file '../../../../build/cg/cg.egg-info/SOURCES.txt'
+[1.629s] running build
+[1.629s] running build_py
+[1.630s] running install
+[1.638s] running install_lib
+[1.666s] running install_data
+[1.666s] running install_egg_info
+[1.693s] removing '/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg-0.0.0-py3.12.egg-info' (and everything under it)
+[1.693s] Copying ../../../../build/cg/cg.egg-info to /home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages/cg-0.0.0-py3.12.egg-info
+[1.694s] running install_scripts
+[1.895s] Installing edit script to /home/inteli/ponderada_navegacao/install/cg/lib/cg
+[1.896s] Installing maze script to /home/inteli/ponderada_navegacao/install/cg/lib/cg
+[1.896s] Installing test script to /home/inteli/ponderada_navegacao/install/cg/lib/cg
+[1.897s] writing list of installed files to '/home/inteli/ponderada_navegacao/build/cg/install.log'
+[1.958s] Invoked command in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/inteli/ponderada_navegacao/build/cg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/cg build --build-base /home/inteli/ponderada_navegacao/build/cg/build install --record /home/inteli/ponderada_navegacao/build/cg/install.log --single-version-externally-managed install_data

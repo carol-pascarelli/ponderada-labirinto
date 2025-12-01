@@ -1,0 +1,4 @@
+/home/inteli/ponderada_navegacao/build/cg_interfaces/rosidl_adapter/cg_interfaces:srv/MoveCmd.idl
+/home/inteli/ponderada_navegacao/build/cg_interfaces/rosidl_adapter/cg_interfaces:srv/GetMap.idl
+/home/inteli/ponderada_navegacao/build/cg_interfaces/rosidl_adapter/cg_interfaces:msg/RobotSensors.idl
+/home/inteli/ponderada_navegacao/build/cg_interfaces/rosidl_adapter/cg_interfaces:srv/Reset.idl

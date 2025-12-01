@@ -1,0 +1,341 @@
+[0.179s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.179s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77fada7a0530>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77fadb1726c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77fadb1726c0>>, mixin_verb=('build',))
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.246s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/inteli/ponderada_navegacao'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extension 'ros'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extensions ['cmake', 'python']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extension 'cmake'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extension 'python'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extensions ['python_setup_py']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games) by extension 'python_setup_py'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extension 'ros'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extension 'cmake'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extension 'python'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/lobotomy_kaisen) by extension 'python_setup_py'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extension 'ros'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extension 'cmake'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extension 'python'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src) by extension 'python_setup_py'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg) by extension 'ros'
+[0.304s] DEBUG:colcon.colcon_core.package_identification:Package 'src/culling_games/src/cg' with type 'ros.ament_python' and name 'cg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_interfaces) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_interfaces) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_interfaces) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_interfaces) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_interfaces) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_interfaces) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_interfaces) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_interfaces) by extension 'ros'
+[0.306s] DEBUG:colcon.colcon_core.package_identification:Package 'src/culling_games/src/cg_interfaces' with type 'ros.ament_cmake' and name 'cg_interfaces'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_teleop) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_teleop) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_teleop) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_teleop) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_teleop) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_teleop) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_teleop) by extensions ['ros']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/culling_games/src/cg_teleop) by extension 'ros'
+[0.308s] DEBUG:colcon.colcon_core.package_identification:Package 'src/culling_games/src/cg_teleop' with type 'ros.ament_python' and name 'cg_teleop'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/navegacao) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/navegacao) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/navegacao) by extension 'ignore_ament_install'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/navegacao) by extensions ['colcon_pkg']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/navegacao) by extension 'colcon_pkg'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/navegacao) by extensions ['colcon_meta']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/navegacao) by extension 'colcon_meta'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/navegacao) by extensions ['ros']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/navegacao) by extension 'ros'
+[0.309s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navegacao' with type 'ros.ament_cmake' and name 'navegacao'
+[0.309s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.309s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.309s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.309s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.309s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.343s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.390s] DEBUG:colcon.colcon_core.verb:Building package 'cg_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/inteli/ponderada_navegacao/build/cg_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/inteli/ponderada_navegacao/install/cg_interfaces', 'merge_install': False, 'path': '/home/inteli/ponderada_navegacao/src/culling_games/src/cg_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg' build argument 'cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg' build argument 'cmake_target' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg' build argument 'cmake_clean_first' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg' build argument 'cmake_force_configure' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg' build argument 'ament_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'cg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.390s] DEBUG:colcon.colcon_core.verb:Building package 'cg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/inteli/ponderada_navegacao/build/cg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/inteli/ponderada_navegacao/install/cg', 'merge_install': False, 'path': '/home/inteli/ponderada_navegacao/src/culling_games/src/cg', 'symlink_install': False, 'test_result_base': None}
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'cg_teleop' build argument 'cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'cg_teleop' build argument 'cmake_target' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'cg_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'cg_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'cg_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'cg_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'cg_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'cg_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'cg_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.391s] DEBUG:colcon.colcon_core.verb:Building package 'cg_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/inteli/ponderada_navegacao/build/cg_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/inteli/ponderada_navegacao/install/cg_teleop', 'merge_install': False, 'path': '/home/inteli/ponderada_navegacao/src/culling_games/src/cg_teleop', 'symlink_install': False, 'test_result_base': None}
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'navegacao' build argument 'cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'navegacao' build argument 'cmake_target' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'navegacao' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'navegacao' build argument 'cmake_clean_cache' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'navegacao' build argument 'cmake_clean_first' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'navegacao' build argument 'cmake_force_configure' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'navegacao' build argument 'ament_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'navegacao' build argument 'catkin_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'navegacao' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.391s] DEBUG:colcon.colcon_core.verb:Building package 'navegacao' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/inteli/ponderada_navegacao/build/navegacao', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/inteli/ponderada_navegacao/install/navegacao', 'merge_install': False, 'path': '/home/inteli/ponderada_navegacao/src/navegacao', 'symlink_install': False, 'test_result_base': None}
+[0.391s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.392s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.393s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg_interfaces' with build type 'ament_cmake'
+[0.393s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg_interfaces'
+[0.396s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.396s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.396s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/inteli/ponderada_navegacao/build/cg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/inteli/ponderada_navegacao/src/culling_games/src/cg_interfaces -DCMAKE_INSTALL_PREFIX=/home/inteli/ponderada_navegacao/install/cg_interfaces
+[5.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/inteli/ponderada_navegacao/build/cg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/inteli/ponderada_navegacao/src/culling_games/src/cg_interfaces -DCMAKE_INSTALL_PREFIX=/home/inteli/ponderada_navegacao/install/cg_interfaces
+[5.868s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/inteli/ponderada_navegacao/build/cg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/cg_interfaces -- -j8 -l8
+[13.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/inteli/ponderada_navegacao/build/cg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/cg_interfaces -- -j8 -l8
+[13.138s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/inteli/ponderada_navegacao/build/cg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/inteli/ponderada_navegacao/build/cg_interfaces
+[13.386s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cg_interfaces)
+[13.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/inteli/ponderada_navegacao/build/cg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/inteli/ponderada_navegacao/build/cg_interfaces
+[13.399s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces' for CMake module files
+[13.401s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces' for CMake config files
+[13.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('cg_interfaces', 'cmake_prefix_path')
+[13.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/cmake_prefix_path.ps1'
+[13.405s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/cmake_prefix_path.dsv'
+[13.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/cmake_prefix_path.sh'
+[13.408s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib'
+[13.408s] Level 1:colcon.colcon_core.shell:create_environment_hook('cg_interfaces', 'ld_library_path_lib')
+[13.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/ld_library_path_lib.ps1'
+[13.409s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/ld_library_path_lib.dsv'
+[13.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/ld_library_path_lib.sh'
+[13.410s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces/bin'
+[13.410s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/pkgconfig/cg_interfaces.pc'
+[13.410s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages'
+[13.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('cg_interfaces', 'pythonpath')
+[13.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/pythonpath.ps1'
+[13.412s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/pythonpath.dsv'
+[13.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/pythonpath.sh'
+[13.414s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces/bin'
+[13.415s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.ps1'
+[13.417s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.dsv'
+[13.419s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.sh'
+[13.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.bash'
+[13.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.zsh'
+[13.423s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/inteli/ponderada_navegacao/install/cg_interfaces/share/colcon-core/packages/cg_interfaces)
+[13.425s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cg_interfaces)
+[13.425s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces' for CMake module files
+[13.427s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces' for CMake config files
+[13.428s] Level 1:colcon.colcon_core.shell:create_environment_hook('cg_interfaces', 'cmake_prefix_path')
+[13.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/cmake_prefix_path.ps1'
+[13.429s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/cmake_prefix_path.dsv'
+[13.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/cmake_prefix_path.sh'
+[13.430s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib'
+[13.431s] Level 1:colcon.colcon_core.shell:create_environment_hook('cg_interfaces', 'ld_library_path_lib')
+[13.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/ld_library_path_lib.ps1'
+[13.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/ld_library_path_lib.dsv'
+[13.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/ld_library_path_lib.sh'
+[13.435s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces/bin'
+[13.435s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/pkgconfig/cg_interfaces.pc'
+[13.436s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages'
+[13.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('cg_interfaces', 'pythonpath')
+[13.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/pythonpath.ps1'
+[13.437s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/pythonpath.dsv'
+[13.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/hook/pythonpath.sh'
+[13.439s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_interfaces/bin'
+[13.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.ps1'
+[13.441s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.dsv'
+[13.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.sh'
+[13.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.bash'
+[13.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.zsh'
+[13.444s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/inteli/ponderada_navegacao/install/cg_interfaces/share/colcon-core/packages/cg_interfaces)
+[13.444s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg' with build type 'ament_python'
+[13.445s] Level 1:colcon.colcon_core.shell:create_environment_hook('cg', 'ament_prefix_path')
+[13.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg/share/cg/hook/ament_prefix_path.ps1'
+[13.446s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/inteli/ponderada_navegacao/install/cg/share/cg/hook/ament_prefix_path.dsv'
+[13.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg/share/cg/hook/ament_prefix_path.sh'
+[13.449s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.449s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.454s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg_teleop' with build type 'ament_python'
+[13.454s] Level 1:colcon.colcon_core.shell:create_environment_hook('cg_teleop', 'ament_prefix_path')
+[13.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_teleop/share/cg_teleop/hook/ament_prefix_path.ps1'
+[13.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/inteli/ponderada_navegacao/install/cg_teleop/share/cg_teleop/hook/ament_prefix_path.dsv'
+[13.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_teleop/share/cg_teleop/hook/ament_prefix_path.sh'
+[13.457s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.457s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.461s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/inteli/ponderada_navegacao/src/navegacao' with build type 'ament_cmake'
+[13.461s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/inteli/ponderada_navegacao/src/navegacao'
+[13.461s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.461s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.760s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg'
+[13.761s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.761s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.037s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg_teleop'
+[14.037s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.037s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.042s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/inteli/ponderada_navegacao/build/navegacao': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/inteli/ponderada_navegacao/src/navegacao -DCMAKE_INSTALL_PREFIX=/home/inteli/ponderada_navegacao/install/navegacao
+[14.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg_teleop': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/build/cg_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/cg_teleop build --build-base /home/inteli/ponderada_navegacao/build/cg_teleop/build install --record /home/inteli/ponderada_navegacao/build/cg_teleop/install.log --single-version-externally-managed install_data
+[14.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/build/cg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/cg build --build-base /home/inteli/ponderada_navegacao/build/cg/build install --record /home/inteli/ponderada_navegacao/build/cg/install.log --single-version-externally-managed install_data
+[15.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/inteli/ponderada_navegacao/build/navegacao' returned '0': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/inteli/ponderada_navegacao/src/navegacao -DCMAKE_INSTALL_PREFIX=/home/inteli/ponderada_navegacao/install/navegacao
+[15.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/inteli/ponderada_navegacao/build/navegacao': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/navegacao -- -j8 -l8
+[15.678s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_teleop' for CMake module files
+[15.678s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg_teleop' returned '0': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/build/cg_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/cg_teleop build --build-base /home/inteli/ponderada_navegacao/build/cg_teleop/build install --record /home/inteli/ponderada_navegacao/build/cg_teleop/install.log --single-version-externally-managed install_data
+[15.683s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_teleop' for CMake config files
+[15.687s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_teleop/lib'
+[15.687s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_teleop/bin'
+[15.688s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_teleop/lib/pkgconfig/cg_teleop.pc'
+[15.688s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages'
+[15.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('cg_teleop', 'pythonpath')
+[15.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_teleop/share/cg_teleop/hook/pythonpath.ps1'
+[15.689s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/inteli/ponderada_navegacao/install/cg_teleop/share/cg_teleop/hook/pythonpath.dsv'
+[15.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg_teleop/share/cg_teleop/hook/pythonpath.sh'
+[15.691s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg_teleop/bin'
+[15.691s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cg_teleop)
+[15.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg_teleop/share/cg_teleop/package.ps1'
+[15.693s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/inteli/ponderada_navegacao/install/cg_teleop/share/cg_teleop/package.dsv'
+[15.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg_teleop/share/cg_teleop/package.sh'
+[15.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg_teleop/share/cg_teleop/package.bash'
+[15.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg_teleop/share/cg_teleop/package.zsh'
+[15.696s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/inteli/ponderada_navegacao/install/cg_teleop/share/colcon-core/packages/cg_teleop)
+[15.840s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg' for CMake module files
+[15.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg' returned '0': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/build/cg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/cg build --build-base /home/inteli/ponderada_navegacao/build/cg/build install --record /home/inteli/ponderada_navegacao/build/cg/install.log --single-version-externally-managed install_data
+[15.841s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg' for CMake config files
+[15.842s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg/lib'
+[15.842s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg/bin'
+[15.842s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg/lib/pkgconfig/cg.pc'
+[15.843s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages'
+[15.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('cg', 'pythonpath')
+[15.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg/share/cg/hook/pythonpath.ps1'
+[15.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/inteli/ponderada_navegacao/install/cg/share/cg/hook/pythonpath.dsv'
+[15.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/inteli/ponderada_navegacao/install/cg/share/cg/hook/pythonpath.sh'
+[15.844s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/cg/bin'
+[15.845s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cg)
+[15.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg/share/cg/package.ps1'
+[15.845s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/inteli/ponderada_navegacao/install/cg/share/cg/package.dsv'
+[15.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg/share/cg/package.sh'
+[15.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg/share/cg/package.bash'
+[15.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/cg/share/cg/package.zsh'
+[15.846s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/inteli/ponderada_navegacao/install/cg/share/colcon-core/packages/cg)
+[22.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/inteli/ponderada_navegacao/build/navegacao' returned '2': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/navegacao -- -j8 -l8
+[22.086s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navegacao)
+[22.086s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/navegacao' for CMake module files
+[22.086s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/navegacao' for CMake config files
+[22.087s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/navegacao/bin'
+[22.087s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/navegacao/lib/pkgconfig/navegacao.pc'
+[22.087s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/navegacao/lib/python3.12/site-packages'
+[22.087s] Level 1:colcon.colcon_core.environment:checking '/home/inteli/ponderada_navegacao/install/navegacao/bin'
+[22.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.ps1'
+[22.088s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.dsv'
+[22.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.sh'
+[22.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.bash'
+[22.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.zsh'
+[22.090s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/inteli/ponderada_navegacao/install/navegacao/share/colcon-core/packages/navegacao)
+[22.100s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[22.100s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[22.100s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[22.101s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[22.111s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[22.112s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[22.112s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[22.132s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[22.133s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/inteli/ponderada_navegacao/install/local_setup.ps1'
+[22.134s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/inteli/ponderada_navegacao/install/_local_setup_util_ps1.py'
+[22.137s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/inteli/ponderada_navegacao/install/setup.ps1'
+[22.139s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/inteli/ponderada_navegacao/install/local_setup.sh'
+[22.141s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/inteli/ponderada_navegacao/install/_local_setup_util_sh.py'
+[22.142s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/inteli/ponderada_navegacao/install/setup.sh'
+[22.144s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/inteli/ponderada_navegacao/install/local_setup.bash'
+[22.145s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/inteli/ponderada_navegacao/install/setup.bash'
+[22.146s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/inteli/ponderada_navegacao/install/local_setup.zsh'
+[22.147s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/inteli/ponderada_navegacao/install/setup.zsh'

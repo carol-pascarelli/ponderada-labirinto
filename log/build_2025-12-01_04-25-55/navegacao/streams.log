@@ -1,0 +1,38 @@
+[0.017s] Invoking command in '/home/inteli/ponderada_navegacao/build/navegacao': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/navegacao -- -j8 -l8
+[0.123s] [ 25%] Building CXX object CMakeFiles/mapper.dir/src/mapper_node.cpp.o
+[0.130s] [ 50%] Building CXX object CMakeFiles/path_planner.dir/src/path_planner_node.cpp.o
+[3.937s] /home/inteli/ponderada_navegacao/src/navegacao/src/path_planner_node.cpp: In member function ‘bool PathPlannerNode::fetch_map(navegacao::GridMap&)’:
+[3.938s] /home/inteli/ponderada_navegacao/src/navegacao/src/path_planner_node.cpp:78:49: error: ‘std::vector<unsigned char, std::allocator<unsigned char> >’ is an inaccessible base of ‘rosidl_runtime_cpp::BoundedVector<unsigned char, 2, std::allocator<unsigned char> >’
+[3.938s]    78 |       grid = navegacao::build_grid_from_response(
+[3.938s]       |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[3.938s]    79 |         response->occupancy_grid_flattened,
+[3.938s]       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~      
+[3.938s]    80 |         response->occupancy_grid_shape);
+[3.938s]       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~          
+[4.118s] /home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp: In lambda function:
+[4.118s] /home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:148:9: error: ‘target_coord_’ was not declared in this scope; did you mean ‘target_known_’?
+[4.118s]   148 |         target_coord_ = coord;
+[4.119s]       |         ^~~~~~~~~~~~~
+[4.119s]       |         target_known_
+[4.159s] /home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp: In member function ‘bool MapperNode::send_move(const std::string&, const navegacao::GridCoordinate&)’:
+[4.159s] /home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:233:7: error: ‘target_coord_’ was not declared in this scope; did you mean ‘target_known_’?
+[4.160s]   233 |       target_coord_ = current_;
+[4.160s]       |       ^~~~~~~~~~~~~
+[4.160s]       |       target_known_
+[4.181s] /home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp: In member function ‘{anonymous}::LocalGrid MapperNode::build_local_grid() const’:
+[4.181s] /home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:267:44: error: ‘target_coord_’ was not declared in this scope; did you mean ‘target_known_’?
+[4.182s]   267 |       } else if (target_known_ && coord == target_coord_) {
+[4.182s]       |                                            ^~~~~~~~~~~~~
+[4.182s]       |                                            target_known_
+[4.200s] /home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp: In member function ‘void MapperNode::replay_with_local_map(const {anonymous}::LocalGrid&)’:
+[4.200s] /home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:323:42: error: ‘target_coord_’ was not declared in this scope; did you mean ‘target_known_’?
+[4.200s]   323 |     navegacao::GridCoordinate target_idx{target_coord_.row + local.row_offset, target_coord_.col + local.col_offset};
+[4.200s]       |                                          ^~~~~~~~~~~~~
+[4.201s]       |                                          target_known_
+[5.854s] gmake[2]: *** [CMakeFiles/path_planner.dir/build.make:76: CMakeFiles/path_planner.dir/src/path_planner_node.cpp.o] Error 1
+[5.854s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/path_planner.dir/all] Error 2
+[5.854s] gmake[1]: *** Waiting for unfinished jobs....
+[8.013s] gmake[2]: *** [CMakeFiles/mapper.dir/build.make:76: CMakeFiles/mapper.dir/src/mapper_node.cpp.o] Error 1
+[8.014s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mapper.dir/all] Error 2
+[8.014s] gmake: *** [Makefile:146: all] Error 2
+[8.016s] Invoked command in '/home/inteli/ponderada_navegacao/build/navegacao' returned '2': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/navegacao -- -j8 -l8

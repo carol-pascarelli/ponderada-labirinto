@@ -1,0 +1,345 @@
+[0.012s] Invoking command in '/home/inteli/ponderada_navegacao/build/cg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/inteli/ponderada_navegacao/src/culling_games/src/cg_interfaces -DCMAKE_INSTALL_PREFIX=/home/inteli/ponderada_navegacao/install/cg_interfaces
+[0.150s] -- The C compiler identification is GNU 13.3.0
+[0.297s] -- The CXX compiler identification is GNU 13.3.0
+[0.327s] -- Detecting C compiler ABI info
+[0.511s] -- Detecting C compiler ABI info - done
+[0.535s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.542s] -- Detecting C compile features
+[0.544s] -- Detecting C compile features - done
+[0.566s] -- Detecting CXX compiler ABI info
+[0.769s] -- Detecting CXX compiler ABI info - done
+[0.792s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.792s] -- Detecting CXX compile features
+[0.794s] -- Detecting CXX compile features - done
+[0.816s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.121s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.286s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.299s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.438s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.557s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.495s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[3.156s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.179s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.189s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[4.446s] -- Found PythonExtra: /usr/bin/python3  
+[5.291s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[5.357s] -- Configuring done (5.3s)
+[5.445s] -- Generating done (0.1s)
+[5.466s] -- Build files have been written to: /home/inteli/ponderada_navegacao/build/cg_interfaces
+[5.474s] Invoked command in '/home/inteli/ponderada_navegacao/build/cg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/inteli/ponderada_navegacao/src/culling_games/src/cg_interfaces -DCMAKE_INSTALL_PREFIX=/home/inteli/ponderada_navegacao/install/cg_interfaces
+[5.476s] Invoking command in '/home/inteli/ponderada_navegacao/build/cg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/cg_interfaces -- -j8 -l8
+[5.572s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[5.606s] [  1%] Built target ament_cmake_python_copy_cg_interfaces
+[5.917s] running egg_info
+[5.918s] creating cg_interfaces.egg-info
+[5.940s] writing cg_interfaces.egg-info/PKG-INFO
+[5.940s] writing dependency_links to cg_interfaces.egg-info/dependency_links.txt
+[5.940s] writing top-level names to cg_interfaces.egg-info/top_level.txt
+[5.940s] writing manifest file 'cg_interfaces.egg-info/SOURCES.txt'
+[5.972s] [  1%] Built target cg_interfaces__rosidl_generator_type_description
+[5.987s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.999s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.023s] reading manifest file 'cg_interfaces.egg-info/SOURCES.txt'
+[6.024s] writing manifest file 'cg_interfaces.egg-info/SOURCES.txt'
+[6.060s] [  4%] Built target ament_cmake_python_build_cg_interfaces_egg
+[6.692s] [  4%] Built target cg_interfaces__cpp
+[6.845s] [  6%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/move_cmd__type_support.c.o[0m
+[6.860s] [  7%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/move_cmd__description.c.o[0m
+[6.862s] [  9%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/move_cmd__functions.c.o[0m
+[6.868s] [ 10%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/get_map__type_support.c.o[0m
+[6.871s] [ 14%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/msg/detail/robot_sensors__functions.c.o[0m
+[6.871s] [ 12%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/get_map__functions.c.o[0m
+[6.871s] [ 15%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/get_map__description.c.o[0m
+[6.873s] [ 17%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/msg/detail/robot_sensors__description.c.o[0m
+[6.977s] [ 18%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/msg/detail/robot_sensors__type_support.c.o[0m
+[6.985s] [ 20%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/reset__description.c.o[0m
+[6.988s] [ 21%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/reset__functions.c.o[0m
+[7.002s] [ 23%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cg_interfaces/srv/detail/reset__type_support.c.o[0m
+[7.117s] [ 25%] [32m[1mLinking C shared library libcg_interfaces__rosidl_generator_c.so[0m
+[7.197s] [ 25%] Built target cg_interfaces__rosidl_generator_c
+[7.218s] [ 26%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.218s] [ 28%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.220s] [ 29%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.222s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.222s] [ 32%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.226s] [ 34%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.985s] [ 35%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cg_interfaces/srv/move_cmd__type_support.cpp.o[0m
+[7.990s] [ 37%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cg_interfaces/srv/get_map__type_support.cpp.o[0m
+[7.992s] [ 39%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cg_interfaces/msg/robot_sensors__type_support.cpp.o[0m
+[8.013s] [ 40%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cg_interfaces/srv/move_cmd__type_support.cpp.o[0m
+[8.133s] [ 42%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cg_interfaces/srv/get_map__type_support.cpp.o[0m
+[8.255s] [ 43%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cg_interfaces/msg/robot_sensors__type_support.cpp.o[0m
+[8.293s] [ 45%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cg_interfaces/srv/detail/move_cmd__type_support.c.o[0m
+[8.328s] [ 46%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cg_interfaces/srv/detail/move_cmd__type_support.cpp.o[0m
+[8.373s] [ 48%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cg_interfaces/srv/reset__type_support.cpp.o[0m
+[8.421s] [ 50%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cg_interfaces/srv/detail/dds_fastrtps/move_cmd__type_support.cpp.o[0m
+[8.456s] [ 51%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cg_interfaces/srv/detail/get_map__type_support.c.o[0m
+[8.537s] [ 53%] [32m[1mLinking CXX shared library libcg_interfaces__rosidl_typesupport_c.so[0m
+[8.579s] [ 54%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cg_interfaces/msg/detail/robot_sensors__type_support.c.o[0m
+[8.654s] [ 56%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cg_interfaces/srv/detail/reset__type_support.c.o[0m
+[8.665s] [ 56%] Built target cg_interfaces__rosidl_typesupport_c
+[8.669s] [ 57%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cg_interfaces/srv/reset__type_support.cpp.o[0m
+[8.679s] [ 59%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cg_interfaces/srv/detail/get_map__type_support.cpp.o[0m
+[8.711s] [ 60%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cg_interfaces/srv/detail/move_cmd__type_support_c.cpp.o[0m
+[8.757s] [ 62%] [32m[1mLinking C shared library libcg_interfaces__rosidl_typesupport_introspection_c.so[0m
+[8.829s] [ 62%] Built target cg_interfaces__rosidl_typesupport_introspection_c
+[8.844s] [ 64%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cg_interfaces/srv/detail/dds_fastrtps/get_map__type_support.cpp.o[0m
+[9.016s] [ 65%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cg_interfaces/msg/detail/robot_sensors__type_support.cpp.o[0m
+[9.085s] [ 67%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cg_interfaces/srv/detail/reset__type_support.cpp.o[0m
+[9.383s] [ 68%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cg_interfaces/srv/detail/get_map__type_support_c.cpp.o[0m
+[9.508s] [ 70%] [32m[1mLinking CXX shared library libcg_interfaces__rosidl_typesupport_cpp.so[0m
+[9.682s] [ 71%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cg_interfaces/msg/detail/robot_sensors__type_support_c.cpp.o[0m
+[9.737s] [ 73%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cg_interfaces/srv/detail/reset__type_support_c.cpp.o[0m
+[9.758s] [ 73%] Built target cg_interfaces__rosidl_typesupport_cpp
+[9.778s] [ 75%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cg_interfaces/msg/detail/dds_fastrtps/robot_sensors__type_support.cpp.o[0m
+[9.841s] [ 76%] [32mBuilding CXX object CMakeFiles/cg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cg_interfaces/srv/detail/dds_fastrtps/reset__type_support.cpp.o[0m
+[10.091s] [ 78%] [32m[1mLinking CXX shared library libcg_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[10.364s] [ 78%] Built target cg_interfaces__rosidl_typesupport_introspection_cpp
+[10.727s] [ 79%] [32m[1mLinking CXX shared library libcg_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[10.837s] [ 79%] Built target cg_interfaces__rosidl_typesupport_fastrtps_c
+[10.928s] [ 81%] [32m[1mLinking CXX shared library libcg_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.054s] [ 81%] Built target cg_interfaces__rosidl_typesupport_fastrtps_cpp
+[11.077s] [ 81%] Built target cg_interfaces
+[11.099s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[12.056s] [ 82%] Built target cg_interfaces__py
+[12.079s] [ 84%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/cg_interfaces/srv/_get_map_s.c.o[0m
+[12.079s] [ 85%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/cg_interfaces/msg/_robot_sensors_s.c.o[0m
+[12.081s] [ 87%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/cg_interfaces/srv/_move_cmd_s.c.o[0m
+[12.082s] [ 89%] [32mBuilding C object CMakeFiles/cg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/cg_interfaces/srv/_reset_s.c.o[0m
+[12.285s] [ 90%] [32m[1mLinking C shared library libcg_interfaces__rosidl_generator_py.so[0m
+[12.383s] [ 90%] Built target cg_interfaces__rosidl_generator_py
+[12.418s] [ 95%] [32mBuilding C object CMakeFiles/cg_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/cg_interfaces/_cg_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[12.418s] [ 95%] [32mBuilding C object CMakeFiles/cg_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/cg_interfaces/_cg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[12.418s] [ 95%] [32mBuilding C object CMakeFiles/cg_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/cg_interfaces/_cg_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[12.596s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/cg_interfaces/cg_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[12.632s] [ 96%] Built target cg_interfaces_s__rosidl_typesupport_introspection_c
+[12.644s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/cg_interfaces/cg_interfaces_s__rosidl_typesupport_c.so[0m
+[12.647s] [100%] [32m[1mLinking C shared module rosidl_generator_py/cg_interfaces/cg_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[12.696s] [100%] Built target cg_interfaces_s__rosidl_typesupport_c
+[12.703s] [100%] Built target cg_interfaces_s__rosidl_typesupport_fastrtps_c
+[12.727s] Invoked command in '/home/inteli/ponderada_navegacao/build/cg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/cg_interfaces -- -j8 -l8
+[12.745s] Invoking command in '/home/inteli/ponderada_navegacao/build/cg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/inteli/ponderada_navegacao/build/cg_interfaces
+[12.762s] -- Install configuration: ""
+[12.763s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/ament_index/resource_index/rosidl_interfaces/cg_interfaces
+[12.764s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/MoveCmd.json
+[12.764s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/GetMap.json
+[12.764s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/msg/RobotSensors.json
+[12.765s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/Reset.json
+[12.765s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces
+[12.765s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg
+[12.765s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/robot_sensors.h
+[12.766s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail
+[12.766s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__functions.h
+[12.766s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__functions.c
+[12.766s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__type_support.c
+[12.766s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__type_support.h
+[12.767s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__description.c
+[12.767s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__struct.h
+[12.767s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/rosidl_generator_c__visibility_control.h
+[12.767s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv
+[12.767s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/get_map.h
+[12.768s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/reset.h
+[12.768s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail
+[12.768s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__description.c
+[12.768s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__functions.c
+[12.768s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__struct.h
+[12.768s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__struct.h
+[12.769s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__functions.c
+[12.769s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__functions.h
+[12.769s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.h
+[12.769s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.c
+[12.769s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__type_support.c
+[12.770s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.c
+[12.770s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__functions.h
+[12.770s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__description.c
+[12.770s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__description.c
+[12.770s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__type_support.h
+[12.770s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__functions.c
+[12.771s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__functions.h
+[12.771s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__struct.h
+[12.771s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.h
+[12.771s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/move_cmd.h
+[12.772s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/library_path.sh
+[12.772s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/library_path.dsv
+[12.772s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_generator_c.so
+[12.773s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_generator_c.so" to ""
+[12.774s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces
+[12.774s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg
+[12.774s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail
+[12.774s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__rosidl_typesupport_fastrtps_c.h
+[12.775s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.775s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv
+[12.775s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail
+[12.776s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__rosidl_typesupport_fastrtps_c.h
+[12.776s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__rosidl_typesupport_fastrtps_c.h
+[12.776s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__rosidl_typesupport_fastrtps_c.h
+[12.777s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_fastrtps_c.so
+[12.777s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[12.777s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces
+[12.777s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg
+[12.777s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail
+[12.778s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__type_support.c
+[12.778s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__rosidl_typesupport_introspection_c.h
+[12.778s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.778s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv
+[12.779s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail
+[12.779s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__rosidl_typesupport_introspection_c.h
+[12.779s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.c
+[12.779s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__type_support.c
+[12.779s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.c
+[12.780s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__rosidl_typesupport_introspection_c.h
+[12.780s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__rosidl_typesupport_introspection_c.h
+[12.780s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_introspection_c.so
+[12.780s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[12.781s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_c.so
+[12.781s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_c.so" to ""
+[12.782s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces
+[12.782s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg
+[12.782s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/robot_sensors.hpp
+[12.782s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail
+[12.782s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__traits.hpp
+[12.783s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__builder.hpp
+[12.783s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__struct.hpp
+[12.783s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__type_support.hpp
+[12.783s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[12.783s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv
+[12.784s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/move_cmd.hpp
+[12.784s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail
+[12.785s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.hpp
+[12.785s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__traits.hpp
+[12.785s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__builder.hpp
+[12.785s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__type_support.hpp
+[12.785s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__builder.hpp
+[12.786s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__struct.hpp
+[12.786s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__struct.hpp
+[12.786s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__builder.hpp
+[12.786s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__traits.hpp
+[12.786s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__struct.hpp
+[12.786s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__traits.hpp
+[12.787s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.hpp
+[12.787s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/reset.hpp
+[12.787s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/get_map.hpp
+[12.787s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces
+[12.787s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg
+[12.788s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail
+[12.789s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/dds_fastrtps
+[12.789s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__rosidl_typesupport_fastrtps_cpp.hpp
+[12.789s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.789s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv
+[12.790s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail
+[12.790s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__rosidl_typesupport_fastrtps_cpp.hpp
+[12.790s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[12.790s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/dds_fastrtps
+[12.791s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__rosidl_typesupport_fastrtps_cpp.hpp
+[12.791s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[12.793s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[12.793s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces
+[12.793s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg
+[12.793s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail
+[12.794s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__type_support.cpp
+[12.794s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__rosidl_typesupport_introspection_cpp.hpp
+[12.794s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv
+[12.794s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail
+[12.794s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__rosidl_typesupport_introspection_cpp.hpp
+[12.794s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__rosidl_typesupport_introspection_cpp.hpp
+[12.794s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__type_support.cpp
+[12.795s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.cpp
+[12.795s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/get_map__rosidl_typesupport_introspection_cpp.hpp
+[12.795s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.cpp
+[12.795s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_introspection_cpp.so
+[12.796s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[12.797s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_cpp.so
+[12.799s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_typesupport_cpp.so" to ""
+[12.799s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/pythonpath.sh
+[12.799s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/pythonpath.dsv
+[12.800s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces-0.0.0-py3.12.egg-info
+[12.800s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[12.800s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[12.801s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[12.801s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[12.801s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces
+[12.801s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_c.so
+[12.801s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg
+[12.801s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg/__init__.py
+[12.801s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg/_robot_sensors_s.c
+[12.802s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg/_robot_sensors.py
+[12.802s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/_cg_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[12.802s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv
+[12.802s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_get_map_s.c
+[12.802s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_move_cmd.py
+[12.803s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_reset.py
+[12.803s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/__init__.py
+[12.803s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_get_map.py
+[12.803s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_reset_s.c
+[12.803s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_move_cmd_s.c
+[12.804s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/_cg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.804s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/_cg_interfaces_s.ep.rosidl_typesupport_c.c
+[12.804s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/__init__.py
+[12.804s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_introspection_c.so
+[12.804s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[12.951s] Listing '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces'...
+[12.951s] Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/__init__.py'...
+[12.951s] Listing '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg'...
+[12.952s] Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg/__init__.py'...
+[12.952s] Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/msg/_robot_sensors.py'...
+[12.952s] Listing '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv'...
+[12.952s] Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/__init__.py'...
+[12.952s] Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_get_map.py'...
+[12.953s] Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_move_cmd.py'...
+[12.953s] Compiling '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/srv/_reset.py'...
+[12.965s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[12.965s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[12.965s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_introspection_c.so
+[12.966s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[12.966s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_c.so
+[12.966s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages/cg_interfaces/cg_interfaces_s__rosidl_typesupport_c.so" to ""
+[12.967s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_generator_py.so
+[12.968s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/libcg_interfaces__rosidl_generator_py.so" to ""
+[12.968s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/MoveCmd.idl
+[12.968s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/GetMap.idl
+[12.968s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/msg/RobotSensors.idl
+[12.969s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/Reset.idl
+[12.970s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/MoveCmd.srv
+[12.970s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/GetMap.srv
+[12.970s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/msg/RobotSensors.msg
+[12.971s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/srv/Reset.srv
+[12.971s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/ament_index/resource_index/package_run_dependencies/cg_interfaces
+[12.972s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/ament_index/resource_index/parent_prefix_path/cg_interfaces
+[12.972s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/ament_prefix_path.sh
+[12.972s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/ament_prefix_path.dsv
+[12.972s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/path.sh
+[12.973s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/environment/path.dsv
+[12.973s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/local_setup.bash
+[12.973s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/local_setup.sh
+[12.974s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/local_setup.zsh
+[12.974s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/local_setup.dsv
+[12.974s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.dsv
+[12.975s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/ament_index/resource_index/packages/cg_interfaces
+[12.975s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_generator_cExport.cmake
+[12.976s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_generator_cExport-noconfig.cmake
+[12.976s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[12.977s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[12.977s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[12.978s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[12.978s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_cExport.cmake
+[12.979s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[12.979s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_generator_cppExport.cmake
+[12.980s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[12.980s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[12.981s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[12.981s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[12.981s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_cppExport.cmake
+[12.982s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[12.982s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_generator_pyExport.cmake
+[12.982s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/export_cg_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[12.983s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/rosidl_cmake-extras.cmake
+[12.983s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.984s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.985s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[12.985s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[12.986s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[12.986s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[12.987s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfacesConfig.cmake
+[12.987s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake/cg_interfacesConfig-version.cmake
+[12.987s] -- Installing: /home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/package.xml
+[12.994s] Invoked command in '/home/inteli/ponderada_navegacao/build/cg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/inteli/ponderada_navegacao/build/cg_interfaces

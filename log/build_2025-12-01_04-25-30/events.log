@@ -1,0 +1,122 @@
+[0.000000] (-) TimerEvent: {}
+[0.000444] (-) JobUnselected: {'identifier': 'cg'}
+[0.000731] (-) JobUnselected: {'identifier': 'cg_interfaces'}
+[0.000761] (-) JobUnselected: {'identifier': 'cg_teleop'}
+[0.000785] (navegacao) JobQueued: {'identifier': 'navegacao', 'dependencies': OrderedDict({'cg_interfaces': '/home/inteli/ponderada_navegacao/install/cg_interfaces'})}
+[0.000818] (navegacao) JobStarted: {'identifier': 'navegacao'}
+[0.013281] (navegacao) JobProgress: {'identifier': 'navegacao', 'progress': 'cmake'}
+[0.013889] (navegacao) JobProgress: {'identifier': 'navegacao', 'progress': 'build'}
+[0.014630] (navegacao) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/inteli/ponderada_navegacao/build/navegacao', '--', '-j8', '-l8'], 'cwd': '/home/inteli/ponderada_navegacao/build/navegacao', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'inteli', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/inteli', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/inteli/ponderada_navegacao', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/inteli/.nvm/versions/node/v20.19.5/bin', 'NVM_INC': '/home/inteli/.nvm/versions/node/v20.19.5/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/inteli/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'inteli', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'inteli', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/inteli/.nvm/versions/node/v20.19.5/bin:/home/inteli/micromamba/condabin:/home/inteli/.cargo/bin:/home/inteli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/inteli:@/tmp/.ICE-unix/3660,unix/inteli:/tmp/.ICE-unix/3660', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8fdd90a0_c698_4efa_99de_a6c10573dcf5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MAMBA_ROOT_PREFIX': '/home/inteli/micromamba', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R5MQG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.319', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_teleop:/home/inteli/ponderada_navegacao/install/cg:/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'MAMBA_EXE': '/home/inteli/.local/bin/micromamba', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/inteli/ponderada_navegacao/build/navegacao', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/inteli/ponderada_navegacao/install/cg_teleop:/home/inteli/ponderada_navegacao/install/cg:/opt/ros/jazzy'}), 'shell': False}
+[0.099798] (-) TimerEvent: {}
+[0.139845] (navegacao) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/path_planner.dir/src/path_planner_node.cpp.o\x1b[0m\n'}
+[0.143393] (navegacao) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mapper.dir/src/mapper_node.cpp.o\x1b[0m\n'}
+[0.199972] (-) TimerEvent: {}
+[0.300470] (-) TimerEvent: {}
+[0.400783] (-) TimerEvent: {}
+[0.502025] (-) TimerEvent: {}
+[0.602394] (-) TimerEvent: {}
+[0.702859] (-) TimerEvent: {}
+[0.803255] (-) TimerEvent: {}
+[0.903713] (-) TimerEvent: {}
+[1.004162] (-) TimerEvent: {}
+[1.104928] (-) TimerEvent: {}
+[1.205624] (-) TimerEvent: {}
+[1.306286] (-) TimerEvent: {}
+[1.406711] (-) TimerEvent: {}
+[1.507106] (-) TimerEvent: {}
+[1.607673] (-) TimerEvent: {}
+[1.708242] (-) TimerEvent: {}
+[1.808820] (-) TimerEvent: {}
+[1.909278] (-) TimerEvent: {}
+[2.009875] (-) TimerEvent: {}
+[2.110295] (-) TimerEvent: {}
+[2.210838] (-) TimerEvent: {}
+[2.311498] (-) TimerEvent: {}
+[2.411893] (-) TimerEvent: {}
+[2.512302] (-) TimerEvent: {}
+[2.612672] (-) TimerEvent: {}
+[2.713043] (-) TimerEvent: {}
+[2.813419] (-) TimerEvent: {}
+[2.913829] (-) TimerEvent: {}
+[3.014418] (-) TimerEvent: {}
+[3.114853] (-) TimerEvent: {}
+[3.215634] (-) TimerEvent: {}
+[3.316105] (-) TimerEvent: {}
+[3.416455] (-) TimerEvent: {}
+[3.516799] (-) TimerEvent: {}
+[3.617146] (-) TimerEvent: {}
+[3.717640] (-) TimerEvent: {}
+[3.738386] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/path_planner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool PathPlannerNode::\x1b[01;32m\x1b[Kfetch_map\x1b[m\x1b[K(navegacao::GridMap&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.739434] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/path_planner_node.cpp:78:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> >\x1b[m\x1b[K\xe2\x80\x99 is an inaccessible base of \xe2\x80\x98\x1b[01m\x1b[Krosidl_runtime_cpp::BoundedVector<unsigned char, 2, std::allocator<unsigned char> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.739663] (navegacao) StderrLine: {'line': b'   78 |       grid = \x1b[01;31m\x1b[Knavegacao::build_grid_from_response(\x1b[m\x1b[K\n'}
+[3.739817] (navegacao) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[3.739987] (navegacao) StderrLine: {'line': b'   79 | \x1b[01;31m\x1b[K        response->occupancy_grid_flattened,\x1b[m\x1b[K\n'}
+[3.740173] (navegacao) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K      \n'}
+[3.740348] (navegacao) StderrLine: {'line': b'   80 | \x1b[01;31m\x1b[K        response->occupancy_grid_shape)\x1b[m\x1b[K;\n'}
+[3.740522] (navegacao) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K          \n'}
+[3.780352] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[3.780559] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:148:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktarget_coord_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktarget_known_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.780658] (navegacao) StderrLine: {'line': b'  148 |         \x1b[01;31m\x1b[Ktarget_coord_\x1b[m\x1b[K = coord;\n'}
+[3.780735] (navegacao) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.780807] (navegacao) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ktarget_known_\x1b[m\x1b[K\n'}
+[3.808360] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool MapperNode::\x1b[01;32m\x1b[Ksend_move\x1b[m\x1b[K(const std::string&, const navegacao::GridCoordinate&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.808756] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:233:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktarget_coord_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktarget_known_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.808899] (navegacao) StderrLine: {'line': b'  233 |       \x1b[01;31m\x1b[Ktarget_coord_\x1b[m\x1b[K = current_;\n'}
+[3.809068] (navegacao) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.809187] (navegacao) StderrLine: {'line': b'      |       \x1b[32m\x1b[Ktarget_known_\x1b[m\x1b[K\n'}
+[3.817772] (-) TimerEvent: {}
+[3.823263] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[K{anonymous}::LocalGrid MapperNode::\x1b[01;32m\x1b[Kbuild_local_grid\x1b[m\x1b[K() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.823518] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:267:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktarget_coord_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktarget_known_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.823660] (navegacao) StderrLine: {'line': b'  267 |       } else if (target_known_ && coord == \x1b[01;31m\x1b[Ktarget_coord_\x1b[m\x1b[K) {\n'}
+[3.823811] (navegacao) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.823974] (navegacao) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[Ktarget_known_\x1b[m\x1b[K\n'}
+[3.839193] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MapperNode::\x1b[01;32m\x1b[Kreplay_with_local_map\x1b[m\x1b[K(const {anonymous}::LocalGrid&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.839664] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:323:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktarget_coord_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktarget_known_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.839848] (navegacao) StderrLine: {'line': b'  323 |     navegacao::GridCoordinate target_idx{\x1b[01;31m\x1b[Ktarget_coord_\x1b[m\x1b[K.row + local.row_offset, target_coord_.col + local.col_offset};\n'}
+[3.839997] (navegacao) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.840151] (navegacao) StderrLine: {'line': b'      |                                          \x1b[32m\x1b[Ktarget_known_\x1b[m\x1b[K\n'}
+[3.917866] (-) TimerEvent: {}
+[4.018200] (-) TimerEvent: {}
+[4.118495] (-) TimerEvent: {}
+[4.218840] (-) TimerEvent: {}
+[4.319368] (-) TimerEvent: {}
+[4.419739] (-) TimerEvent: {}
+[4.520072] (-) TimerEvent: {}
+[4.620416] (-) TimerEvent: {}
+[4.720816] (-) TimerEvent: {}
+[4.821240] (-) TimerEvent: {}
+[4.921608] (-) TimerEvent: {}
+[5.021947] (-) TimerEvent: {}
+[5.122335] (-) TimerEvent: {}
+[5.224028] (-) TimerEvent: {}
+[5.324487] (-) TimerEvent: {}
+[5.424879] (-) TimerEvent: {}
+[5.525420] (-) TimerEvent: {}
+[5.547631] (navegacao) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/path_planner.dir/build.make:76: CMakeFiles/path_planner.dir/src/path_planner_node.cpp.o] Error 1\n'}
+[5.548042] (navegacao) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/path_planner.dir/all] Error 2\n'}
+[5.548208] (navegacao) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.625536] (-) TimerEvent: {}
+[5.725874] (-) TimerEvent: {}
+[5.826233] (-) TimerEvent: {}
+[5.926624] (-) TimerEvent: {}
+[6.026971] (-) TimerEvent: {}
+[6.128154] (-) TimerEvent: {}
+[6.228617] (-) TimerEvent: {}
+[6.330116] (-) TimerEvent: {}
+[6.430421] (-) TimerEvent: {}
+[6.530748] (-) TimerEvent: {}
+[6.631180] (-) TimerEvent: {}
+[6.731507] (-) TimerEvent: {}
+[6.831837] (-) TimerEvent: {}
+[6.932144] (-) TimerEvent: {}
+[7.032454] (-) TimerEvent: {}
+[7.132798] (-) TimerEvent: {}
+[7.233158] (-) TimerEvent: {}
+[7.333514] (-) TimerEvent: {}
+[7.433893] (-) TimerEvent: {}
+[7.476949] (navegacao) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mapper.dir/build.make:76: CMakeFiles/mapper.dir/src/mapper_node.cpp.o] Error 1\n'}
+[7.477287] (navegacao) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mapper.dir/all] Error 2\n'}
+[7.477484] (navegacao) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.480139] (navegacao) CommandEnded: {'returncode': 2}
+[7.489372] (navegacao) JobEnded: {'identifier': 'navegacao', 'rc': 2}
+[7.500164] (-) EventReactorShutdown: {}

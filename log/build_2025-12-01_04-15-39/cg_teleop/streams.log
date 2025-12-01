@@ -1,0 +1,21 @@
+[1.746s] Invoking command in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg_teleop': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/build/cg_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/cg_teleop build --build-base /home/inteli/ponderada_navegacao/build/cg_teleop/build install --record /home/inteli/ponderada_navegacao/build/cg_teleop/install.log --single-version-externally-managed install_data
+[2.282s] running egg_info
+[2.315s] writing ../../../../build/cg_teleop/cg_teleop.egg-info/PKG-INFO
+[2.316s] writing dependency_links to ../../../../build/cg_teleop/cg_teleop.egg-info/dependency_links.txt
+[2.317s] writing entry points to ../../../../build/cg_teleop/cg_teleop.egg-info/entry_points.txt
+[2.319s] writing requirements to ../../../../build/cg_teleop/cg_teleop.egg-info/requires.txt
+[2.319s] writing top-level names to ../../../../build/cg_teleop/cg_teleop.egg-info/top_level.txt
+[2.389s] reading manifest file '../../../../build/cg_teleop/cg_teleop.egg-info/SOURCES.txt'
+[2.392s] writing manifest file '../../../../build/cg_teleop/cg_teleop.egg-info/SOURCES.txt'
+[2.394s] running build
+[2.394s] running build_py
+[2.395s] running install
+[2.405s] running install_lib
+[2.432s] running install_data
+[2.432s] running install_egg_info
+[2.468s] removing '/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages/cg_teleop-0.0.0-py3.12.egg-info' (and everything under it)
+[2.468s] Copying ../../../../build/cg_teleop/cg_teleop.egg-info to /home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages/cg_teleop-0.0.0-py3.12.egg-info
+[2.469s] running install_scripts
+[2.676s] Installing teleop_keyboard script to /home/inteli/ponderada_navegacao/install/cg_teleop/lib/cg_teleop
+[2.676s] writing list of installed files to '/home/inteli/ponderada_navegacao/build/cg_teleop/install.log'
+[2.727s] Invoked command in '/home/inteli/ponderada_navegacao/src/culling_games/src/cg_teleop' returned '0': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/build/cg_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/cg_teleop build --build-base /home/inteli/ponderada_navegacao/build/cg_teleop/build install --record /home/inteli/ponderada_navegacao/build/cg_teleop/install.log --single-version-externally-managed install_data

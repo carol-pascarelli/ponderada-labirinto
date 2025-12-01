@@ -1,0 +1,277 @@
+[0.000000] (-) TimerEvent: {}
+[0.000203] (-) JobUnselected: {'identifier': 'cg'}
+[0.000492] (-) JobUnselected: {'identifier': 'cg_interfaces'}
+[0.000535] (-) JobUnselected: {'identifier': 'cg_teleop'}
+[0.000568] (navegacao) JobQueued: {'identifier': 'navegacao', 'dependencies': OrderedDict({'cg_interfaces': '/home/inteli/ponderada_navegacao/install/cg_interfaces'})}
+[0.001135] (navegacao) JobStarted: {'identifier': 'navegacao'}
+[0.021162] (navegacao) JobProgress: {'identifier': 'navegacao', 'progress': 'cmake'}
+[0.022394] (navegacao) JobProgress: {'identifier': 'navegacao', 'progress': 'build'}
+[0.023976] (navegacao) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/inteli/ponderada_navegacao/build/navegacao', '--', '-j8', '-l8'], 'cwd': '/home/inteli/ponderada_navegacao/build/navegacao', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/inteli', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'USER': 'inteli', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/inteli', 'CHROME_DESKTOP': 'cursor.desktop', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/inteli/ponderada_navegacao', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/inteli/.nvm/versions/node/v20.19.5/bin', 'NVM_INC': '/home/inteli/.nvm/versions/node/v20.19.5/include/node', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-b447031e-2.1.-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/cursor.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '3388', 'SYSTEMD_EXEC_PID': '3733', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '118363', 'NVM_DIR': '/home/inteli/.nvm', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'VSCODE_L10N_BUNDLE_LOCATION': '', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'inteli', 'FORCE_COLOR': '0', 'JOURNAL_STREAM': '9:28848', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'inteli', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COMPOSER_NO_INTERACTION': '1', 'PATH': '/home/inteli/.local/bin:/home/inteli/.local/bin:/opt/ros/jazzy/bin:/home/inteli/.nvm/versions/node/v20.19.5/bin:/home/inteli/micromamba/condabin:/home/inteli/.cargo/bin:/home/inteli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/inteli:@/tmp/.ICE-unix/3660,unix/inteli:/tmp/.ICE-unix/3660', 'INVOCATION_ID': 'f12c7352f27f4be7b406951c02292beb', 'XDG_MENU_PREFIX': 'gnome-', 'VSCODE_PROCESS_TITLE': 'extension-host  [1-2]', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'MAMBA_ROOT_PREFIX': '/home/inteli/micromamba', 'CURSOR_AGENT': '1', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R5MQG3', 'LS_COLORS': '', 'SBX_CHROME_API_RQ': '1', 'CURSOR_TRACE_ID': 'ca2fdaa175984c9bb4ec1b2cadd0ebdb', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'MAMBA_EXE': '/home/inteli/.local/bin/micromamba', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/inteli/ponderada_navegacao/build/navegacao', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/inteli/.config/Cursor/CachedData/39a966b4048ef6b8024b27d4812a50d88de29cc0', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', '_ZO_DOCTOR': '0', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '118363'}), 'shell': False}
+[0.099567] (-) TimerEvent: {}
+[0.151309] (navegacao) StdoutLine: {'line': b'[ 50%] Built target path_planner\n'}
+[0.172206] (navegacao) StdoutLine: {'line': b'[ 75%] Building CXX object CMakeFiles/mapper.dir/src/mapper_node.cpp.o\n'}
+[0.199681] (-) TimerEvent: {}
+[0.299968] (-) TimerEvent: {}
+[0.400254] (-) TimerEvent: {}
+[0.500512] (-) TimerEvent: {}
+[0.601561] (-) TimerEvent: {}
+[0.701850] (-) TimerEvent: {}
+[0.802378] (-) TimerEvent: {}
+[0.902729] (-) TimerEvent: {}
+[1.003065] (-) TimerEvent: {}
+[1.103368] (-) TimerEvent: {}
+[1.203775] (-) TimerEvent: {}
+[1.304198] (-) TimerEvent: {}
+[1.404546] (-) TimerEvent: {}
+[1.504878] (-) TimerEvent: {}
+[1.605194] (-) TimerEvent: {}
+[1.705532] (-) TimerEvent: {}
+[1.805914] (-) TimerEvent: {}
+[1.906239] (-) TimerEvent: {}
+[2.006634] (-) TimerEvent: {}
+[2.106975] (-) TimerEvent: {}
+[2.207284] (-) TimerEvent: {}
+[2.307739] (-) TimerEvent: {}
+[2.408099] (-) TimerEvent: {}
+[2.508405] (-) TimerEvent: {}
+[2.608871] (-) TimerEvent: {}
+[2.709209] (-) TimerEvent: {}
+[2.809537] (-) TimerEvent: {}
+[2.909796] (-) TimerEvent: {}
+[3.010093] (-) TimerEvent: {}
+[3.110369] (-) TimerEvent: {}
+[3.210643] (-) TimerEvent: {}
+[3.310968] (-) TimerEvent: {}
+[3.411273] (-) TimerEvent: {}
+[3.511553] (-) TimerEvent: {}
+[3.611847] (-) TimerEvent: {}
+[3.712104] (-) TimerEvent: {}
+[3.812371] (-) TimerEvent: {}
+[3.912741] (-) TimerEvent: {}
+[4.013021] (-) TimerEvent: {}
+[4.113330] (-) TimerEvent: {}
+[4.213614] (-) TimerEvent: {}
+[4.313867] (-) TimerEvent: {}
+[4.414149] (-) TimerEvent: {}
+[4.514436] (-) TimerEvent: {}
+[4.614770] (-) TimerEvent: {}
+[4.715016] (-) TimerEvent: {}
+[4.815254] (-) TimerEvent: {}
+[4.915533] (-) TimerEvent: {}
+[5.015754] (-) TimerEvent: {}
+[5.116256] (-) TimerEvent: {}
+[5.216553] (-) TimerEvent: {}
+[5.316811] (-) TimerEvent: {}
+[5.417092] (-) TimerEvent: {}
+[5.517333] (-) TimerEvent: {}
+[5.617550] (-) TimerEvent: {}
+[5.717789] (-) TimerEvent: {}
+[5.818066] (-) TimerEvent: {}
+[5.918346] (-) TimerEvent: {}
+[6.018592] (-) TimerEvent: {}
+[6.118849] (-) TimerEvent: {}
+[6.219116] (-) TimerEvent: {}
+[6.319394] (-) TimerEvent: {}
+[6.419686] (-) TimerEvent: {}
+[6.520028] (-) TimerEvent: {}
+[6.620311] (-) TimerEvent: {}
+[6.720576] (-) TimerEvent: {}
+[6.820866] (-) TimerEvent: {}
+[6.921197] (-) TimerEvent: {}
+[7.021542] (-) TimerEvent: {}
+[7.121893] (-) TimerEvent: {}
+[7.222216] (-) TimerEvent: {}
+[7.322525] (-) TimerEvent: {}
+[7.422795] (-) TimerEvent: {}
+[7.523020] (-) TimerEvent: {}
+[7.623349] (-) TimerEvent: {}
+[7.723624] (-) TimerEvent: {}
+[7.823921] (-) TimerEvent: {}
+[7.924239] (-) TimerEvent: {}
+[8.024587] (-) TimerEvent: {}
+[8.124946] (-) TimerEvent: {}
+[8.225267] (-) TimerEvent: {}
+[8.325547] (-) TimerEvent: {}
+[8.425861] (-) TimerEvent: {}
+[8.526121] (-) TimerEvent: {}
+[8.626373] (-) TimerEvent: {}
+[8.726647] (-) TimerEvent: {}
+[8.826925] (-) TimerEvent: {}
+[8.927196] (-) TimerEvent: {}
+[9.027549] (-) TimerEvent: {}
+[9.127913] (-) TimerEvent: {}
+[9.228229] (-) TimerEvent: {}
+[9.328535] (-) TimerEvent: {}
+[9.428809] (-) TimerEvent: {}
+[9.529062] (-) TimerEvent: {}
+[9.629354] (-) TimerEvent: {}
+[9.729708] (-) TimerEvent: {}
+[9.829928] (-) TimerEvent: {}
+[9.930139] (-) TimerEvent: {}
+[10.030374] (-) TimerEvent: {}
+[10.130639] (-) TimerEvent: {}
+[10.230867] (-) TimerEvent: {}
+[10.331108] (-) TimerEvent: {}
+[10.431460] (-) TimerEvent: {}
+[10.531724] (-) TimerEvent: {}
+[10.632021] (-) TimerEvent: {}
+[10.732299] (-) TimerEvent: {}
+[10.832618] (-) TimerEvent: {}
+[10.932901] (-) TimerEvent: {}
+[11.033292] (-) TimerEvent: {}
+[11.134232] (-) TimerEvent: {}
+[11.239797] (-) TimerEvent: {}
+[11.340107] (-) TimerEvent: {}
+[11.440946] (-) TimerEvent: {}
+[11.541175] (-) TimerEvent: {}
+[11.641423] (-) TimerEvent: {}
+[11.741732] (-) TimerEvent: {}
+[11.842056] (-) TimerEvent: {}
+[11.942341] (-) TimerEvent: {}
+[12.042694] (-) TimerEvent: {}
+[12.143001] (-) TimerEvent: {}
+[12.243321] (-) TimerEvent: {}
+[12.343649] (-) TimerEvent: {}
+[12.443953] (-) TimerEvent: {}
+[12.544257] (-) TimerEvent: {}
+[12.644567] (-) TimerEvent: {}
+[12.744851] (-) TimerEvent: {}
+[12.845147] (-) TimerEvent: {}
+[12.945474] (-) TimerEvent: {}
+[13.045787] (-) TimerEvent: {}
+[13.146048] (-) TimerEvent: {}
+[13.246357] (-) TimerEvent: {}
+[13.346691] (-) TimerEvent: {}
+[13.446947] (-) TimerEvent: {}
+[13.547191] (-) TimerEvent: {}
+[13.647431] (-) TimerEvent: {}
+[13.747682] (-) TimerEvent: {}
+[13.847891] (-) TimerEvent: {}
+[13.948125] (-) TimerEvent: {}
+[14.048369] (-) TimerEvent: {}
+[14.148608] (-) TimerEvent: {}
+[14.249111] (-) TimerEvent: {}
+[14.349516] (-) TimerEvent: {}
+[14.449780] (-) TimerEvent: {}
+[14.550050] (-) TimerEvent: {}
+[14.650325] (-) TimerEvent: {}
+[14.750610] (-) TimerEvent: {}
+[14.855563] (-) TimerEvent: {}
+[14.955848] (-) TimerEvent: {}
+[15.056112] (-) TimerEvent: {}
+[15.156413] (-) TimerEvent: {}
+[15.256736] (-) TimerEvent: {}
+[15.357034] (-) TimerEvent: {}
+[15.457291] (-) TimerEvent: {}
+[15.557544] (-) TimerEvent: {}
+[15.657738] (-) TimerEvent: {}
+[15.758013] (-) TimerEvent: {}
+[15.858255] (-) TimerEvent: {}
+[15.958503] (-) TimerEvent: {}
+[16.058748] (-) TimerEvent: {}
+[16.158994] (-) TimerEvent: {}
+[16.259328] (-) TimerEvent: {}
+[16.359606] (-) TimerEvent: {}
+[16.459845] (-) TimerEvent: {}
+[16.560065] (-) TimerEvent: {}
+[16.660330] (-) TimerEvent: {}
+[16.760617] (-) TimerEvent: {}
+[16.860898] (-) TimerEvent: {}
+[16.961157] (-) TimerEvent: {}
+[17.061428] (-) TimerEvent: {}
+[17.161678] (-) TimerEvent: {}
+[17.261953] (-) TimerEvent: {}
+[17.362256] (-) TimerEvent: {}
+[17.462520] (-) TimerEvent: {}
+[17.562758] (-) TimerEvent: {}
+[17.662963] (-) TimerEvent: {}
+[17.763182] (-) TimerEvent: {}
+[17.863382] (-) TimerEvent: {}
+[17.963654] (-) TimerEvent: {}
+[18.063968] (-) TimerEvent: {}
+[18.164209] (-) TimerEvent: {}
+[18.264480] (-) TimerEvent: {}
+[18.364720] (-) TimerEvent: {}
+[18.464951] (-) TimerEvent: {}
+[18.565165] (-) TimerEvent: {}
+[18.665401] (-) TimerEvent: {}
+[18.765633] (-) TimerEvent: {}
+[18.865851] (-) TimerEvent: {}
+[18.966126] (-) TimerEvent: {}
+[19.066436] (-) TimerEvent: {}
+[19.166725] (-) TimerEvent: {}
+[19.267014] (-) TimerEvent: {}
+[19.367278] (-) TimerEvent: {}
+[19.467573] (-) TimerEvent: {}
+[19.567910] (-) TimerEvent: {}
+[19.668229] (-) TimerEvent: {}
+[19.768731] (-) TimerEvent: {}
+[19.869010] (-) TimerEvent: {}
+[19.969419] (-) TimerEvent: {}
+[20.069845] (-) TimerEvent: {}
+[20.170154] (-) TimerEvent: {}
+[20.270481] (-) TimerEvent: {}
+[20.370790] (-) TimerEvent: {}
+[20.471060] (-) TimerEvent: {}
+[20.571293] (-) TimerEvent: {}
+[20.671559] (-) TimerEvent: {}
+[20.771805] (-) TimerEvent: {}
+[20.872157] (-) TimerEvent: {}
+[20.972474] (-) TimerEvent: {}
+[21.072705] (-) TimerEvent: {}
+[21.173059] (-) TimerEvent: {}
+[21.273444] (-) TimerEvent: {}
+[21.373829] (-) TimerEvent: {}
+[21.474101] (-) TimerEvent: {}
+[21.574375] (-) TimerEvent: {}
+[21.674729] (-) TimerEvent: {}
+[21.774965] (-) TimerEvent: {}
+[21.875228] (-) TimerEvent: {}
+[21.975514] (-) TimerEvent: {}
+[22.075800] (-) TimerEvent: {}
+[22.176092] (-) TimerEvent: {}
+[22.276374] (-) TimerEvent: {}
+[22.376641] (-) TimerEvent: {}
+[22.476907] (-) TimerEvent: {}
+[22.577032] (navegacao) StdoutLine: {'line': b'[100%] Linking CXX executable mapper\n'}
+[22.577442] (-) TimerEvent: {}
+[22.677660] (-) TimerEvent: {}
+[22.778018] (-) TimerEvent: {}
+[22.878411] (-) TimerEvent: {}
+[22.978723] (-) TimerEvent: {}
+[23.079035] (-) TimerEvent: {}
+[23.179352] (-) TimerEvent: {}
+[23.279622] (-) TimerEvent: {}
+[23.349017] (navegacao) StdoutLine: {'line': b'[100%] Built target mapper\n'}
+[23.376493] (navegacao) CommandEnded: {'returncode': 0}
+[23.378348] (navegacao) JobProgress: {'identifier': 'navegacao', 'progress': 'install'}
+[23.379738] (-) TimerEvent: {}
+[23.400094] (navegacao) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/inteli/ponderada_navegacao/build/navegacao'], 'cwd': '/home/inteli/ponderada_navegacao/build/navegacao', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/inteli', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'USER': 'inteli', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/inteli', 'CHROME_DESKTOP': 'cursor.desktop', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/inteli/ponderada_navegacao', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/inteli/.nvm/versions/node/v20.19.5/bin', 'NVM_INC': '/home/inteli/.nvm/versions/node/v20.19.5/include/node', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-b447031e-2.1.-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/cursor.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '3388', 'SYSTEMD_EXEC_PID': '3733', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '118363', 'NVM_DIR': '/home/inteli/.nvm', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'VSCODE_L10N_BUNDLE_LOCATION': '', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'inteli', 'FORCE_COLOR': '0', 'JOURNAL_STREAM': '9:28848', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'inteli', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COMPOSER_NO_INTERACTION': '1', 'PATH': '/home/inteli/.local/bin:/home/inteli/.local/bin:/opt/ros/jazzy/bin:/home/inteli/.nvm/versions/node/v20.19.5/bin:/home/inteli/micromamba/condabin:/home/inteli/.cargo/bin:/home/inteli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/inteli:@/tmp/.ICE-unix/3660,unix/inteli:/tmp/.ICE-unix/3660', 'INVOCATION_ID': 'f12c7352f27f4be7b406951c02292beb', 'XDG_MENU_PREFIX': 'gnome-', 'VSCODE_PROCESS_TITLE': 'extension-host  [1-2]', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'MAMBA_ROOT_PREFIX': '/home/inteli/micromamba', 'CURSOR_AGENT': '1', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R5MQG3', 'LS_COLORS': '', 'SBX_CHROME_API_RQ': '1', 'CURSOR_TRACE_ID': 'ca2fdaa175984c9bb4ec1b2cadd0ebdb', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'MAMBA_EXE': '/home/inteli/.local/bin/micromamba', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/inteli/ponderada_navegacao/build/navegacao', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/inteli/.config/Cursor/CachedData/39a966b4048ef6b8024b27d4812a50d88de29cc0', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', '_ZO_DOCTOR': '0', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '118363'}), 'shell': False}
+[23.419880] (navegacao) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.420824] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/path_planner\n'}
+[23.421417] (navegacao) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/mapper\n'}
+[23.432516] (navegacao) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/mapper" to ""\n'}
+[23.434309] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/include/navegacao\n'}
+[23.434981] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/include/navegacao/grid_utils.hpp\n'}
+[23.435468] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch\n'}
+[23.435718] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch/mapper.launch.py\n'}
+[23.435961] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch/path_planner.launch.py\n'}
+[23.436216] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/maps\n'}
+[23.436476] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/package_run_dependencies/navegacao\n'}
+[23.436726] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/parent_prefix_path/navegacao\n'}
+[23.436974] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/ament_prefix_path.sh\n'}
+[23.437219] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/ament_prefix_path.dsv\n'}
+[23.437501] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/path.sh\n'}
+[23.437815] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/path.dsv\n'}
+[23.438351] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.bash\n'}
+[23.438883] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.sh\n'}
+[23.439854] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.zsh\n'}
+[23.440269] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.dsv\n'}
+[23.440770] (navegacao) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.dsv\n'}
+[23.441046] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/packages/navegacao\n'}
+[23.441519] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/cmake/navegacaoConfig.cmake\n'}
+[23.442519] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/cmake/navegacaoConfig-version.cmake\n'}
+[23.442897] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.xml\n'}
+[23.443486] (navegacao) CommandEnded: {'returncode': 0}
+[23.476212] (navegacao) JobEnded: {'identifier': 'navegacao', 'rc': 0}
+[23.477280] (-) EventReactorShutdown: {}

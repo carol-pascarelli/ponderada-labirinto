@@ -1,0 +1,68 @@
+[0.581s] Invoking command in '/home/inteli/ponderada_navegacao/build/navegacao': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/inteli/ponderada_navegacao/src/navegacao -DCMAKE_INSTALL_PREFIX=/home/inteli/ponderada_navegacao/install/navegacao
+[0.656s] -- The C compiler identification is GNU 13.3.0
+[0.727s] -- The CXX compiler identification is GNU 13.3.0
+[0.748s] -- Detecting C compiler ABI info
+[0.848s] -- Detecting C compiler ABI info - done
+[0.859s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.859s] -- Detecting C compile features
+[0.860s] -- Detecting C compile features - done
+[0.871s] -- Detecting CXX compiler ABI info
+[1.037s] -- Detecting CXX compiler ABI info - done
+[1.054s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.054s] -- Detecting CXX compile features
+[1.055s] -- Detecting CXX compile features - done
+[1.059s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.279s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.399s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.442s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.456s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.473s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.492s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.600s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.605s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.714s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.740s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.768s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.873s] -- Found cg_interfaces: 0.0.0 (/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake)
+[2.040s] -- Configuring done (1.4s)
+[2.062s] -- Generating done (0.0s)
+[2.073s] -- Build files have been written to: /home/inteli/ponderada_navegacao/build/navegacao
+[2.086s] Invoked command in '/home/inteli/ponderada_navegacao/build/navegacao' returned '0': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/inteli/ponderada_navegacao/src/navegacao -DCMAKE_INSTALL_PREFIX=/home/inteli/ponderada_navegacao/install/navegacao
+[2.087s] Invoking command in '/home/inteli/ponderada_navegacao/build/navegacao': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/navegacao -- -j8 -l8
+[2.153s] [ 25%] [32mBuilding CXX object CMakeFiles/path_planner.dir/src/path_planner_node.cpp.o[0m
+[2.153s] [ 50%] [32mBuilding CXX object CMakeFiles/mapper.dir/src/mapper_node.cpp.o[0m
+[5.067s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/path_planner_node.cpp:[m[K In member function ‘[01m[Kbool PathPlannerNode::[01;32m[Kfetch_map[m[K(navegacao::GridMap&)[m[K’:
+[5.067s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/path_planner_node.cpp:78:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’ is an inaccessible base of ‘[01m[Krosidl_runtime_cpp::BoundedVector<unsigned char, 2, std::allocator<unsigned char> >[m[K’
+[5.067s]    78 |       grid = [01;31m[Knavegacao::build_grid_from_response([m[K
+[5.067s]       |              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[5.067s]    79 | [01;31m[K        response->occupancy_grid_flattened,[m[K
+[5.067s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K      
+[5.067s]    80 | [01;31m[K        response->occupancy_grid_shape)[m[K;
+[5.067s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K          
+[5.417s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In lambda function:
+[5.417s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:148:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_coord_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_known_[m[K’?
+[5.418s]   148 |         [01;31m[Ktarget_coord_[m[K = coord;
+[5.418s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[5.418s]       |         [32m[Ktarget_known_[m[K
+[5.443s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kbool MapperNode::[01;32m[Ksend_move[m[K(const std::string&, const navegacao::GridCoordinate&)[m[K’:
+[5.443s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:233:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_coord_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_known_[m[K’?
+[5.443s]   233 |       [01;31m[Ktarget_coord_[m[K = current_;
+[5.443s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[5.443s]       |       [32m[Ktarget_known_[m[K
+[5.458s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[K{anonymous}::LocalGrid MapperNode::[01;32m[Kbuild_local_grid[m[K() const[m[K’:
+[5.458s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:267:44:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_coord_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_known_[m[K’?
+[5.458s]   267 |       } else if (target_known_ && coord == [01;31m[Ktarget_coord_[m[K) {
+[5.458s]       |                                            [01;31m[K^~~~~~~~~~~~~[m[K
+[5.458s]       |                                            [32m[Ktarget_known_[m[K
+[5.475s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Kreplay_with_local_map[m[K(const {anonymous}::LocalGrid&)[m[K’:
+[5.475s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:323:42:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_coord_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_known_[m[K’?
+[5.475s]   323 |     navegacao::GridCoordinate target_idx{[01;31m[Ktarget_coord_[m[K.row + local.row_offset, target_coord_.col + local.col_offset};
+[5.475s]       |                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[5.475s]       |                                          [32m[Ktarget_known_[m[K
+[6.679s] gmake[2]: *** [CMakeFiles/path_planner.dir/build.make:76: CMakeFiles/path_planner.dir/src/path_planner_node.cpp.o] Error 1
+[6.679s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/path_planner.dir/all] Error 2
+[6.679s] gmake[1]: *** Waiting for unfinished jobs....
+[8.622s] gmake[2]: *** [CMakeFiles/mapper.dir/build.make:76: CMakeFiles/mapper.dir/src/mapper_node.cpp.o] Error 1
+[8.622s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mapper.dir/all] Error 2
+[8.622s] gmake: *** [Makefile:146: all] Error 2
+[8.624s] Invoked command in '/home/inteli/ponderada_navegacao/build/navegacao' returned '2': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/navegacao -- -j8 -l8

@@ -1,0 +1,29 @@
+[ 25%] Building CXX object CMakeFiles/path_planner.dir/src/path_planner_node.cpp.o
+[ 75%] Built target mapper
+[100%] Linking CXX executable path_planner
+[100%] Built target path_planner
+-- Install configuration: ""
+-- Installing: /home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/path_planner
+-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/path_planner" to ""
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/mapper
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/include/navegacao
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/include/navegacao/grid_utils.hpp
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch/mapper.launch.py
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch/path_planner.launch.py
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/maps
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/package_run_dependencies/navegacao
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/parent_prefix_path/navegacao
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/ament_prefix_path.sh
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/path.sh
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/path.dsv
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.bash
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.sh
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.zsh
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.dsv
+-- Installing: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.dsv
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/packages/navegacao
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/cmake/navegacaoConfig.cmake
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/cmake/navegacaoConfig-version.cmake
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.xml

@@ -1,0 +1,64 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found cg_interfaces: 0.0.0 (/home/inteli/ponderada_navegacao/install/cg_interfaces/share/cg_interfaces/cmake)
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/inteli/ponderada_navegacao/build/navegacao
+[ 25%] [32mBuilding CXX object CMakeFiles/path_planner.dir/src/path_planner_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mapper.dir/src/mapper_node.cpp.o[0m
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/path_planner_node.cpp:[m[K In member function ‘[01m[Kbool PathPlannerNode::[01;32m[Kfetch_map[m[K(navegacao::GridMap&)[m[K’:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/path_planner_node.cpp:78:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’ is an inaccessible base of ‘[01m[Krosidl_runtime_cpp::BoundedVector<unsigned char, 2, std::allocator<unsigned char> >[m[K’
+   78 |       grid = [01;31m[Knavegacao::build_grid_from_response([m[K
+      |              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   79 | [01;31m[K        response->occupancy_grid_flattened,[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K      
+   80 | [01;31m[K        response->occupancy_grid_shape)[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K          
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In lambda function:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:148:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_coord_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_known_[m[K’?
+  148 |         [01;31m[Ktarget_coord_[m[K = coord;
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Ktarget_known_[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kbool MapperNode::[01;32m[Ksend_move[m[K(const std::string&, const navegacao::GridCoordinate&)[m[K’:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:233:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_coord_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_known_[m[K’?
+  233 |       [01;31m[Ktarget_coord_[m[K = current_;
+      |       [01;31m[K^~~~~~~~~~~~~[m[K
+      |       [32m[Ktarget_known_[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[K{anonymous}::LocalGrid MapperNode::[01;32m[Kbuild_local_grid[m[K() const[m[K’:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:267:44:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_coord_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_known_[m[K’?
+  267 |       } else if (target_known_ && coord == [01;31m[Ktarget_coord_[m[K) {
+      |                                            [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                            [32m[Ktarget_known_[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Kreplay_with_local_map[m[K(const {anonymous}::LocalGrid&)[m[K’:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:323:42:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_coord_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_known_[m[K’?
+  323 |     navegacao::GridCoordinate target_idx{[01;31m[Ktarget_coord_[m[K.row + local.row_offset, target_coord_.col + local.col_offset};
+      |                                          [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                          [32m[Ktarget_known_[m[K
+gmake[2]: *** [CMakeFiles/path_planner.dir/build.make:76: CMakeFiles/path_planner.dir/src/path_planner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/path_planner.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/mapper.dir/build.make:76: CMakeFiles/mapper.dir/src/mapper_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mapper.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

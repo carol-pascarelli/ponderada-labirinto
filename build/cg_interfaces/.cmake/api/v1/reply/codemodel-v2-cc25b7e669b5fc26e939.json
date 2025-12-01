@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f642ee5a2c7e49dee946.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "cg_interfaces__py",
+					"jsonFile" : "directory-cg_interfaces__py-b27108e8150347f4318a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/inteli/ponderada_navegacao/build/cg_interfaces/cg_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "cg_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_cg_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_cg_interfaces_egg-d51a9f9aa2c43d34f8cf.json",
+					"name" : "ament_cmake_python_build_cg_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_cg_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_cg_interfaces-6947c14e4aef6d4de23c.json",
+					"name" : "ament_cmake_python_copy_cg_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces-f065cc47a004e4c6568b.json",
+					"name" : "cg_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces__cpp-00ea0fe6d901478692a2.json",
+					"name" : "cg_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cg_interfaces__py::@4d26a88d730f05de1574",
+					"jsonFile" : "target-cg_interfaces__py-9a2ec7f7a0ccf3c644ce.json",
+					"name" : "cg_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces__rosidl_generator_c-90c2fe3423835f6559cb.json",
+					"name" : "cg_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces__rosidl_generator_py-90c77115a2709bc0eba0.json",
+					"name" : "cg_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces__rosidl_generator_type_description-7f1cc4d5893f04f786f9.json",
+					"name" : "cg_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces__rosidl_typesupport_c-b9011db693c670ec1c4d.json",
+					"name" : "cg_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces__rosidl_typesupport_cpp-660a6f4dba514009d5e6.json",
+					"name" : "cg_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces__rosidl_typesupport_fastrtps_c-6f1413e8f56b144dab50.json",
+					"name" : "cg_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces__rosidl_typesupport_fastrtps_cpp-0004e9cdac34c4f6292f.json",
+					"name" : "cg_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces__rosidl_typesupport_introspection_c-4f993983ed975c4b539c.json",
+					"name" : "cg_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces__rosidl_typesupport_introspection_cpp-c74ddf86e337c266d3d8.json",
+					"name" : "cg_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces_s__rosidl_typesupport_c-edf5c8a9e3fe88e8485e.json",
+					"name" : "cg_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces_s__rosidl_typesupport_fastrtps_c-9d61914cd47b5dcf0da6.json",
+					"name" : "cg_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces_s__rosidl_typesupport_introspection_c-7c0f785d7b4e5ac038a5.json",
+					"name" : "cg_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cg_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cg_interfaces_uninstall-873b697eb9f939b86c52.json",
+					"name" : "cg_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b370b6fd59c96b1dbf2b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/inteli/ponderada_navegacao/build/cg_interfaces",
+		"source" : "/home/inteli/ponderada_navegacao/src/culling_games/src/cg_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

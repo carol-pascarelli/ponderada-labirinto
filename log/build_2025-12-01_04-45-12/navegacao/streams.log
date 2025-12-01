@@ -1,0 +1,14 @@
+[0.027s] Invoking command in '/home/inteli/ponderada_navegacao/build/navegacao': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/navegacao -- -j8 -l8
+[0.176s] [ 50%] Built target path_planner
+[0.196s] [ 75%] Building CXX object CMakeFiles/mapper.dir/src/mapper_node.cpp.o
+[6.457s] /home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp: In member function ‘std::optional<{anonymous}::StepDecision> MapperNode::choose_next_step()’:
+[6.458s] /home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:202:15: error: no match for ‘operator!=’ (operand types are ‘navegacao::GridCoordinate’ and ‘navegacao::GridCoordinate’)
+[6.458s]   202 |       if (cur != current_ && it_cell != discovered_.end()) {
+[6.458s]       |           ~~~ ^~ ~~~~~~~~
+[6.458s]       |           |      |
+[6.458s]       |           |      navegacao::GridCoordinate
+[6.458s]       |           navegacao::GridCoordinate
+[12.480s] gmake[2]: *** [CMakeFiles/mapper.dir/build.make:76: CMakeFiles/mapper.dir/src/mapper_node.cpp.o] Error 1
+[12.481s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mapper.dir/all] Error 2
+[12.481s] gmake: *** [Makefile:146: all] Error 2
+[12.487s] Invoked command in '/home/inteli/ponderada_navegacao/build/navegacao' returned '2': AMENT_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/navegacao -- -j8 -l8
