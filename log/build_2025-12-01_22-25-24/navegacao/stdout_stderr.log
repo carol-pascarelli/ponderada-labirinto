@@ -1,0 +1,73 @@
+[ 50%] Built target path_planner
+[ 75%] [32mBuilding CXX object CMakeFiles/mapper.dir/src/mapper_node.cpp.o[0m
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:17[m[K:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Kupdate_map_from_sensors[m[K()[m[K’:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:172:37:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  172 |           RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                     [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:177:37:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  177 |           RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                     [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Kexploration_step[m[K()[m[K’:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:252:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  252 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:311:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  311 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Khandle_post_mapping[m[K()[m[K’:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:389:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  389 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:398:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  398 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:406:35:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  406 |         RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                   [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:421:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  421 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:432:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  432 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Kreplay_optimal_path[m[K()[m[K’:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:457:31:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  457 |     RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                               [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:469:31:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  469 |     RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                               [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:496:31:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  496 |     RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                               [01;35m[K^~[m[K
+[100%] [32m[1mLinking CXX executable mapper[0m
+[100%] Built target mapper
+-- Install configuration: ""
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/path_planner
+-- Installing: /home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/mapper
+-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/mapper" to ""
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/include/navegacao
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/include/navegacao/grid_utils.hpp
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch/mapper.launch.py
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch/path_planner.launch.py
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/maps
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/package_run_dependencies/navegacao
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/parent_prefix_path/navegacao
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/ament_prefix_path.sh
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/path.sh
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/path.dsv
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.bash
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.sh
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.zsh
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.dsv
+-- Installing: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.dsv
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/packages/navegacao
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/cmake/navegacaoConfig.cmake
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/cmake/navegacaoConfig-version.cmake
+-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.xml

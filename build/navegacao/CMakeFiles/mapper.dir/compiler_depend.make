@@ -12,7 +12,12 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
   /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__struct.hpp \
   /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__traits.hpp \
   /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.hpp \
+  /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__builder.hpp \
+  /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__struct.hpp \
+  /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__traits.hpp \
+  /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.hpp \
   /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/move_cmd.hpp \
+  /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/reset.hpp \
   /home/inteli/ponderada_navegacao/src/navegacao/include/navegacao/grid_utils.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
@@ -516,6 +521,7 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_relops.h \
   /usr/include/c++/13/bits/stl_set.h \
+  /usr/include/c++/13/bits/stl_stack.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
@@ -596,6 +602,7 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
   /usr/include/c++/13/set \
   /usr/include/c++/13/shared_mutex \
   /usr/include/c++/13/sstream \
+  /usr/include/c++/13/stack \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
@@ -809,8 +816,6 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
-
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
@@ -997,6 +1002,8 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /usr/include/c++/13/stdlib.h:
 
+/usr/include/c++/13/stack:
+
 /usr/include/c++/13/sstream:
 
 /usr/include/c++/13/shared_mutex:
@@ -1081,11 +1088,13 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /usr/include/c++/13/compare:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/serialization.hpp:
+/usr/include/c++/13/stdexcept:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+/usr/include/c++/13/clocale:
 
-/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
+/usr/include/c++/13/climits:
+
+/usr/include/c++/13/chrono:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/qos_overriding_options.hpp:
 
@@ -1098,8 +1107,6 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 /usr/include/c++/13/tr1/hypergeometric.tcc:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/publisher_base.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
@@ -1122,10 +1129,6 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
 
 /opt/ros/jazzy/include/rcutils/rcutils/sha256.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
 
@@ -1215,10 +1218,6 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
 
-/usr/include/string.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/serialized_message.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/exceptions.hpp:
@@ -1238,6 +1237,8 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 /opt/ros/jazzy/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
 
@@ -1321,11 +1322,25 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /usr/include/c++/13/bits/requires_hosted.h:
 
+/usr/include/c++/13/bits/algorithmfwd.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/qos_policy_kind.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
+
+/opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/service.h:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/service.h:
 
 /usr/include/c++/13/system_error:
 
@@ -1365,6 +1380,10 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /usr/include/c++/13/bits/ostream.tcc:
 
+/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/domain_id.h:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
 
 /usr/include/c++/13/fstream:
@@ -1383,10 +1402,6 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /opt/ros/jazzy/include/tracetools/tracetools/visibility_control.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/client.h:
-
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
@@ -1395,65 +1410,27 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /opt/ros/jazzy/include/rcl/rcl/allocator.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/rate.hpp:
+/usr/include/c++/13/cctype:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/rate.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/context.h:
+/opt/ros/jazzy/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
 
-/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:
+/opt/ros/jazzy/include/rmw/rmw/impl/config.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
+/usr/include/c++/13/bits/ios_base.h:
 
-/opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h:
+/opt/ros/jazzy/include/rmw/rmw/domain_id.h:
 
-/opt/ros/jazzy/include/rcl/rcl/timer.h:
-
-/opt/ros/jazzy/include/rmw/rmw/publisher_options.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/message_info.hpp:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/event.h:
-
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
-
-/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/get_message_type_support_handle.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/usr/include/c++/13/bits/charconv.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/service_introspection.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
-
-/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/domain_id.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
-
-/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__traits.hpp:
+/usr/include/c++/13/bits/exception_defines.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
 
@@ -1467,9 +1444,27 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/service.hpp:
+/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__builder.hpp:
 
-/opt/ros/jazzy/include/rmw/rmw/get_topic_names_and_types.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/future_return_code.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/clock.hpp:
+
+/opt/ros/jazzy/include/rcutils/rcutils/types.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/message_info.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
@@ -1489,25 +1484,33 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /usr/include/c++/13/bits/range_access.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
-
 /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.hpp:
 
-/usr/include/c++/13/cstddef:
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
 
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
+/opt/ros/jazzy/include/rcl/rcl/event.h:
 
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
 
-/opt/ros/jazzy/include/rcl/rcl/types.h:
+/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__struct.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/get_message_type_support_handle.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/context.h:
+
+/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_clock_interface_traits.hpp:
 
@@ -1523,9 +1526,65 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
+/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__traits.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/service_introspection.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
+
+/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__struct.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:
 
 /home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:
+
+/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__traits.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/ret_types.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/13/cstddef:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
+
+/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/reset.hpp:
+
+/usr/include/endian.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_options.hpp:
+
+/usr/include/c++/13/algorithm:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h:
+
+/opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/serialization.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
 
 /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__builder.hpp:
 
@@ -1536,6 +1595,16 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
 
 /usr/include/c++/13/bits/locale_facets_nonio.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
+
+/usr/include/c++/13/pstl/execution_defs.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/guard_condition.hpp:
 
@@ -1549,57 +1618,39 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+
+/usr/include/c++/13/bits/charconv.h:
+
+/opt/ros/jazzy/include/rcpputils/rcpputils/scope_exit.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
+
 /usr/include/stdint.h:
 
 /opt/ros/jazzy/include/rcl/rcl/subscription.h:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/identifier.h:
 
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
+/opt/ros/jazzy/include/rmw/rmw/publisher_options.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
+/opt/ros/jazzy/include/rcl/rcl/timer.h:
 
-/opt/ros/jazzy/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
-
-/opt/ros/jazzy/include/rmw/rmw/impl/config.h:
-
-/usr/include/c++/13/bits/ios_base.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
-
-/opt/ros/jazzy/include/rmw/rmw/domain_id.h:
-
-/usr/include/c++/13/bits/exception_defines.h:
-
-/usr/include/c++/13/pstl/execution_defs.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
+/opt/ros/jazzy/include/rcl/rcl/types.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/loaned_message.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/visibility_control.h:
 
-/usr/include/c++/13/bits/algorithmfwd.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
-
-/opt/ros/jazzy/include/rmw/rmw/qos_policy_kind.h:
-
 /opt/ros/jazzy/include/rcl/rcl/wait.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
@@ -1653,10 +1704,6 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/visibility_control.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
-
-/opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
-
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
@@ -1699,6 +1746,8 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/wait_result.hpp:
 
+/home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
@@ -1707,9 +1756,9 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/qos.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/qos.hpp:
 
 /usr/include/c++/13/bits/predefined_ops.h:
 
@@ -1717,9 +1766,9 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
 
-/usr/include/c++/13/stdexcept:
+/opt/ros/jazzy/include/rcutils/rcutils/snprintf.h:
 
-/usr/include/c++/13/clocale:
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
@@ -1757,18 +1806,6 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/future_return_code.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/clock.hpp:
-
-/opt/ros/jazzy/include/rcutils/rcutils/types.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
@@ -1781,13 +1818,17 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
+/opt/ros/jazzy/include/rcl/rcl/client.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:
 
-/opt/ros/jazzy/include/rcpputils/rcpputils/scope_exit.hpp:
+/usr/include/string.h:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/serialized_message.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/service.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/get_topic_names_and_types.h:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
 
@@ -1798,12 +1839,6 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:
-
-/usr/include/endian.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_options.hpp:
-
-/usr/include/c++/13/algorithm:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
@@ -1901,14 +1936,6 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /usr/include/c++/13/bits/std_function.h:
 
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
-
-/opt/ros/jazzy/include/rcutils/rcutils/snprintf.h:
-
-/usr/include/c++/13/initializer_list:
-
-/opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h:
-
 /usr/include/c++/13/bits/specfun.h:
 
 /usr/include/c++/13/bits/streambuf.tcc:
@@ -1923,13 +1950,21 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h:
 
-/usr/include/c++/13/chrono:
-
 /opt/ros/jazzy/include/rcutils/rcutils/types/string_array.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/string_map.h:
 
+/usr/include/c++/13/initializer_list:
+
+/opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h:
+
+/usr/include/c++/13/bits/stl_stack.h:
+
 /opt/ros/jazzy/include/rcutils/rcutils/types/uint8_array.h:
+
+/usr/include/c++/13/cerrno:
+
+/usr/include/c++/13/bits/stringfwd.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h:
 
@@ -2008,10 +2043,6 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 /usr/include/c++/13/bits/basic_ios.h:
 
 /opt/ros/jazzy/include/rmw/rmw/qos_string_conversions.h:
-
-/opt/ros/jazzy/include/rmw/rmw/ret_types.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_serialization_support.hpp:
 
@@ -2332,13 +2363,3 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: /home/inteli/ponderada_navegacao/sr
 /usr/include/c++/13/bits/unordered_map.h:
 
 /usr/include/c++/13/bits/uses_allocator_args.h:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
-
-/usr/include/c++/13/cctype:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/cerrno:
-
-/usr/include/c++/13/climits:

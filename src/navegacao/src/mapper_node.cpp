@@ -8,6 +8,7 @@
 #include <unordered_set>
 #include <utility>
 #include <vector>
+#include <stack>
 
 #include "cg_interfaces/msg/robot_sensors.hpp"
 #include "cg_interfaces/srv/move_cmd.hpp"
@@ -17,11 +18,6 @@
 
 using namespace std::chrono_literals;
 
-// Nó simples de mapeamento incremental:
-//  - Usa apenas /culling_games/robot_sensors e /move_command
-//  - Constrói um mapa em memória
-//  - Após encontrar o alvo, executa A* nesse mapa para demonstrar o caminho ótimo
-
 class MapperNode : public rclcpp::Node
 {
 public:
@@ -30,7 +26,6 @@ public:
   {
     map_output_path_ = this->declare_parameter<std::string>("map_output_path", default_output_path());
 
-    // Usar QoS de sensor (best_effort) para ser compatível com o publisher do simulador.
     sensors_sub_ = this->create_subscription<cg_interfaces::msg::RobotSensors>(
       "/culling_games/robot_sensors",
       rclcpp::SensorDataQoS(),
@@ -39,11 +34,18 @@ public:
     move_client_ = this->create_client<cg_interfaces::srv::MoveCmd>("move_command");
     reset_client_ = this->create_client<cg_interfaces::srv::Reset>("reset");
 
-    RCLCPP_INFO(get_logger(), "Mapper iniciado. Aguardando sensores...");
+    RCLCPP_INFO(get_logger(), "╔════════════════════════════════════════════════════╗");
+    RCLCPP_INFO(get_logger(), "║           MAPPER NODE INICIADO                     ║");
+    RCLCPP_INFO(get_logger(), "╚════════════════════════════════════════════════════╝");
   }
 
   void run()
   {
+    if (!move_client_->wait_for_service(5s)) {
+      RCLCPP_ERROR(get_logger(), "Serviço /move_command indisponível!");
+      return;
+    }
+
     while (rclcpp::ok() && !finished_) {
       rclcpp::spin_some(shared_from_this());
 
@@ -65,40 +67,50 @@ public:
   }
 
 private:
-  // --- Tipos auxiliares ---
-
-  struct CellCoord
+  struct Pos
   {
-    int r = 0;
-    int c = 0;
+    int x = 0;
+    int y = 0;
+    
+    bool operator==(const Pos& other) const {
+      return x == other.x && y == other.y;
+    }
+    
+    bool operator!=(const Pos& other) const {
+      return !(*this == other);
+    }
+    
+    bool operator<(const Pos& other) const {
+      if (x != other.x) return x < other.x;
+      return y < other.y;
+    }
   };
 
-  using Key = int;
+  struct PosHash {
+    size_t operator()(const Pos& p) const {
+      return std::hash<int>()(p.x) ^ (std::hash<int>()(p.y) << 1);
+    }
+  };
 
-  // --- Estado ROS ---
+  enum CellType { UNKNOWN, FREE, WALL, TARGET };
 
   rclcpp::Subscription<cg_interfaces::msg::RobotSensors>::SharedPtr sensors_sub_;
   rclcpp::Client<cg_interfaces::srv::MoveCmd>::SharedPtr move_client_;
   rclcpp::Client<cg_interfaces::srv::Reset>::SharedPtr reset_client_;
 
-  cg_interfaces::msg::RobotSensors last_sensors_;
+  cg_interfaces::msg::RobotSensors::SharedPtr last_sensors_;
   bool have_sensors_ = false;
 
-  // --- Estado de mapeamento ---
+  std::unordered_map<Pos, CellType, PosHash> map_;
+  std::unordered_set<Pos, PosHash> visited_;
+  std::stack<Pos> path_stack_;
 
-  std::unordered_map<Key, char> mapdata_;  // 'b' parede, 'f' livre, 't' alvo
-  std::unordered_set<Key> visited_;        // células que o robô já pisou
-
-  int robot_r_ = 0;
-  int robot_c_ = 0;
-  bool robot_initialized_ = false;
-  int start_r_ = 0;
-  int start_c_ = 0;
-  bool start_set_ = false;
+  Pos current_pos_{0, 0};
+  Pos initial_pos_{0, 0};
+  bool initialized_ = false;
 
   bool target_found_ = false;
-  int target_r_ = -1;
-  int target_c_ = -1;
+  Pos target_pos_{-1, -1};
 
   bool mapping_complete_ = false;
   bool map_saved_ = false;
@@ -106,28 +118,22 @@ private:
   bool replayed_ = false;
   bool finished_ = false;
 
+  int exploration_moves_ = 0;
+  int optimal_moves_ = 0;
+
   std::string map_output_path_;
 
-  const std::vector<std::pair<std::string, CellCoord>> dirs_{
-    {"up", {-1, 0}},
-    {"down", {1, 0}},
-    {"left", {0, -1}},
-    {"right", {0, 1}}
+  const std::vector<std::pair<std::string, std::pair<int, int>>> directions_{
+    {"up", {0, 1}},
+    {"down", {0, -1}},
+    {"left", {-1, 0}},
+    {"right", {1, 0}}
   };
-
-  // --- Callbacks ROS ---
 
   void on_sensors(const cg_interfaces::msg::RobotSensors::SharedPtr msg)
   {
-    last_sensors_ = *msg;
+    last_sensors_ = msg;
     have_sensors_ = true;
-  }
-
-  // --- Helpers de grid interno ---
-
-  Key key(int r, int c) const
-  {
-    return r * 1000 + c;
   }
 
   static std::string default_output_path()
@@ -139,318 +145,219 @@ private:
 
   void update_map_from_sensors()
   {
-    // Para cada direção cardinal, atualiza o mapa interno com base no sensor.
-    for (const auto & d : dirs_) {
-      int dr = d.second.r;
-      int dc = d.second.c;
-      int nr = robot_r_ + dr;
-      int nc = robot_c_ + dc;
-      Key k = key(nr, nc);
+    if (!last_sensors_) return;
 
-      char val = 'b';
-      if (d.first == "up") {
-        val = last_sensors_.up.empty() ? 'b' : last_sensors_.up[0];
-      } else if (d.first == "down") {
-        val = last_sensors_.down.empty() ? 'b' : last_sensors_.down[0];
-      } else if (d.first == "left") {
-        val = last_sensors_.left.empty() ? 'b' : last_sensors_.left[0];
-      } else if (d.first == "right") {
-        val = last_sensors_.right.empty() ? 'b' : last_sensors_.right[0];
-      }
+    std::map<std::string, std::string> sensor_values = {
+      {"up", last_sensors_->up},
+      {"down", last_sensors_->down},
+      {"left", last_sensors_->left},
+      {"right", last_sensors_->right}
+    };
 
-      if (val == 'b') {
-        mapdata_[k] = 'b';
-      } else if (val == 'f') {
-        if (!mapdata_.count(k)) {
-          mapdata_[k] = 'f';
+    for (const auto& [dir_name, offset] : directions_) {
+      Pos neighbor{current_pos_.x + offset.first, current_pos_.y + offset.second};
+      std::string value = sensor_values[dir_name];
+
+      if (value == "b") {
+        map_[neighbor] = WALL;
+      } else if (value == "f") {
+        if (map_.find(neighbor) == map_.end()) {
+          map_[neighbor] = FREE;
         }
-      } else if (val == 't') {
-        mapdata_[k] = 't';
+      } else if (value == "t") {
+        map_[neighbor] = TARGET;
         if (!target_found_) {
           target_found_ = true;
-          target_r_ = nr;
-          target_c_ = nc;
-          RCLCPP_INFO(get_logger(), "Target detectado pelos sensores em (%d, %d).", target_r_, target_c_);
+          target_pos_ = neighbor;
+          RCLCPP_INFO(get_logger(), "");
+          RCLCPP_INFO(get_logger(), "🎯 ═══════════════════════════════════════════════════");
+          RCLCPP_INFO(get_logger(), "   ALVO DETECTADO em (%d, %d) [SENSORES]", target_pos_.x, target_pos_.y);
+          RCLCPP_INFO(get_logger(), "   Continuando mapeamento sem entrar no alvo...");
+          RCLCPP_INFO(get_logger(), "   ═══════════════════════════════════════════════════");
+          RCLCPP_INFO(get_logger(), "");
         }
       }
     }
+
+    map_[current_pos_] = FREE;
   }
 
-  bool call_move(const std::string & dir, int & new_r, int & new_c)
+  bool call_move(const std::string& dir, Pos& new_pos)
   {
-    if (!move_client_->wait_for_service(500ms)) {
-      RCLCPP_ERROR(get_logger(), "Serviço /move_command indisponível.");
-      return false;
-    }
     auto req = std::make_shared<cg_interfaces::srv::MoveCmd::Request>();
     req->direction = dir;
     auto fut = move_client_->async_send_request(req);
-    auto status = rclcpp::spin_until_future_complete(this->get_node_base_interface(), fut, 1s);
+    auto status = rclcpp::spin_until_future_complete(this->get_node_base_interface(), fut, 2s);
+    
     if (status != rclcpp::FutureReturnCode::SUCCESS) {
-      RCLCPP_ERROR(get_logger(), "Serviço /move_command não respondeu.");
+      RCLCPP_ERROR(get_logger(), "Timeout ao chamar move_command");
       return false;
     }
+    
     auto res = fut.get();
     if (!res->success) {
       return false;
     }
 
-    new_r = res->robot_pos[0];
-    new_c = res->robot_pos[1];
-
-    // Se o simulador indicar que a posição do robô é igual ao alvo, salvamos o target.
-    if (res->robot_pos == res->target_pos) {
-      target_found_ = true;
-      target_r_ = new_r;
-      target_c_ = new_c;
-      RCLCPP_INFO(get_logger(), "Target alcançado em (%d, %d) durante exploração.", target_r_, target_c_);
+    // Calcular nova posição baseado na direção
+    for (const auto& [name, offset] : directions_) {
+      if (name == dir) {
+        new_pos.x = current_pos_.x + offset.first;
+        new_pos.y = current_pos_.y + offset.second;
+        break;
+      }
     }
 
     return true;
   }
 
-  void initialize_robot_position()
+  std::string get_direction_to(const Pos& from, const Pos& to)
   {
-    if (robot_initialized_) {
-      return;
-    }
+    int dx = to.x - from.x;
+    int dy = to.y - from.y;
 
-    // Tentativa simples: mover em alguma direção válida só para ler a posição real.
-    std::vector<std::string> test_dirs{"right", "down", "left", "up"};
-    bool found = false;
-    for (const auto & d : test_dirs) {
-      int nr, nc;
-      if (call_move(d, nr, nc)) {
-        found = true;
-        // Movimento oposto para voltar.
-        std::string opp;
-        if (d == "right") { opp = "left"; }
-        else if (d == "left") { opp = "right"; }
-        else if (d == "up") { opp = "down"; }
-        else { opp = "up"; }
-
-        int br, bc;
-        if (call_move(opp, br, bc)) {
-          robot_r_ = br;
-          robot_c_ = bc;
-        } else {
-          robot_r_ = nr;
-          robot_c_ = nc;
-        }
-        break;
+    for (const auto& [name, offset] : directions_) {
+      if (offset.first == dx && offset.second == dy) {
+        return name;
       }
     }
-
-    if (!found) {
-      robot_r_ = 0;
-      robot_c_ = 0;
-    }
-
-    if (!start_set_) {
-      start_r_ = robot_r_;
-      start_c_ = robot_c_;
-      start_set_ = true;
-    }
-
-    Key k = key(robot_r_, robot_c_);
-    mapdata_[k] = 'f';
-    visited_.insert(k);
-    robot_initialized_ = true;
-    RCLCPP_INFO(get_logger(), "Robô inicializado em (%d, %d).", robot_r_, robot_c_);
-  }
-
-  std::pair<int, int> find_closest_unvisited() const
-  {
-    std::queue<std::pair<int, int>> q;
-    std::unordered_set<Key> seen;
-
-    q.push({robot_r_, robot_c_});
-    seen.insert(key(robot_r_, robot_c_));
-
-    while (!q.empty()) {
-      auto [r, c] = q.front();
-      q.pop();
-
-      for (const auto & d : dirs_) {
-        int nr = r + d.second.r;
-        int nc = c + d.second.c;
-        Key k = key(nr, nc);
-        if (seen.count(k)) {
-          continue;
-        }
-        seen.insert(k);
-
-        auto it = mapdata_.find(k);
-        if (it != mapdata_.end() && it->second != 'b') {
-          if (!visited_.count(k)) {
-            return {nr, nc};
-          }
-          q.push({nr, nc});
-        }
-      }
-    }
-
-    return {-1, -1};
-  }
-
-  navegacao::GridMap build_grid_from_mapdata() const
-  {
-    navegacao::GridMap grid;
-    if (mapdata_.empty()) {
-      return grid;
-    }
-
-    int min_r = INT_MAX, min_c = INT_MAX, max_r = INT_MIN, max_c = INT_MIN;
-    for (const auto & p : mapdata_) {
-      int r = p.first / 1000;
-      int c = p.first % 1000;
-      min_r = std::min(min_r, r);
-      min_c = std::min(min_c, c);
-      max_r = std::max(max_r, r);
-      max_c = std::max(max_c, c);
-    }
-
-    int rows = max_r - min_r + 1;
-    int cols = max_c - min_c + 1;
-    grid.cells.assign(static_cast<size_t>(rows), std::vector<char>(static_cast<size_t>(cols), 'b'));
-
-    for (const auto & p : mapdata_) {
-      int r = p.first / 1000;
-      int c = p.first % 1000;
-      grid.cells[static_cast<size_t>(r - min_r)][static_cast<size_t>(c - min_c)] = p.second;
-    }
-
-    // Marca robô e alvo
-    int rr = robot_r_ - min_r;
-    int rc = robot_c_ - min_c;
-    if (rr >= 0 && rr < rows && rc >= 0 && rc < cols) {
-      grid.cells[static_cast<size_t>(rr)][static_cast<size_t>(rc)] = 'r';
-    }
-    if (target_found_) {
-      int tr = target_r_ - min_r;
-      int tc = target_c_ - min_c;
-      if (tr >= 0 && tr < rows && tc >= 0 && tc < cols) {
-        grid.cells[static_cast<size_t>(tr)][static_cast<size_t>(tc)] = 't';
-      }
-    }
-
-    return grid;
-  }
-
-  void save_map_to_disk(const std::string & path) const
-  {
-    auto grid = build_grid_from_mapdata();
-    if (grid.rows() == 0 || grid.cols() == 0) {
-      RCLCPP_WARN(get_logger(), "Mapa vazio, nada para salvar.");
-      return;
-    }
-
-    std::ofstream ofs(path);
-    if (!ofs.is_open()) {
-      RCLCPP_ERROR(get_logger(), "Não consegui abrir arquivo de mapa em %s", path.c_str());
-      return;
-    }
-
-    for (size_t r = 0; r < grid.rows(); ++r) {
-      for (size_t c = 0; c < grid.cols(); ++c) {
-        ofs << grid.cells[r][c];
-      }
-      ofs << '\n';
-    }
-    ofs.close();
-    RCLCPP_INFO(get_logger(), "Mapa salvo em %s", path.c_str());
+    return "";
   }
 
   void exploration_step()
   {
-    if (mapping_complete_) {
-      return;
+    if (mapping_complete_) return;
+
+    if (!initialized_) {
+      visited_.insert(current_pos_);
+      path_stack_.push(current_pos_);
+      initial_pos_ = current_pos_;
+      initialized_ = true;
+      RCLCPP_INFO(get_logger(), "Iniciando exploração em (%d, %d)", current_pos_.x, current_pos_.y);
     }
 
     update_map_from_sensors();
 
-    if (!robot_initialized_) {
-      initialize_robot_position();
+    // Verificar se há células livres não visitadas (excluindo target)
+    bool has_unexplored = false;
+    for (const auto& [pos, type] : map_) {
+      if (type == FREE && visited_.find(pos) == visited_.end()) {
+        has_unexplored = true;
+        break;
+      }
+    }
+    
+    if (!has_unexplored && target_found_) {
+      mapping_complete_ = true;
+      RCLCPP_INFO(get_logger(), "");
+      RCLCPP_INFO(get_logger(), "✓ Exploração concluída: %d movimentos", exploration_moves_);
+      RCLCPP_INFO(get_logger(), "✓ Células visitadas: %zu", visited_.size());
+      RCLCPP_INFO(get_logger(), "✓ Alvo em: (%d, %d)", target_pos_.x, target_pos_.y);
       return;
     }
 
-    // 1) Tentar vizinho livre não visitado
-    for (const auto & d : dirs_) {
-      int nr = robot_r_ + d.second.r;
-      int nc = robot_c_ + d.second.c;
-      Key k = key(nr, nc);
-      auto it = mapdata_.find(k);
-      if (it != mapdata_.end() && it->second != 'b' && !visited_.count(k)) {
-        int new_r, new_c;
-        if (call_move(d.first, new_r, new_c)) {
-          robot_r_ = new_r;
-          robot_c_ = new_c;
-          Key nk = key(robot_r_, robot_c_);
-          visited_.insert(nk);
-          mapdata_[nk] = 'f';
-          RCLCPP_INFO(get_logger(), "Explorando célula (%d, %d).", robot_r_, robot_c_);
-        }
-        return;
+    // Procurar vizinho livre não visitado (NÃO incluir TARGET)
+    std::string best_dir = "";
+    
+    for (const auto& [dir_name, offset] : directions_) {
+      Pos neighbor{current_pos_.x + offset.first, current_pos_.y + offset.second};
+      auto it = map_.find(neighbor);
+      
+      // Apenas células FREE, nunca TARGET
+      if (it != map_.end() && 
+          it->second == FREE &&
+          visited_.find(neighbor) == visited_.end()) {
+        best_dir = dir_name;
+        break;
       }
     }
 
-    // 2) Não há vizinho novo; procurar célula não visitada mais próxima via BFS
-    auto unvisited = find_closest_unvisited();
-    if (unvisited.first >= 0) {
-      auto grid = build_grid_from_mapdata();
-      if (grid.rows() == 0 || grid.cols() == 0) {
-        mapping_complete_ = true;
-        return;
+    if (!best_dir.empty()) {
+      Pos new_pos;
+      if (call_move(best_dir, new_pos)) {
+        current_pos_ = new_pos;
+        visited_.insert(current_pos_);
+        path_stack_.push(current_pos_);
+        exploration_moves_++;
+        
+        if (exploration_moves_ % 5 == 0) {
+          RCLCPP_INFO(get_logger(), "Explorando: (%d, %d) | Movimentos: %d", 
+                      current_pos_.x, current_pos_.y, exploration_moves_);
+        }
+      }
+      return;
+    }
+
+    // Backtracking
+    if (path_stack_.size() > 1) {
+      path_stack_.pop();
+      Pos previous = path_stack_.top();
+      std::string dir = get_direction_to(current_pos_, previous);
+      
+      if (!dir.empty()) {
+        Pos new_pos;
+        if (call_move(dir, new_pos)) {
+          current_pos_ = new_pos;
+          exploration_moves_++;
+          RCLCPP_INFO(get_logger(), "← Backtracking para (%d, %d)", current_pos_.x, current_pos_.y);
+        }
+      }
+      return;
+    }
+
+    // Sem opções
+    if (target_found_) {
+      mapping_complete_ = true;
+      RCLCPP_INFO(get_logger(), "");
+      RCLCPP_INFO(get_logger(), "✓ Exploração concluída: %d movimentos", exploration_moves_);
+    } else {
+      RCLCPP_WARN(get_logger(), "⚠ Exploração terminou sem encontrar o alvo!");
+    }
+  }
+
+  std::vector<Pos> calculate_optimal_path()
+  {
+    std::queue<Pos> q;
+    std::unordered_map<Pos, Pos, PosHash> parent;
+    std::unordered_set<Pos, PosHash> visited;
+
+    q.push(initial_pos_);
+    visited.insert(initial_pos_);
+    parent[initial_pos_] = initial_pos_;
+
+    while (!q.empty()) {
+      Pos current = q.front();
+      q.pop();
+
+      if (current == target_pos_) {
+        std::vector<Pos> path;
+        Pos pos = target_pos_;
+        
+        while (pos != initial_pos_) {
+          path.push_back(pos);
+          pos = parent[pos];
+        }
+        path.push_back(initial_pos_);
+        
+        std::reverse(path.begin(), path.end());
+        return path;
       }
 
-      // Converter coordenadas globais (robot_r_, robot_c_) para índices na matriz
-      int min_r = INT_MAX, min_c = INT_MAX;
-      for (const auto & p : mapdata_) {
-        int r = p.first / 1000;
-        int c = p.first % 1000;
-        min_r = std::min(min_r, r);
-        min_c = std::min(min_c, c);
-      }
-
-      navegacao::GridCoordinate start_idx{
-        robot_r_ - min_r,
-        robot_c_ - min_c};
-      navegacao::GridCoordinate goal_idx{
-        unvisited.first - min_r,
-        unvisited.second - min_c};
-
-      std::vector<navegacao::GridCoordinate> path;
-      if (navegacao::run_a_star(grid, start_idx, goal_idx, path) && path.size() > 1) {
-        auto next = path[1];
-        int global_r = next.row + min_r;
-        int global_c = next.col + min_c;
-        int dr = global_r - robot_r_;
-        int dc = global_c - robot_c_;
-        std::string dir;
-        if (dr == -1 && dc == 0) dir = "up";
-        else if (dr == 1 && dc == 0) dir = "down";
-        else if (dr == 0 && dc == -1) dir = "left";
-        else if (dr == 0 && dc == 1) dir = "right";
-        else {
-          return;
+      for (const auto& [_, offset] : directions_) {
+        Pos neighbor{current.x + offset.first, current.y + offset.second};
+        auto it = map_.find(neighbor);
+        
+        if (visited.find(neighbor) == visited.end() &&
+            it != map_.end() && 
+            (it->second == FREE || it->second == TARGET)) {
+          visited.insert(neighbor);
+          parent[neighbor] = current;
+          q.push(neighbor);
         }
-
-        int new_r, new_c;
-        if (call_move(dir, new_r, new_c)) {
-          robot_r_ = new_r;
-          robot_c_ = new_c;
-          Key nk = key(robot_r_, robot_c_);
-          visited_.insert(nk);
-          mapdata_[nk] = 'f';
-          RCLCPP_INFO(get_logger(), "Movendo por caminho planejado para (%d, %d).", robot_r_, robot_c_);
-        }
-        return;
       }
     }
 
-    // 3) Não há mais nada para explorar
-    mapping_complete_ = true;
-    RCLCPP_INFO(get_logger(), "Mapeamento completo.");
+    return {};
   }
 
   void handle_post_mapping()
@@ -462,107 +369,222 @@ private:
 
     if (!target_found_) {
       finished_ = true;
-      RCLCPP_WARN(get_logger(), "Target não foi encontrado durante o mapeamento.");
+      RCLCPP_WARN(get_logger(), "⚠ Target não encontrado - finalizando.");
       return;
     }
 
     if (!reset_done_) {
+      auto optimal_path = calculate_optimal_path();
+      
+      if (optimal_path.empty()) {
+        RCLCPP_ERROR(get_logger(), "✗ Não foi possível calcular rota ótima!");
+        finished_ = true;
+        return;
+      }
+      
+      int optimal_length = optimal_path.size() - 1;
+      int saved_moves = exploration_moves_ - optimal_length;
+      float efficiency = (100.0f * saved_moves) / exploration_moves_;
+      
+      RCLCPP_INFO(get_logger(), "");
+      RCLCPP_INFO(get_logger(), "┌────────────────────────────────────────────────────┐");
+      RCLCPP_INFO(get_logger(), "│  Movimentos exploração:  %d%s│", 
+                  exploration_moves_, std::string(27 - std::to_string(exploration_moves_).length(), ' ').c_str());
+      RCLCPP_INFO(get_logger(), "│  Rota ótima calculada:   %d movimentos%s│", 
+                  optimal_length, std::string(21 - std::to_string(optimal_length).length(), ' ').c_str());
+      RCLCPP_INFO(get_logger(), "│  Economia:               %d movimentos (%.0f%%)%s│", 
+                  saved_moves, efficiency, std::string(13 - std::to_string(saved_moves).length(), ' ').c_str());
+      RCLCPP_INFO(get_logger(), "└────────────────────────────────────────────────────┘");
+      RCLCPP_INFO(get_logger(), "");
+      
+      RCLCPP_INFO(get_logger(), "Chamando serviço /reset...");
+      
       if (reset_game()) {
-        robot_r_ = start_r_;
-        robot_c_ = start_c_;
+        current_pos_ = initial_pos_;
         reset_done_ = true;
-        RCLCPP_INFO(get_logger(), "Simulador reiniciado. Repetindo trajeto ótimo...");
+        RCLCPP_INFO(get_logger(), "✓ Reset concluído. Robô em (%d, %d)", current_pos_.x, current_pos_.y);
+        RCLCPP_INFO(get_logger(), "");
+      } else {
+        RCLCPP_ERROR(get_logger(), "✗ Falha no reset!");
+        finished_ = true;
       }
       return;
     }
 
     if (!replayed_) {
-      replay_path_to_target();
+      RCLCPP_INFO(get_logger(), "Aguardando estabilização do simulador...");
+      rclcpp::sleep_for(2s);
+      
+      replay_optimal_path();
       replayed_ = true;
+      
+      RCLCPP_INFO(get_logger(), "");
+      RCLCPP_INFO(get_logger(), "╔════════════════════════════════════════════════════╗");
+      RCLCPP_INFO(get_logger(), "║  ESTATÍSTICAS FINAIS                               ║");
+      RCLCPP_INFO(get_logger(), "╠════════════════════════════════════════════════════╣");
+      RCLCPP_INFO(get_logger(), "║  Células exploradas:        %zu%s║", 
+                  visited_.size(), std::string(23 - std::to_string(visited_.size()).length(), ' ').c_str());
+      RCLCPP_INFO(get_logger(), "║  Movimentos exploração:     %d%s║", 
+                  exploration_moves_, std::string(23 - std::to_string(exploration_moves_).length(), ' ').c_str());
+      RCLCPP_INFO(get_logger(), "║  Movimentos rota ótima:     %d%s║", 
+                  optimal_moves_, std::string(23 - std::to_string(optimal_moves_).length(), ' ').c_str());
+      RCLCPP_INFO(get_logger(), "╚════════════════════════════════════════════════════╝");
+      RCLCPP_INFO(get_logger(), "");
+      
       finished_ = true;
     }
   }
 
-  void replay_path_to_target()
+  void replay_optimal_path()
   {
-    if (!target_found_) {
+    // Resetar flag de sensores e aguardar nova leitura
+    have_sensors_ = false;
+    int wait_attempts = 0;
+    
+    RCLCPP_INFO(get_logger(), "Aguardando sensores após reset...");
+    while (!have_sensors_ && wait_attempts < 100 && rclcpp::ok()) {
+      rclcpp::spin_some(shared_from_this());
+      rclcpp::sleep_for(50ms);
+      wait_attempts++;
+    }
+    
+    if (!have_sensors_) {
+      RCLCPP_ERROR(get_logger(), "✗ Timeout aguardando sensores!");
+      return;
+    }
+    
+    RCLCPP_INFO(get_logger(), "✓ Sensores recebidos. Iniciando replay...");
+    RCLCPP_INFO(get_logger(), "");
+    
+    auto path = calculate_optimal_path();
+    
+    if (path.empty() || path.size() < 2) {
+      RCLCPP_ERROR(get_logger(), "✗ Caminho ótimo inválido!");
       return;
     }
 
-    auto grid = build_grid_from_mapdata();
-    if (grid.rows() == 0 || grid.cols() == 0) {
-      return;
-    }
-
-    int min_r = INT_MAX, min_c = INT_MAX;
-    for (const auto & p : mapdata_) {
-      int r = p.first / 1000;
-      int c = p.first % 1000;
-      min_r = std::min(min_r, r);
-      min_c = std::min(min_c, c);
-    }
-
-    navegacao::GridCoordinate start_idx{
-      robot_r_ - min_r,
-      robot_c_ - min_c};
-    navegacao::GridCoordinate goal_idx{
-      target_r_ - min_r,
-      target_c_ - min_c};
-
-    std::vector<navegacao::GridCoordinate> path;
-    if (!navegacao::run_a_star(grid, start_idx, goal_idx, path) || path.size() < 2) {
-      RCLCPP_ERROR(get_logger(), "Falha ao encontrar caminho no mapa mapeado.");
-      return;
-    }
-
-    RCLCPP_INFO(get_logger(), "Reexecutando A* no mapa mapeado (%zu passos)...", path.size() - 1);
+    RCLCPP_INFO(get_logger(), "Executando rota ótima: %zu movimentos", path.size() - 1);
+    RCLCPP_INFO(get_logger(), "De (%d, %d) até (%d, %d)", 
+                initial_pos_.x, initial_pos_.y, target_pos_.x, target_pos_.y);
+    RCLCPP_INFO(get_logger(), "");
 
     for (size_t i = 1; i < path.size() && rclcpp::ok(); ++i) {
-      auto next = path[i];
-      int global_r = next.row + min_r;
-      int global_c = next.col + min_c;
-
-      int dr = global_r - robot_r_;
-      int dc = global_c - robot_c_;
-      std::string dir;
-      if (dr == -1 && dc == 0) dir = "up";
-      else if (dr == 1 && dc == 0) dir = "down";
-      else if (dr == 0 && dc == -1) dir = "left";
-      else if (dr == 0 && dc == 1) dir = "right";
-      else {
-        continue;
-      }
-
-      int new_r, new_c;
-      if (!call_move(dir, new_r, new_c)) {
-        RCLCPP_WARN(get_logger(), "Falha ao mover %s durante a repetição.", dir.c_str());
+      std::string dir = get_direction_to(path[i-1], path[i]);
+      
+      if (dir.empty()) {
+        RCLCPP_ERROR(get_logger(), "✗ Direção inválida entre (%d,%d) e (%d,%d)!", 
+                     path[i-1].x, path[i-1].y, path[i].x, path[i].y);
         break;
       }
-      robot_r_ = new_r;
-      robot_c_ = new_c;
-      RCLCPP_INFO(get_logger(), "Repetição: movido %s -> (%d, %d)", dir.c_str(), robot_r_, robot_c_);
-      rclcpp::sleep_for(80ms);
+
+      RCLCPP_INFO(get_logger(), "[%zu/%zu] Movendo %s...", i, path.size() - 1, dir.c_str());
+
+      Pos new_pos;
+      if (!call_move(dir, new_pos)) {
+        RCLCPP_WARN(get_logger(), "✗ Falha ao mover %s", dir.c_str());
+        break;
+      }
+      
+      current_pos_ = new_pos;
+      optimal_moves_++;
+      
+      RCLCPP_INFO(get_logger(), "   → Posição: (%d, %d)", current_pos_.x, current_pos_.y);
+      
+      rclcpp::sleep_for(500ms);
     }
+
+    RCLCPP_INFO(get_logger(), "");
+    
+    if (current_pos_ == target_pos_) {
+      RCLCPP_INFO(get_logger(), "🎯 Alvo alcançado com sucesso!");
+    } else {
+      RCLCPP_WARN(get_logger(), "⚠ Posição final (%d,%d) diferente do alvo (%d,%d)", 
+                  current_pos_.x, current_pos_.y, target_pos_.x, target_pos_.y);
+    }
+  }
+
+  void save_map_to_disk(const std::string& path) const
+  {
+    if (map_.empty()) {
+      RCLCPP_WARN(get_logger(), "Mapa vazio.");
+      return;
+    }
+
+    int min_x = INT_MAX, max_x = INT_MIN;
+    int min_y = INT_MAX, max_y = INT_MIN;
+
+    for (const auto& [pos, _] : map_) {
+      min_x = std::min(min_x, pos.x);
+      max_x = std::max(max_x, pos.x);
+      min_y = std::min(min_y, pos.y);
+      max_y = std::max(max_y, pos.y);
+    }
+
+    std::ofstream ofs(path);
+    if (!ofs.is_open()) {
+      RCLCPP_ERROR(get_logger(), "Erro ao abrir %s", path.c_str());
+      return;
+    }
+
+    for (int y = max_y; y >= min_y; --y) {
+      for (int x = min_x; x <= max_x; ++x) {
+        Pos p{x, y};
+        
+        if (p == initial_pos_) {
+          ofs << 's';  // start
+        } else if (p == target_pos_) {
+          ofs << 't';
+        } else {
+          auto it = map_.find(p);
+          if (it != map_.end()) {
+            switch (it->second) {
+              case FREE: ofs << 'f'; break;
+              case WALL: ofs << 'b'; break;
+              case TARGET: ofs << 't'; break;
+              default: ofs << '?'; break;
+            }
+          } else {
+            ofs << '?';
+          }
+        }
+      }
+      ofs << '\n';
+    }
+    
+    ofs.close();
+    RCLCPP_INFO(get_logger(), "✓ Mapa salvo em: %s", path.c_str());
   }
 
   bool reset_game()
   {
-    if (!reset_client_->wait_for_service(1s)) {
-      RCLCPP_ERROR(get_logger(), "Serviço /reset indisponível.");
+    if (!reset_client_->wait_for_service(3s)) {
+      RCLCPP_ERROR(get_logger(), "Serviço /reset indisponível!");
       return false;
     }
 
     auto req = std::make_shared<cg_interfaces::srv::Reset::Request>();
     req->is_random = false;
     req->map_name = "";
+    
     auto fut = reset_client_->async_send_request(req);
-    auto status = rclcpp::spin_until_future_complete(this->get_node_base_interface(), fut, 3s);
-    if (status != rclcpp::FutureReturnCode::SUCCESS || !fut.get()->success) {
-      RCLCPP_ERROR(get_logger(), "Falha ao chamar /reset.");
+    auto status = rclcpp::spin_until_future_complete(this->get_node_base_interface(), fut, 5s);
+    
+    if (status != rclcpp::FutureReturnCode::SUCCESS) {
+      RCLCPP_ERROR(get_logger(), "Timeout ao chamar /reset");
+      return false;
+    }
+    
+    auto res = fut.get();
+    if (!res->success) {
+      RCLCPP_ERROR(get_logger(), "Reset retornou success=false");
       return false;
     }
 
-    rclcpp::sleep_for(500ms);
+    RCLCPP_INFO(get_logger(), "✓ Serviço /reset retornou sucesso");
+    
+    // Aguardar reset completo
+    rclcpp::sleep_for(3s);
+    
     return true;
   }
 };
@@ -575,5 +597,3 @@ int main(int argc, char ** argv)
   rclcpp::shutdown();
   return 0;
 }
-
-

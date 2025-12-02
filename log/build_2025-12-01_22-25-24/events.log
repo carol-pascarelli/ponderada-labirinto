@@ -1,0 +1,194 @@
+[0.000000] (-) TimerEvent: {}
+[0.000514] (-) JobUnselected: {'identifier': 'cg'}
+[0.000800] (-) JobUnselected: {'identifier': 'cg_interfaces'}
+[0.000840] (-) JobUnselected: {'identifier': 'cg_teleop'}
+[0.000863] (navegacao) JobQueued: {'identifier': 'navegacao', 'dependencies': OrderedDict({'cg_interfaces': '/home/inteli/ponderada_navegacao/install/cg_interfaces'})}
+[0.000890] (navegacao) JobStarted: {'identifier': 'navegacao'}
+[0.010961] (navegacao) JobProgress: {'identifier': 'navegacao', 'progress': 'cmake'}
+[0.011509] (navegacao) JobProgress: {'identifier': 'navegacao', 'progress': 'build'}
+[0.012071] (navegacao) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/inteli/ponderada_navegacao/build/navegacao', '--', '-j8', '-l8'], 'cwd': '/home/inteli/ponderada_navegacao/build/navegacao', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'inteli', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/inteli', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/inteli', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/inteli/.nvm/versions/node/v20.19.5/bin', 'NVM_INC': '/home/inteli/.nvm/versions/node/v20.19.5/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/inteli/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'inteli', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'inteli', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/inteli/.nvm/versions/node/v20.19.5/bin:/home/inteli/micromamba/condabin:/home/inteli/.cargo/bin:/home/inteli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/inteli:@/tmp/.ICE-unix/3660,unix/inteli:/tmp/.ICE-unix/3660', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/688dacad_fde7_498d_b73c_6275ec7fca22', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MAMBA_ROOT_PREFIX': '/home/inteli/micromamba', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R5MQG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.1205', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/navegacao:/home/inteli/ponderada_navegacao/install/cg_teleop:/home/inteli/ponderada_navegacao/install/cg:/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'MAMBA_EXE': '/home/inteli/.local/bin/micromamba', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/inteli/ponderada_navegacao/build/navegacao', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/home/inteli/ponderada_navegacao/install/navegacao:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/inteli/ponderada_navegacao/install/cg_teleop:/home/inteli/ponderada_navegacao/install/cg:/opt/ros/jazzy'}), 'shell': False}
+[0.086327] (navegacao) StdoutLine: {'line': b'[ 50%] Built target path_planner\n'}
+[0.086782] (navegacao) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/mapper.dir/src/mapper_node.cpp.o\x1b[0m\n'}
+[0.099701] (-) TimerEvent: {}
+[0.201103] (-) TimerEvent: {}
+[0.301764] (-) TimerEvent: {}
+[0.402078] (-) TimerEvent: {}
+[0.502474] (-) TimerEvent: {}
+[0.602935] (-) TimerEvent: {}
+[0.703248] (-) TimerEvent: {}
+[0.803588] (-) TimerEvent: {}
+[0.904016] (-) TimerEvent: {}
+[1.004439] (-) TimerEvent: {}
+[1.104777] (-) TimerEvent: {}
+[1.205121] (-) TimerEvent: {}
+[1.305442] (-) TimerEvent: {}
+[1.405962] (-) TimerEvent: {}
+[1.506333] (-) TimerEvent: {}
+[1.607448] (-) TimerEvent: {}
+[1.708410] (-) TimerEvent: {}
+[1.808755] (-) TimerEvent: {}
+[1.909100] (-) TimerEvent: {}
+[2.009362] (-) TimerEvent: {}
+[2.109637] (-) TimerEvent: {}
+[2.209890] (-) TimerEvent: {}
+[2.310167] (-) TimerEvent: {}
+[2.410467] (-) TimerEvent: {}
+[2.510733] (-) TimerEvent: {}
+[2.610999] (-) TimerEvent: {}
+[2.711282] (-) TimerEvent: {}
+[2.786960] (navegacao) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.787429] (navegacao) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[2.787515] (navegacao) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[2.787621] (navegacao) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:17\x1b[m\x1b[K:\n'}
+[2.787716] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MapperNode::\x1b[01;32m\x1b[Kupdate_map_from_sensors\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.787883] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:172:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.787986] (navegacao) StderrLine: {'line': b'  172 |           RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[2.788096] (navegacao) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.788532] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:177:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.788749] (navegacao) StderrLine: {'line': b'  177 |           RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[2.788856] (navegacao) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.803586] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MapperNode::\x1b[01;32m\x1b[Kexploration_step\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.803841] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:252:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.803915] (navegacao) StderrLine: {'line': b'  252 |       RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[2.803980] (navegacao) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.811398] (-) TimerEvent: {}
+[2.813844] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:311:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.814013] (navegacao) StderrLine: {'line': b'  311 |       RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[2.814090] (navegacao) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.829540] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MapperNode::\x1b[01;32m\x1b[Khandle_post_mapping\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.829827] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:389:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.829913] (navegacao) StderrLine: {'line': b'  389 |       RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[2.829987] (navegacao) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.831471] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:398:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.831613] (navegacao) StderrLine: {'line': b'  398 |       RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[2.831690] (navegacao) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.832158] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:406:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.832297] (navegacao) StderrLine: {'line': b'  406 |         RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[2.832371] (navegacao) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.832998] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:421:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.833154] (navegacao) StderrLine: {'line': b'  421 |       RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[2.833249] (navegacao) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.835197] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:432:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.835315] (navegacao) StderrLine: {'line': b'  432 |       RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[2.835388] (navegacao) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.837999] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MapperNode::\x1b[01;32m\x1b[Kreplay_optimal_path\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.838133] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:457:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.838222] (navegacao) StderrLine: {'line': b'  457 |     RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[2.838327] (navegacao) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.839356] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:469:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.839588] (navegacao) StderrLine: {'line': b'  469 |     RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[2.839749] (navegacao) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.842216] (navegacao) StderrLine: {'line': b'\x1b[01m\x1b[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:496:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.842416] (navegacao) StderrLine: {'line': b'  496 |     RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[2.842560] (navegacao) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.911523] (-) TimerEvent: {}
+[3.011915] (-) TimerEvent: {}
+[3.112253] (-) TimerEvent: {}
+[3.212610] (-) TimerEvent: {}
+[3.312907] (-) TimerEvent: {}
+[3.413224] (-) TimerEvent: {}
+[3.513559] (-) TimerEvent: {}
+[3.613847] (-) TimerEvent: {}
+[3.714163] (-) TimerEvent: {}
+[3.814531] (-) TimerEvent: {}
+[3.914931] (-) TimerEvent: {}
+[4.015327] (-) TimerEvent: {}
+[4.115661] (-) TimerEvent: {}
+[4.216152] (-) TimerEvent: {}
+[4.316519] (-) TimerEvent: {}
+[4.416784] (-) TimerEvent: {}
+[4.517159] (-) TimerEvent: {}
+[4.617531] (-) TimerEvent: {}
+[4.717904] (-) TimerEvent: {}
+[4.818308] (-) TimerEvent: {}
+[4.918710] (-) TimerEvent: {}
+[5.019152] (-) TimerEvent: {}
+[5.119555] (-) TimerEvent: {}
+[5.220005] (-) TimerEvent: {}
+[5.320502] (-) TimerEvent: {}
+[5.421685] (-) TimerEvent: {}
+[5.522140] (-) TimerEvent: {}
+[5.622554] (-) TimerEvent: {}
+[5.722966] (-) TimerEvent: {}
+[5.823347] (-) TimerEvent: {}
+[5.923762] (-) TimerEvent: {}
+[6.024178] (-) TimerEvent: {}
+[6.124582] (-) TimerEvent: {}
+[6.224996] (-) TimerEvent: {}
+[6.325392] (-) TimerEvent: {}
+[6.425784] (-) TimerEvent: {}
+[6.526157] (-) TimerEvent: {}
+[6.626518] (-) TimerEvent: {}
+[6.726907] (-) TimerEvent: {}
+[6.827320] (-) TimerEvent: {}
+[6.927760] (-) TimerEvent: {}
+[7.028120] (-) TimerEvent: {}
+[7.128507] (-) TimerEvent: {}
+[7.228912] (-) TimerEvent: {}
+[7.329309] (-) TimerEvent: {}
+[7.429697] (-) TimerEvent: {}
+[7.530099] (-) TimerEvent: {}
+[7.630512] (-) TimerEvent: {}
+[7.730928] (-) TimerEvent: {}
+[7.831258] (-) TimerEvent: {}
+[7.931681] (-) TimerEvent: {}
+[8.032178] (-) TimerEvent: {}
+[8.132549] (-) TimerEvent: {}
+[8.232988] (-) TimerEvent: {}
+[8.333403] (-) TimerEvent: {}
+[8.433710] (-) TimerEvent: {}
+[8.534074] (-) TimerEvent: {}
+[8.634380] (-) TimerEvent: {}
+[8.734763] (-) TimerEvent: {}
+[8.835107] (-) TimerEvent: {}
+[8.935488] (-) TimerEvent: {}
+[9.035899] (-) TimerEvent: {}
+[9.136291] (-) TimerEvent: {}
+[9.236710] (-) TimerEvent: {}
+[9.337128] (-) TimerEvent: {}
+[9.437528] (-) TimerEvent: {}
+[9.537806] (-) TimerEvent: {}
+[9.638215] (-) TimerEvent: {}
+[9.738689] (-) TimerEvent: {}
+[9.839177] (-) TimerEvent: {}
+[9.939627] (-) TimerEvent: {}
+[10.040121] (-) TimerEvent: {}
+[10.140542] (-) TimerEvent: {}
+[10.240967] (-) TimerEvent: {}
+[10.258265] (navegacao) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mapper\x1b[0m\n'}
+[10.341160] (-) TimerEvent: {}
+[10.441502] (-) TimerEvent: {}
+[10.541816] (-) TimerEvent: {}
+[10.640074] (navegacao) StdoutLine: {'line': b'[100%] Built target mapper\n'}
+[10.644686] (-) TimerEvent: {}
+[10.660619] (navegacao) CommandEnded: {'returncode': 0}
+[10.662173] (navegacao) JobProgress: {'identifier': 'navegacao', 'progress': 'install'}
+[10.674725] (navegacao) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/inteli/ponderada_navegacao/build/navegacao'], 'cwd': '/home/inteli/ponderada_navegacao/build/navegacao', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'inteli', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/inteli', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/inteli', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/inteli/.nvm/versions/node/v20.19.5/bin', 'NVM_INC': '/home/inteli/.nvm/versions/node/v20.19.5/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/inteli/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'inteli', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'inteli', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/inteli/.nvm/versions/node/v20.19.5/bin:/home/inteli/micromamba/condabin:/home/inteli/.cargo/bin:/home/inteli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/inteli:@/tmp/.ICE-unix/3660,unix/inteli:/tmp/.ICE-unix/3660', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/688dacad_fde7_498d_b73c_6275ec7fca22', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MAMBA_ROOT_PREFIX': '/home/inteli/micromamba', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.R5MQG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.1205', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/navegacao:/home/inteli/ponderada_navegacao/install/cg_teleop:/home/inteli/ponderada_navegacao/install/cg:/home/inteli/ponderada_navegacao/install/cg_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'MAMBA_EXE': '/home/inteli/.local/bin/micromamba', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/inteli/ponderada_navegacao/build/navegacao', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/inteli/ponderada_navegacao/install/cg_interfaces:/home/inteli/ponderada_navegacao/install/navegacao:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/inteli/ponderada_navegacao/install/cg_teleop:/home/inteli/ponderada_navegacao/install/cg:/opt/ros/jazzy'}), 'shell': False}
+[10.685870] (navegacao) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.686165] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/path_planner\n'}
+[10.686291] (navegacao) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/mapper\n'}
+[10.695887] (navegacao) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/mapper" to ""\n'}
+[10.696262] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/include/navegacao\n'}
+[10.696514] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/include/navegacao/grid_utils.hpp\n'}
+[10.696691] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch\n'}
+[10.696815] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch/mapper.launch.py\n'}
+[10.696925] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch/path_planner.launch.py\n'}
+[10.697027] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/maps\n'}
+[10.697132] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/package_run_dependencies/navegacao\n'}
+[10.697242] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/parent_prefix_path/navegacao\n'}
+[10.697348] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/ament_prefix_path.sh\n'}
+[10.697452] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/ament_prefix_path.dsv\n'}
+[10.697557] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/path.sh\n'}
+[10.697671] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/path.dsv\n'}
+[10.697777] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.bash\n'}
+[10.697887] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.sh\n'}
+[10.697994] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.zsh\n'}
+[10.698189] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.dsv\n'}
+[10.698432] (navegacao) StdoutLine: {'line': b'-- Installing: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.dsv\n'}
+[10.698851] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/packages/navegacao\n'}
+[10.699144] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/cmake/navegacaoConfig.cmake\n'}
+[10.699252] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/cmake/navegacaoConfig-version.cmake\n'}
+[10.699358] (navegacao) StdoutLine: {'line': b'-- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.xml\n'}
+[10.699530] (navegacao) CommandEnded: {'returncode': 0}
+[10.716978] (navegacao) JobEnded: {'identifier': 'navegacao', 'rc': 0}
+[10.718654] (-) EventReactorShutdown: {}

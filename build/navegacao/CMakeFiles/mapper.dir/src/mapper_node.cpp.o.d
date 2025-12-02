@@ -196,7 +196,8 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o: \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/unordered_set \
  /usr/include/c++/13/bits/unordered_set.h /usr/include/c++/13/utility \
- /usr/include/c++/13/bits/stl_relops.h \
+ /usr/include/c++/13/bits/stl_relops.h /usr/include/c++/13/stack \
+ /usr/include/c++/13/bits/stl_stack.h \
  /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/robot_sensors.hpp \
  /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/msg/detail/robot_sensors__struct.hpp \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \

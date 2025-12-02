@@ -1,0 +1,77 @@
+[0.013s] Invoking command in '/home/inteli/ponderada_navegacao/build/navegacao': CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/home/inteli/ponderada_navegacao/install/navegacao:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/inteli/ponderada_navegacao/install/cg_teleop:/home/inteli/ponderada_navegacao/install/cg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/navegacao -- -j8 -l8
+[0.086s] [ 50%] Built target path_planner
+[0.086s] [ 75%] [32mBuilding CXX object CMakeFiles/mapper.dir/src/mapper_node.cpp.o[0m
+[2.786s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.787s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[2.787s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[2.787s]                  from [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:17[m[K:
+[2.787s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Kupdate_map_from_sensors[m[K()[m[K’:
+[2.787s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:172:37:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.787s]   172 |           RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+[2.787s]       |                                     [01;35m[K^~[m[K
+[2.788s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:177:37:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.788s]   177 |           RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+[2.788s]       |                                     [01;35m[K^~[m[K
+[2.803s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Kexploration_step[m[K()[m[K’:
+[2.803s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:252:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.803s]   252 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+[2.803s]       |                                 [01;35m[K^~[m[K
+[2.813s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:311:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.813s]   311 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+[2.813s]       |                                 [01;35m[K^~[m[K
+[2.829s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Khandle_post_mapping[m[K()[m[K’:
+[2.829s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:389:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.829s]   389 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+[2.829s]       |                                 [01;35m[K^~[m[K
+[2.831s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:398:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.831s]   398 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+[2.831s]       |                                 [01;35m[K^~[m[K
+[2.831s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:406:35:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.831s]   406 |         RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+[2.832s]       |                                   [01;35m[K^~[m[K
+[2.832s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:421:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.832s]   421 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+[2.832s]       |                                 [01;35m[K^~[m[K
+[2.834s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:432:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.834s]   432 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+[2.835s]       |                                 [01;35m[K^~[m[K
+[2.837s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Kreplay_optimal_path[m[K()[m[K’:
+[2.837s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:457:31:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.837s]   457 |     RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+[2.838s]       |                               [01;35m[K^~[m[K
+[2.839s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:469:31:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.839s]   469 |     RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+[2.839s]       |                               [01;35m[K^~[m[K
+[2.841s] [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:496:31:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.842s]   496 |     RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+[2.842s]       |                               [01;35m[K^~[m[K
+[10.258s] [100%] [32m[1mLinking CXX executable mapper[0m
+[10.639s] [100%] Built target mapper
+[10.660s] Invoked command in '/home/inteli/ponderada_navegacao/build/navegacao' returned '0': CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/home/inteli/ponderada_navegacao/install/navegacao:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/inteli/ponderada_navegacao/install/cg_teleop:/home/inteli/ponderada_navegacao/install/cg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/inteli/ponderada_navegacao/build/navegacao -- -j8 -l8
+[10.674s] Invoking command in '/home/inteli/ponderada_navegacao/build/navegacao': CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/home/inteli/ponderada_navegacao/install/navegacao:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/inteli/ponderada_navegacao/install/cg_teleop:/home/inteli/ponderada_navegacao/install/cg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/inteli/ponderada_navegacao/build/navegacao
+[10.685s] -- Install configuration: ""
+[10.685s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/path_planner
+[10.685s] -- Installing: /home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/mapper
+[10.695s] -- Set non-toolchain portion of runtime path of "/home/inteli/ponderada_navegacao/install/navegacao/lib/navegacao/mapper" to ""
+[10.696s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/include/navegacao
+[10.696s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/include/navegacao/grid_utils.hpp
+[10.696s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch
+[10.696s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch/mapper.launch.py
+[10.696s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/launch/path_planner.launch.py
+[10.696s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/maps
+[10.696s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/package_run_dependencies/navegacao
+[10.696s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/parent_prefix_path/navegacao
+[10.697s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/ament_prefix_path.sh
+[10.697s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/ament_prefix_path.dsv
+[10.697s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/path.sh
+[10.697s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/environment/path.dsv
+[10.697s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.bash
+[10.697s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.sh
+[10.697s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.zsh
+[10.697s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/local_setup.dsv
+[10.698s] -- Installing: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.dsv
+[10.698s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/ament_index/resource_index/packages/navegacao
+[10.698s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/cmake/navegacaoConfig.cmake
+[10.698s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/cmake/navegacaoConfig-version.cmake
+[10.699s] -- Up-to-date: /home/inteli/ponderada_navegacao/install/navegacao/share/navegacao/package.xml
+[10.699s] Invoked command in '/home/inteli/ponderada_navegacao/build/navegacao' returned '0': CMAKE_PREFIX_PATH=/home/inteli/ponderada_navegacao/install/cg_interfaces:/home/inteli/ponderada_navegacao/install/navegacao:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/inteli/ponderada_navegacao/install/cg_teleop:/home/inteli/ponderada_navegacao/install/cg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/inteli/ponderada_navegacao/install/cg_interfaces/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg_teleop/lib/python3.12/site-packages:/home/inteli/ponderada_navegacao/install/cg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/inteli/ponderada_navegacao/build/navegacao

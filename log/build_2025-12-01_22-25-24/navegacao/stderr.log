@@ -1,0 +1,44 @@
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:17[m[K:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Kupdate_map_from_sensors[m[K()[m[K’:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:172:37:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  172 |           RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                     [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:177:37:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  177 |           RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                     [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Kexploration_step[m[K()[m[K’:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:252:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  252 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:311:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  311 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Khandle_post_mapping[m[K()[m[K’:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:389:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  389 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:398:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  398 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:406:35:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  406 |         RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                   [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:421:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  421 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:432:33:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  432 |       RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MapperNode::[01;32m[Kreplay_optimal_path[m[K()[m[K’:
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:457:31:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  457 |     RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                               [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:469:31:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  469 |     RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                               [01;35m[K^~[m[K
+[01m[K/home/inteli/ponderada_navegacao/src/navegacao/src/mapper_node.cpp:496:31:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  496 |     RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                               [01;35m[K^~[m[K

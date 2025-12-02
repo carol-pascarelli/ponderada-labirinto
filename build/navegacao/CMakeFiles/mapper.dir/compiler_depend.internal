@@ -13,7 +13,12 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o
  /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__struct.hpp
  /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__traits.hpp
  /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/move_cmd__type_support.hpp
+ /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__builder.hpp
+ /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__struct.hpp
+ /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__traits.hpp
+ /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/detail/reset__type_support.hpp
  /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/move_cmd.hpp
+ /home/inteli/ponderada_navegacao/install/cg_interfaces/include/cg_interfaces/cg_interfaces/srv/reset.hpp
  /home/inteli/ponderada_navegacao/src/navegacao/include/navegacao/grid_utils.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp
@@ -517,6 +522,7 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o
  /usr/include/c++/13/bits/stl_raw_storage_iter.h
  /usr/include/c++/13/bits/stl_relops.h
  /usr/include/c++/13/bits/stl_set.h
+ /usr/include/c++/13/bits/stl_stack.h
  /usr/include/c++/13/bits/stl_tempbuf.h
  /usr/include/c++/13/bits/stl_tree.h
  /usr/include/c++/13/bits/stl_uninitialized.h
@@ -597,6 +603,7 @@ CMakeFiles/mapper.dir/src/mapper_node.cpp.o
  /usr/include/c++/13/set
  /usr/include/c++/13/shared_mutex
  /usr/include/c++/13/sstream
+ /usr/include/c++/13/stack
  /usr/include/c++/13/stdexcept
  /usr/include/c++/13/stdlib.h
  /usr/include/c++/13/streambuf
