@@ -74,4 +74,4 @@ Fluxo:
 
 ---
 
-[Vídeo Demonstrativo](https://studio.youtube.com/video/_fuaRmTKc5E)
+[Vídeo Demonstrativo](https://youtu.be/tuDMv_8rJUk)
